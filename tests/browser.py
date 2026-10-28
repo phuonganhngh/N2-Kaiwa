@@ -108,7 +108,7 @@ with sync_playwright() as p:
     check(page.locator('#grammar-options input:checked').count()==20,'D1 and D2 can both be selected')
     page.locator('#grammar-options input[value="3"]').uncheck()
     check(page.locator('#custom-days input[value="1"]').evaluate('(e)=>e.indeterminate'),'unticking one grammar makes D1 partially selected')
-    check('9/10' in page.locator('#custom-days label').first.inner_text(),'day badge reflects individual unticks')
+    check(page.locator('#custom-days small').count()==0 and page.locator('#custom-days label').first.inner_text()=='D1','compact day chips show only D1 without counts')
     page.locator('#apply-selection').click()
     check(page.locator('#round option').count()==4,'19 selected structures split into rounds of five')
     page.locator('#next').click();page.locator('#next').click()

@@ -159,7 +159,6 @@ function syncSelection() {
     input.checked = count === entries.length;
     input.indeterminate = count > 0 && count < entries.length;
     input.closest('label').classList.toggle('has-selection', count > 0);
-    input.closest('label').querySelector('small').textContent = `${count}/${entries.length}`;
   });
 }
 function renderDayChoices() {
@@ -168,7 +167,7 @@ function renderDayChoices() {
     const label = el('label', undefined, 'day-choice');
     const input = el('input'); input.type = 'checkbox'; input.value = day;
     input.setAttribute('aria-label', `D${day} — select grammar for Day ${day}`);
-    label.append(input, el('span', `D${day}`), el('small'));
+    label.append(input, el('span', `D${day}`));
     input.addEventListener('change', () => {
       const entries = lesson(grammar,day);
       if (input.checked) {

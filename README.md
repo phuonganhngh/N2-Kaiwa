@@ -46,6 +46,8 @@ npm test
 
 The importer does not overwrite the authored question bank. If you replace the workbook, review and update the bank explicitly; the application rejects mismatched STTs or grammar labels.
 
+See [CONTENT_REVIEW.md](CONTENT_REVIEW.md) for the complete-unit review criteria and explanations of the revised speaking scenarios. Automated tests verify behavior and data fidelity; they do not establish linguistic quality.
+
 ## Practice
 
 - **Daily:** follows STT order. Days 1–21 have 10 structures each. Day 22 contains the remaining 4; entries are never padded or duplicated.

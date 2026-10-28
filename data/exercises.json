@@ -39,8 +39,8 @@
     "id": "stt-005",
     "stt": 5,
     "targetGrammar": "～てはいられない",
-    "englishQuestion": "Your exam is tomorrow. Can you keep watching videos?",
-    "japaneseQuestion": "明日が試験ですが、まだ動画を見ますか。",
+    "englishQuestion": "Your exam is tomorrow. Are you still going to watch videos?",
+    "japaneseQuestion": "明日が試験ですが、まだ動画を見るつもりですか。",
     "englishMeaningHint": "exam tomorrow → no time to keep watching videos",
     "japaneseModelAnswer": "明日が試験なので、のんびり動画を見てはいられません。"
   },
@@ -48,10 +48,10 @@
     "id": "stt-006",
     "stt": 6,
     "targetGrammar": "～ないではいられない]\n～ずにはいられない",
-    "englishQuestion": "What happens when you watch that comedy show?",
-    "japaneseQuestion": "あのお笑い番組を見ると、どうなりますか。",
+    "englishQuestion": "Is that comedy show really that funny?",
+    "japaneseQuestion": "あのお笑い番組は、そんなに面白いんですか。",
     "englishMeaningHint": "comedy show → can't help laughing",
-    "japaneseModelAnswer": "あの番組を見ると、笑わずにはいられません。",
+    "japaneseModelAnswer": "ええ、見ると笑わずにはいられません。",
     "sourceUsageNote": "Source label includes a trailing bracket. Preserved verbatim; practice uses the listed ずにはいられない variant."
   },
   {
@@ -85,8 +85,8 @@
     "id": "stt-010",
     "stt": 10,
     "targetGrammar": "～がたい",
-    "englishQuestion": "How do you feel about throwing away that old photo album?",
-    "japaneseQuestion": "あの古いアルバムを捨てることを、どう思いますか。",
+    "englishQuestion": "Would you be okay with throwing away that old photo album?",
+    "japaneseQuestion": "その古いアルバム、もう捨てても大丈夫ですか。",
     "englishMeaningHint": "precious memories → hard to throw away",
     "japaneseModelAnswer": "大切な思い出が詰まっているので、捨てがたいです。"
   },
@@ -94,8 +94,8 @@
     "id": "stt-011",
     "stt": 11,
     "targetGrammar": "だす",
-    "englishQuestion": "What happened to the weather on your way home?",
-    "japaneseQuestion": "帰り道、天気はどうなりましたか。",
+    "englishQuestion": "What was the weather like on your way home?",
+    "japaneseQuestion": "帰り道、天気はどうでしたか。",
     "englishMeaningHint": "on the way home → sudden rain",
     "japaneseModelAnswer": "家に帰る途中で、急に雨が降りだしました。"
   },
@@ -142,8 +142,8 @@
     "id": "stt-016",
     "stt": 16,
     "targetGrammar": "Aもあれば、Bもある",
-    "englishQuestion": "What is a typical day like at your new workplace?",
-    "japaneseQuestion": "新しい職場では、毎日どんな感じですか。",
+    "englishQuestion": "How busy is your new workplace from day to day?",
+    "japaneseQuestion": "新しい職場は、毎日忙しいんですか。",
     "englishMeaningHint": "busy days ↔ quiet days",
     "japaneseModelAnswer": "忙しい日もあれば、暇な日もあります。"
   },
@@ -169,8 +169,8 @@
     "id": "stt-019",
     "stt": 19,
     "targetGrammar": "がち",
-    "englishQuestion": "What bad habits do you fall into when work gets busy?",
-    "japaneseQuestion": "仕事が忙しくなると、どんな悪い習慣が出ますか。",
+    "englishQuestion": "When work gets busy, what parts of your daily routine do you tend to neglect?",
+    "japaneseQuestion": "仕事が忙しくなると、生活の中でどんなことがおろそかになりますか。",
     "englishMeaningHint": "busy at work → skipping breakfast too often",
     "japaneseModelAnswer": "忙しくなると、朝ご飯を抜きがちです。"
   },
@@ -206,8 +206,8 @@
     "id": "stt-023",
     "stt": 23,
     "targetGrammar": "～に基づいて",
-    "englishQuestion": "How are business travel expenses calculated at your company?",
-    "japaneseQuestion": "会社の出張費は、どう決めていますか。",
+    "englishQuestion": "How does your company calculate business travel expenses?",
+    "japaneseQuestion": "会社では、出張費をどうやって計算していますか。",
     "englishMeaningHint": "company rules → calculate travel expenses",
     "japaneseModelAnswer": "会社の規定に基づいて、出張費を計算しています。",
     "context": "Formal, workplace, or descriptive register; practice as prompted."
@@ -217,9 +217,9 @@
     "stt": 24,
     "targetGrammar": "～をもとにして",
     "englishQuestion": "Where did the idea for your short story come from?",
-    "japaneseQuestion": "その短い小説のアイデアは、どこから来ましたか。",
+    "japaneseQuestion": "その短編小説のアイデアは、どこから生まれたんですか。",
     "englishMeaningHint": "personal travel experience → basis for a story",
-    "japaneseModelAnswer": "自分の旅行の経験をもとにして、書きました。"
+    "japaneseModelAnswer": "自分の旅行の経験をもとにして書きました。"
   },
   {
     "id": "stt-025",
@@ -252,10 +252,10 @@
     "id": "stt-028",
     "stt": 28,
     "targetGrammar": "V-るだけV-て",
-    "englishQuestion": "Will you apply even though you might not be accepted?",
-    "japaneseQuestion": "受かるか分かりませんが、応募しますか。",
-    "englishMeaningHint": "uncertain outcome → apply anyway",
-    "japaneseModelAnswer": "受かるか分かりませんが、応募するだけしてみます。"
+    "englishQuestion": "You want a day off, but you're not sure your boss will agree. Will you ask anyway?",
+    "japaneseQuestion": "休みを取りたいけれど、上司が認めてくれるか分からないんですよね。それでも頼んでみますか。",
+    "englishMeaningHint": "time off → uncertain approval → try asking",
+    "japaneseModelAnswer": "だめかもしれませんが、頼むだけ頼んでみます。"
   },
   {
     "id": "stt-029",
@@ -279,10 +279,10 @@
     "id": "stt-031",
     "stt": 31,
     "targetGrammar": "～つつ",
-    "englishQuestion": "What do you consider when changing the way you work?",
-    "japaneseQuestion": "仕事のやり方を変えるとき、何を考えますか。",
+    "englishQuestion": "How do you work out ways to improve how you do your job?",
+    "japaneseQuestion": "仕事の改善策は、どのように考えていますか。",
     "englishMeaningHint": "consult coworkers + consider improvements",
-    "japaneseModelAnswer": "同僚と相談しつつ、改善策を考えます。"
+    "japaneseModelAnswer": "同僚と相談しつつ、改善策を考えています。"
   },
   {
     "id": "stt-032",
@@ -315,19 +315,19 @@
     "id": "stt-035",
     "stt": 35,
     "targetGrammar": "ことになると",
-    "englishQuestion": "What happens to your friend when you start talking about soccer?",
-    "japaneseQuestion": "サッカーの話をすると、友達はどうなりますか。",
+    "englishQuestion": "Does your friend act differently when soccer comes up?",
+    "japaneseQuestion": "サッカーの話になると、友達の様子は変わりますか。",
     "englishMeaningHint": "soccer comes up → suddenly talkative",
-    "japaneseModelAnswer": "サッカーのことになると、急におしゃべりになります。"
+    "japaneseModelAnswer": "ええ、サッカーのことになると、急におしゃべりになります。"
   },
   {
     "id": "stt-036",
     "stt": 36,
     "targetGrammar": "～をめぐって",
-    "englishQuestion": "What is your family discussing as you plan your time off?",
-    "japaneseQuestion": "休みの予定について、家族で何を話していますか。",
-    "englishMeaningHint": "travel destination → different family opinions",
-    "japaneseModelAnswer": "旅行先をめぐって、家族で意見が分かれています。",
+    "englishQuestion": "Have you and your family decided where to go on vacation?",
+    "japaneseQuestion": "家族旅行の行き先は、もう決まりましたか。",
+    "englishMeaningHint": "vacation destination → different opinions → still undecided",
+    "japaneseModelAnswer": "まだです。旅行先をめぐって、家族で意見が分かれています。",
     "context": "Formal, workplace, or descriptive register; practice as prompted."
   },
   {
@@ -343,10 +343,10 @@
     "id": "stt-038",
     "stt": 38,
     "targetGrammar": "～にすぎない",
-    "englishQuestion": "Are you sure your explanation is correct?",
-    "japaneseQuestion": "自分の説明が正しいと、自信を持って言えますか。",
-    "englishMeaningHint": "personal opinion → nothing more",
-    "japaneseModelAnswer": "これは私の意見にすぎないので、ほかの人にも聞いてみてください。"
+    "englishQuestion": "Is that an official decision, or just your opinion?",
+    "japaneseQuestion": "それは正式な決定ですか。それとも、あなたの意見ですか。",
+    "englishMeaningHint": "not official → personal opinion only",
+    "japaneseModelAnswer": "まだ正式な決定ではなく、私の意見にすぎません。"
   },
   {
     "id": "stt-039",
@@ -399,8 +399,8 @@
     "targetGrammar": "～とは\n～なんて",
     "englishQuestion": "How did you feel when your old friend suddenly visited?",
     "japaneseQuestion": "昔の友達が突然訪ねてきて、どう思いましたか。",
-    "englishMeaningHint": "unexpected visit → first meeting in ten years",
-    "japaneseModelAnswer": "十年ぶりに会えるなんて、思ってもいませんでした。"
+    "englishMeaningHint": "unexpected visit → first meeting in ten years → surprise",
+    "japaneseModelAnswer": "十年ぶりに突然会いに来てくれるなんて、びっくりしました。"
   },
   {
     "id": "stt-045",
@@ -496,8 +496,8 @@
     "id": "stt-055",
     "stt": 55,
     "targetGrammar": "～こそ",
-    "englishQuestion": "When would you like to start exercising?",
-    "japaneseQuestion": "いつから運動を始めたいですか。",
+    "englishQuestion": "What goal do you really want to achieve this year?",
+    "japaneseQuestion": "今年、ぜひ達成したい目標は何ですか。",
     "englishMeaningHint": "this year → finally make exercise a habit",
     "japaneseModelAnswer": "今年こそ、運動を習慣にしたいです。"
   },
@@ -524,7 +524,7 @@
     "stt": 58,
     "targetGrammar": "～ばと思う",
     "englishQuestion": "How would you like to spend your next day off?",
-    "japaneseQuestion": "次の休みは、どう過ごせたらいいと思いますか。",
+    "japaneseQuestion": "次の休みは、どんなふうに過ごしたいですか。",
     "englishMeaningHint": "next day off → relax with family",
     "japaneseModelAnswer": "次の休みは、家族とのんびり過ごせればと思います。"
   },
@@ -551,8 +551,8 @@
     "id": "stt-061",
     "stt": 61,
     "targetGrammar": "～としても",
-    "englishQuestion": "What will you do next if you don't get the job?",
-    "japaneseQuestion": "もし応募が不採用だったら、次はどうしますか。",
+    "englishQuestion": "What will you do next if this company doesn't hire you?",
+    "japaneseQuestion": "今回の会社に採用されなかったら、次はどうしますか。",
     "englishMeaningHint": "even if rejected → apply to another company",
     "japaneseModelAnswer": "今回不採用になったとしても、別の会社に応募します。"
   },
@@ -560,10 +560,10 @@
     "id": "stt-062",
     "stt": 62,
     "targetGrammar": "～であっても",
-    "englishQuestion": "Should beginners also check the equipment before using it?",
-    "japaneseQuestion": "初心者も、使う前に道具を確認したほうがいいですか。",
-    "englishMeaningHint": "even beginners → safety checks needed",
-    "japaneseModelAnswer": "初心者であっても、道具の安全確認は必要です。"
+    "englishQuestion": "Can someone with no cooking experience join this class?",
+    "japaneseQuestion": "料理の経験がない人でも、この教室に参加できますか。",
+    "englishMeaningHint": "even a beginner → welcome → taught from the basics",
+    "japaneseModelAnswer": "初心者であっても、参加できます。基本から教えてもらえますから。"
   },
   {
     "id": "stt-063",
@@ -578,8 +578,8 @@
     "id": "stt-064",
     "stt": 64,
     "targetGrammar": "Vたいものだ",
-    "englishQuestion": "Is there a trip you have wanted to take for a long time?",
-    "japaneseQuestion": "ずっと行ってみたいと思っている旅行はありますか。",
+    "englishQuestion": "What kind of trip would you love to take someday?",
+    "japaneseQuestion": "いつか、どんな旅行をしてみたいですか。",
     "englishMeaningHint": "someday → travel all around Japan",
     "japaneseModelAnswer": "いつか日本をゆっくり一周してみたいものです。"
   },
@@ -624,9 +624,9 @@
     "id": "stt-069",
     "stt": 69,
     "targetGrammar": "～か",
-    "englishQuestion": "Someone tells you that you can become fluent in Japanese in a day. Respond with strong disbelief.",
-    "japaneseQuestion": "一日で日本語がぺらぺらになると言われました。強く反応してください。",
-    "englishMeaningHint": "fluent in one day? → disbelief",
+    "englishQuestion": "You see an ad claiming you can become fluent in Japanese in a day. React with disbelief.",
+    "japaneseQuestion": "「一日で日本語がぺらぺらになる」という広告を見ました。信じられないという気持ちを強く表してください。",
+    "englishMeaningHint": "unrealistic ad → fluent in one day? → disbelief",
     "japaneseModelAnswer": "そんな話、誰が信じるか。",
     "context": "Strong or critical expression; use only in the explicit role-play context, not polite conversation."
   },
@@ -707,10 +707,10 @@
     "id": "stt-078",
     "stt": 78,
     "targetGrammar": "～わけだ / ～というわけだ",
-    "englishQuestion": "Your colleague says they lived in Japan for ten years. Does that explain why their Japanese is so good?",
-    "japaneseQuestion": "同僚は十年間日本に住んでいたそうです。日本語が上手な理由が分かりましたか。",
+    "englishQuestion": "Our colleague's Japanese is excellent. Did you know they lived in Japan for ten years?",
+    "japaneseQuestion": "あの同僚は日本語が上手ですよね。十年間日本に住んでいたって知っていましたか。",
     "englishMeaningHint": "ten years in Japan → fluent Japanese makes sense",
-    "japaneseModelAnswer": "十年も住んでいたんですね。日本語が上手なわけです。"
+    "japaneseModelAnswer": "そうなんですね。日本語が上手なわけです。"
   },
   {
     "id": "stt-079",
@@ -744,9 +744,9 @@
     "id": "stt-082",
     "stt": 82,
     "targetGrammar": "～といった",
-    "englishQuestion": "What kinds of Japanese food do you often make?",
-    "japaneseQuestion": "どんな和食をよく作りますか。",
-    "englishMeaningHint": "examples of dishes → curry + miso soup",
+    "englishQuestion": "What kinds of dishes do you often make at home?",
+    "japaneseQuestion": "家では、どんな料理をよく作りますか。",
+    "englishMeaningHint": "home cooking examples → curry + miso soup",
     "japaneseModelAnswer": "カレーやみそ汁といった料理をよく作ります。"
   },
   {
@@ -755,16 +755,16 @@
     "targetGrammar": "～上",
     "englishQuestion": "What should you be careful about when posting photos online?",
     "japaneseQuestion": "ネットで写真を公開するとき、何に気を付けるべきですか。",
-    "englishMeaningHint": "privacy → identifiable faces → caution",
-    "japaneseModelAnswer": "プライバシー上、顔が分かる写真には気を付けたほうがいいです。",
+    "englishMeaningHint": "privacy concerns → permission before posting someone's photo",
+    "japaneseModelAnswer": "プライバシー上の問題があるので、本人の許可なく写真を載せないことが大切です。",
     "context": "Formal, workplace, or descriptive register; practice as prompted."
   },
   {
     "id": "stt-084",
     "stt": 84,
     "targetGrammar": "～上に",
-    "englishQuestion": "What do you find convenient about your current apartment?",
-    "japaneseQuestion": "今のアパートは、どんなところが便利ですか。",
+    "englishQuestion": "What do you like about your current apartment?",
+    "japaneseQuestion": "今のアパートは、どんなところが気に入っていますか。",
     "englishMeaningHint": "near the station + quiet → comfortable home",
     "japaneseModelAnswer": "駅に近い上に、静かなので住みやすいです。"
   },
@@ -827,19 +827,19 @@
     "id": "stt-091",
     "stt": 91,
     "targetGrammar": "～（さ）せてもらう",
-    "englishQuestion": "What did your manager allow you to do yesterday?",
-    "japaneseQuestion": "昨日、上司に何を許可してもらいましたか。",
+    "englishQuestion": "You left early yesterday. Did you check with your manager first?",
+    "japaneseQuestion": "昨日は早めに帰りましたよね。先に上司には確認しましたか。",
     "englishMeaningHint": "manager's permission → leave early",
-    "japaneseModelAnswer": "昨日は、少し早く帰らせてもらいました。"
+    "japaneseModelAnswer": "はい、上司に相談して、少し早く帰らせてもらいました。"
   },
   {
     "id": "stt-092",
     "stt": 92,
     "targetGrammar": "～（さ）せる",
-    "englishQuestion": "How does your favorite comedian make you feel?",
-    "japaneseQuestion": "好きなお笑い芸人は、あなたをどんな気持ちにしますか。",
-    "englishMeaningHint": "favorite comedian → makes me laugh",
-    "japaneseModelAnswer": "あの芸人さんは、いつも私を笑わせてくれます。"
+    "englishQuestion": "What do you like about that comedian?",
+    "japaneseQuestion": "あのお笑い芸人の、どんなところが好きなんですか。",
+    "englishMeaningHint": "always makes me laugh → favorite quality",
+    "japaneseModelAnswer": "いつも笑わせてくれるところが好きです。"
   },
   {
     "id": "stt-093",
@@ -865,7 +865,7 @@
     "id": "stt-095",
     "stt": 95,
     "targetGrammar": "～だけ～",
-    "englishQuestion": "How much cake may I take?",
+    "englishQuestion": "How much cake can I have?",
     "japaneseQuestion": "ケーキは、どのくらい取ってもいいですか。",
     "englishMeaningHint": "cake → as much as desired",
     "japaneseModelAnswer": "食べたいだけ取ってください。"
@@ -903,8 +903,8 @@
     "targetGrammar": "～をもって",
     "englishQuestion": "How would you formally announce the end of today's event?",
     "japaneseQuestion": "今日のイベントの終了を、正式に案内してください。",
-    "englishMeaningHint": "as of now → today's event over",
-    "japaneseModelAnswer": "この時間をもって、本日のイベントを終了いたします。",
+    "englishMeaningHint": "formal announcement → today's event now concluded",
+    "japaneseModelAnswer": "これをもって、本日のイベントを終了いたします。",
     "context": "Formal, workplace, or descriptive register; practice as prompted."
   },
   {
@@ -929,19 +929,19 @@
     "id": "stt-102",
     "stt": 102,
     "targetGrammar": "～に限ったことではない",
-    "englishQuestion": "Is the housing problem limited to Tokyo?",
-    "japaneseQuestion": "住宅の問題は、東京だけの問題ですか。",
-    "englishMeaningHint": "housing problem → other cities too",
-    "japaneseModelAnswer": "東京に限ったことではなく、ほかの都市にもあります。"
+    "englishQuestion": "Is it only in Tokyo that it's hard to find an affordable apartment?",
+    "japaneseQuestion": "手頃な家賃の部屋が見つかりにくいのは、東京だけですか。",
+    "englishMeaningHint": "affordable housing → problem in other cities too",
+    "japaneseModelAnswer": "東京に限ったことではなく、ほかの都市でも同じような問題があります。"
   },
   {
     "id": "stt-103",
     "stt": 103,
     "targetGrammar": "～にとどまらず",
-    "englishQuestion": "How much has your friend's bakery business grown?",
-    "japaneseQuestion": "友達のパン屋さんは、どのくらい事業を広げていますか。",
+    "englishQuestion": "Does your friend's bakery only sell to local customers?",
+    "japaneseQuestion": "友達のパン屋さんは、地元のお客さんにだけ売っているんですか。",
     "englishMeaningHint": "beyond the local area → nationwide shipping",
-    "japaneseModelAnswer": "地元にとどまらず、全国にパンを発送しています。",
+    "japaneseModelAnswer": "いいえ、地元にとどまらず、全国にパンを発送しています。",
     "context": "Formal, workplace, or descriptive register; practice as prompted."
   },
   {
@@ -960,7 +960,7 @@
     "englishQuestion": "Do you think you can buy everything you want?",
     "japaneseQuestion": "欲しい物を全部買えそうですか。",
     "englishMeaningHint": "things to buy → endless list → choose carefully",
-    "japaneseModelAnswer": "欲しい物を挙げたら限りがないので、よく考えて選びます。"
+    "japaneseModelAnswer": "欲しい物には限りがないので、よく考えて選びます。"
   },
   {
     "id": "stt-106",
@@ -994,8 +994,8 @@
     "id": "stt-109",
     "stt": 109,
     "targetGrammar": "～にかかわらず\n～Nの いかんにかかわらず\n～Nの いかんによらず",
-    "englishQuestion": "Will the picnic take place if it rains?",
-    "japaneseQuestion": "雨でもピクニックはありますか。",
+    "englishQuestion": "Will the community event go ahead if it rains?",
+    "japaneseQuestion": "雨が降っても、地域のイベントは開催されますか。",
     "englishMeaningHint": "regardless of weather → indoors if rainy",
     "japaneseModelAnswer": "天候にかかわらず開催しますが、雨の場合は室内で行います。"
   },
@@ -1003,8 +1003,8 @@
     "id": "stt-110",
     "stt": 110,
     "targetGrammar": "～に至っては",
-    "englishQuestion": "Is your family busy these days? Give an example of someone who is especially busy.",
-    "japaneseQuestion": "最近、ご家族は忙しいですか。特に忙しい人の例も挙げてください。",
+    "englishQuestion": "Is everyone in your family busy at the moment?",
+    "japaneseQuestion": "最近は、ご家族もみんな忙しいんですか。",
     "englishMeaningHint": "everyone busy → older sister working weekends too",
     "japaneseModelAnswer": "みんな忙しいですが、姉に至っては週末も働いています。",
     "context": "Formal, workplace, or descriptive register; practice as prompted."
@@ -1060,7 +1060,7 @@
     "stt": 116,
     "targetGrammar": "～からして",
     "englishQuestion": "What made the restaurant look expensive to you?",
-    "japaneseQuestion": "そのレストランは高そうだと、何を見て感じましたか。",
+    "japaneseQuestion": "そのレストランの、どこを見て高そうだと思ったんですか。",
     "englishMeaningHint": "even the entrance → looks expensive",
     "japaneseModelAnswer": "入り口からして、とても高級そうでした。"
   },
@@ -1077,26 +1077,26 @@
     "id": "stt-118",
     "stt": 118,
     "targetGrammar": "いずれにしても",
-    "englishQuestion": "We haven't chosen a venue yet. What do we need to do either way?",
-    "japaneseQuestion": "会場はまだ決まっていませんが、どちらにしても何が必要ですか。",
-    "englishMeaningHint": "venue undecided → still notify everyone by tomorrow",
-    "japaneseModelAnswer": "いずれにしても、明日までにみんなに連絡する必要があります。"
+    "englishQuestion": "Should we make a reservation even if we choose a different restaurant?",
+    "japaneseQuestion": "別のお店にするとしても、予約したほうがいいですか。",
+    "englishMeaningHint": "either restaurant → large group → reservation needed",
+    "japaneseModelAnswer": "いずれにしても、人数が多いので予約しておいたほうがいいです。"
   },
   {
     "id": "stt-119",
     "stt": 119,
     "targetGrammar": "～得る",
-    "englishQuestion": "Could the same mistake happen to any of us?",
-    "japaneseQuestion": "同じミスは、私たちの誰にでも起こると思いますか。",
-    "englishMeaningHint": "this kind of mistake → possible for anyone",
-    "japaneseModelAnswer": "こういうミスは、誰にでも起こり得ると思います。"
+    "englishQuestion": "Could anyone accidentally send an email to the wrong person?",
+    "japaneseQuestion": "メールを間違った相手に送ってしまうことは、誰にでもあると思いますか。",
+    "englishMeaningHint": "wrong email recipient → mistake possible for anyone",
+    "japaneseModelAnswer": "はい、そういうミスは誰にでも起こり得ると思います。"
   },
   {
     "id": "stt-120",
     "stt": 120,
     "targetGrammar": "～ないことはない",
-    "englishQuestion": "Can't you eat any spicy food at all?",
-    "japaneseQuestion": "辛い物は、少しも食べられませんか。",
+    "englishQuestion": "Are you not a fan of spicy food?",
+    "japaneseQuestion": "辛い物は苦手なんですか。",
     "englishMeaningHint": "spicy food possible → milder food preferred",
     "japaneseModelAnswer": "食べられないことはないですが、あまり辛くないほうが好きです。"
   },
@@ -1104,10 +1104,10 @@
     "id": "stt-121",
     "stt": 121,
     "targetGrammar": "～のは + N + にほかならない\n～ことは + N + にほかならない",
-    "englishQuestion": "What is the real reason you keep studying Japanese?",
-    "japaneseQuestion": "日本語の勉強を続ける本当の理由は何ですか。",
-    "englishMeaningHint": "reason for studying → enjoyment of conversation",
-    "japaneseModelAnswer": "勉強を続けるのは、人と話すのが楽しいからにほかなりません。",
+    "englishQuestion": "What do you think is the main reason the team succeeded?",
+    "japaneseQuestion": "チームが成功した一番の理由は何だと思いますか。",
+    "englishMeaningHint": "team's success → everyone's effort → true reason",
+    "japaneseModelAnswer": "今回の成功を支えたのは、みんなの努力にほかなりません。",
     "context": "Formal, workplace, or descriptive register; practice as prompted."
   },
   {
@@ -1123,19 +1123,19 @@
     "id": "stt-123",
     "stt": 123,
     "targetGrammar": "～「Vよう」にも～ない",
-    "englishQuestion": "Why couldn't you contact me when your phone broke?",
-    "japaneseQuestion": "スマホが壊れたとき、どうして連絡できなかったんですか。",
+    "englishQuestion": "Why didn't you let me know you'd be late?",
+    "japaneseQuestion": "遅れることを、どうして連絡してくれなかったんですか。",
     "englishMeaningHint": "wanted to get in touch → broken phone → impossible",
-    "japaneseModelAnswer": "スマホが壊れて、連絡しようにもできませんでした。"
+    "japaneseModelAnswer": "スマホが壊れていて、連絡しようにもできなかったんです。"
   },
   {
     "id": "stt-124",
     "stt": 124,
     "targetGrammar": "どうにも…ない",
-    "englishQuestion": "Have you managed to get back into a regular daily routine?",
-    "japaneseQuestion": "生活リズムは、直せましたか。",
-    "englishMeaningHint": "daily routine disrupted → still unable to fix it",
-    "japaneseModelAnswer": "生活リズムが乱れて、どうにも元に戻せません。"
+    "englishQuestion": "Have you got back to your usual routine since returning from your trip?",
+    "japaneseQuestion": "旅行から帰ってきて、生活リズムは元に戻りましたか。",
+    "englishMeaningHint": "after the trip → disrupted routine → still can't restore it",
+    "japaneseModelAnswer": "まだ生活リズムが乱れていて、どうにも元に戻せません。"
   },
   {
     "id": "stt-125",
@@ -1178,8 +1178,8 @@
     "id": "stt-129",
     "stt": 129,
     "targetGrammar": "～てでも",
-    "englishQuestion": "How much do you want to go to your friend's wedding abroad?",
-    "japaneseQuestion": "海外である友達の結婚式に、どのくらい行きたいですか。",
+    "englishQuestion": "Do you really want to attend your friend's wedding abroad?",
+    "japaneseQuestion": "海外で開かれる友達の結婚式には、ぜひ出席したいんですか。",
     "englishMeaningHint": "even taking time off → attend the wedding",
     "japaneseModelAnswer": "休みを取ってでも、出席したいです。"
   },
@@ -1271,7 +1271,7 @@
     "englishQuestion": "How would you ask a trusted colleague for an important favor?",
     "japaneseQuestion": "信頼している同僚に、大事なお願いをしてみてください。",
     "englishMeaningHint": "important presentation → strong request for help",
-    "japaneseModelAnswer": "明日の発表を手伝っていただきたいんです。どうしてもお願いしたいです。"
+    "japaneseModelAnswer": "明日の発表の準備を手伝っていただけませんか。どうしてもお願いしたいんです。"
   },
   {
     "id": "stt-140",
@@ -1296,7 +1296,7 @@
     "stt": 142,
     "targetGrammar": "～といっても",
     "englishQuestion": "I hear you can cook. What kinds of dishes can you make?",
-    "japaneseQuestion": "料理ができるそうですが、どのくらい作れますか。",
+    "japaneseQuestion": "料理ができるそうですが、どんなものが作れるんですか。",
     "englishMeaningHint": "able to cook → only simple dishes",
     "japaneseModelAnswer": "料理ができるといっても、簡単な物だけです。"
   },
@@ -1304,10 +1304,10 @@
     "id": "stt-143",
     "stt": 143,
     "targetGrammar": "～見えて",
-    "englishQuestion": "Why do you think that person on the train is tired?",
-    "japaneseQuestion": "電車のあの人は、どうして疲れていると思うんですか。",
-    "englishMeaningHint": "apparently tired → asleep as soon as seated",
-    "japaneseModelAnswer": "あの人は疲れていると見えて、座るとすぐに寝てしまいました。",
+    "englishQuestion": "That person fell asleep as soon as they sat down. Do you think they're tired?",
+    "japaneseQuestion": "あの人、座るとすぐに寝てしまいましたね。疲れているんでしょうか。",
+    "englishMeaningHint": "fell asleep immediately → apparently tired",
+    "japaneseModelAnswer": "ええ、疲れていると見えて、ぐっすり寝ていますね。",
     "sourceUsageNote": "Source label is abbreviated to ～見えて. Practice follows the source example pattern と見えて (inference from appearance)."
   },
   {
@@ -1350,9 +1350,9 @@
     "id": "stt-148",
     "stt": 148,
     "targetGrammar": "～まい",
-    "englishQuestion": "What did you decide to do after missing the train again?",
-    "japaneseQuestion": "また電車に乗り遅れて、どんな決心をしましたか。",
-    "englishMeaningHint": "missed train again → determination never to oversleep",
+    "englishQuestion": "You overslept and missed the train again. What did you decide to change?",
+    "japaneseQuestion": "また寝坊して電車に乗り遅れたそうですね。それで、どんな決心をしましたか。",
+    "englishMeaningHint": "overslept → missed train → determination not to repeat it",
     "japaneseModelAnswer": "もう二度と寝坊するまいと決めました。"
   },
   {
@@ -1377,10 +1377,12 @@
     "id": "stt-151",
     "stt": 151,
     "targetGrammar": "V ます ながらも",
-    "englishQuestion": "Can you join our dinner tomorrow?",
-    "japaneseQuestion": "明日の食事会に来られますか。",
-    "englishMeaningHint": "desire to join → prior commitment → decline",
-    "japaneseModelAnswer": "参加したいと思いながらも、先約があってお断りするしかありません。"
+    "englishQuestion": "Is it hard to keep studying Japanese while working full-time?",
+    "japaneseQuestion": "フルタイムで働きながら日本語の勉強も続けるのは、大変ですか。",
+    "englishMeaningHint": "full-time work + study → difficult → keep going",
+    "japaneseModelAnswer": "大変だと感じながらも、毎日少しずつ勉強を続けています。",
+    "context": "Reflective account of balancing work and study; ながらも is more formal than casual けど.",
+    "sourceUsageNote": "The source label specifies a verb stem, while its example uses 小学生ながらも. This exercise demonstrates the verb-stem form 感じながらも; the original label and example remain unchanged."
   },
   {
     "id": "stt-152",
@@ -1452,10 +1454,10 @@
     "id": "stt-159",
     "stt": 159,
     "targetGrammar": "ことは～が",
-    "englishQuestion": "Did you understand the explanation?",
-    "japaneseQuestion": "説明は分かりましたか。",
-    "englishMeaningHint": "understood in general → details still uncertain",
-    "japaneseModelAnswer": "分かったことは分かりましたが、細かい点はまだ不安です。"
+    "englishQuestion": "Can you swim?",
+    "japaneseQuestion": "泳げますか。",
+    "englishMeaningHint": "able to swim → not over long distances",
+    "japaneseModelAnswer": "泳げることは泳げますが、長い距離は泳げません。"
   },
   {
     "id": "stt-160",
@@ -1490,17 +1492,17 @@
     "id": "stt-163",
     "stt": 163,
     "targetGrammar": "はず",
-    "englishQuestion": "Do you think your friend will arrive soon? You know their train schedule.",
-    "japaneseQuestion": "友達はもうすぐ着きますか。電車の時間は分かっています。",
-    "englishMeaningHint": "train arrives at three → friend due soon",
-    "japaneseModelAnswer": "電車は三時に着くので、もうすぐ来るはずです。"
+    "englishQuestion": "Your friend's train has just arrived. Will they be at the station exit soon?",
+    "japaneseQuestion": "友達の乗っている電車が、今着いたそうです。もうすぐ駅の出口に来そうですか。",
+    "englishMeaningHint": "train just arrived → station exit soon",
+    "japaneseModelAnswer": "ええ、電車が着いたなら、もうすぐ出口に来るはずです。"
   },
   {
     "id": "stt-164",
     "stt": 164,
     "targetGrammar": "に違いない",
-    "englishQuestion": "Why do you think that restaurant is good?",
-    "japaneseQuestion": "あのお店は、おいしいと思いますか。理由も教えてください。",
+    "englishQuestion": "Do you think the food at that restaurant is good? Why?",
+    "japaneseQuestion": "あのお店は、おいしいと思いますか。そう思う理由も教えてください。",
     "englishMeaningHint": "regular line outside → food must be good",
     "japaneseModelAnswer": "いつも行列ができているので、おいしいに違いありません。"
   },
@@ -1508,8 +1510,8 @@
     "id": "stt-165",
     "stt": 165,
     "targetGrammar": "に決まっている",
-    "englishQuestion": "What do you think your friend will choose for lunch? You know their favorite food.",
-    "japaneseQuestion": "友達は昼に何を選ぶと思いますか。好物は知っています。",
+    "englishQuestion": "Your friend loves curry. What do you think they'll order for lunch?",
+    "japaneseQuestion": "あの友達はカレーが大好きですよね。お昼は何を頼むと思いますか。",
     "englishMeaningHint": "friend loves curry → confident prediction",
     "japaneseModelAnswer": "あの人はカレーが大好きだから、カレーを選ぶに決まっています。"
   },
@@ -1545,10 +1547,10 @@
     "id": "stt-169",
     "stt": 169,
     "targetGrammar": "～のことだから",
-    "englishQuestion": "Will your always-reliable friend bring an umbrella?",
-    "japaneseQuestion": "いつもしっかりしている友達は、傘を持ってくるでしょうか。",
-    "englishMeaningHint": "reliable friend → probably bringing an umbrella",
-    "japaneseModelAnswer": "しっかり者の彼のことだから、傘を持ってくるでしょう。"
+    "englishQuestion": "Rain is forecast today. Do you think your well-prepared friend will bring an umbrella?",
+    "japaneseQuestion": "今日は雨の予報ですが、いつも準備のいいあの友達は傘を持ってくるでしょうか。",
+    "englishMeaningHint": "rain forecast + reliable friend → probably bringing umbrella",
+    "japaneseModelAnswer": "しっかり者の彼のことだから、きっと傘を持ってくるでしょう。"
   },
   {
     "id": "stt-170",
@@ -1581,8 +1583,8 @@
     "id": "stt-173",
     "stt": 173,
     "targetGrammar": "N ほど～ことはない",
-    "englishQuestion": "What are you doing when you feel happiest?",
-    "japaneseQuestion": "どんなことをしているときが、一番幸せですか。",
+    "englishQuestion": "When do you feel happiest?",
+    "japaneseQuestion": "どんなことをしているとき、一番幸せを感じますか。",
     "englishMeaningHint": "family time → greatest happiness",
     "japaneseModelAnswer": "家族と過ごすことほど、幸せなことはありません。",
     "sourceUsageNote": "Source label uses こと; its example uses もの. Practice uses こと for an activity, preserving the original label."
@@ -1604,7 +1606,7 @@
     "englishQuestion": "How has your daily life changed since work got busier?",
     "japaneseQuestion": "仕事が忙しくなって、生活はどう変わりましたか。",
     "englishMeaningHint": "more work → getting home later",
-    "japaneseModelAnswer": "仕事が増えるにともなって、帰る時間も遅くなりました。"
+    "japaneseModelAnswer": "仕事が増えるのにともなって、帰る時間も遅くなってきました。"
   },
   {
     "id": "stt-176",
@@ -1646,10 +1648,10 @@
     "id": "stt-180",
     "stt": 180,
     "targetGrammar": "～あげく",
-    "englishQuestion": "After spending so long choosing a restaurant, what happened in the end?",
-    "japaneseQuestion": "レストランを長い間迷ったあと、結局どうなりましたか。",
-    "englishMeaningHint": "long indecision → all the restaurants closed",
-    "japaneseModelAnswer": "さんざん迷ったあげく、どの店も閉まってしまいました。",
+    "englishQuestion": "You spent a long time choosing where to have dinner. Where did you end up eating?",
+    "japaneseQuestion": "夕食のお店選びにずいぶん迷っていましたね。結局どこで食べたんですか。",
+    "englishMeaningHint": "long indecision → restaurant closed → ate at home",
+    "japaneseModelAnswer": "さんざん迷ったあげく、行きたかった店が閉まってしまいました。結局、家で食べました。",
     "context": "Formal, workplace, or descriptive register; practice as prompted."
   },
   {
@@ -1676,10 +1678,10 @@
     "id": "stt-183",
     "stt": 183,
     "targetGrammar": "～一方で",
-    "englishQuestion": "What are you doing for your work and for your health?",
-    "japaneseQuestion": "仕事と健康のために、それぞれ何をしていますか。",
-    "englishMeaningHint": "study for work ↔ exercise for health",
-    "japaneseModelAnswer": "仕事のために勉強する一方で、健康のために運動もしています。"
+    "englishQuestion": "What are the advantages and disadvantages of working from home?",
+    "japaneseQuestion": "在宅勤務には、どんないい点と大変な点がありますか。",
+    "englishMeaningHint": "no commute ↔ hard to separate work and personal time",
+    "japaneseModelAnswer": "通勤しなくていい一方で、家では仕事と休みの切り替えが難しいです。"
   },
   {
     "id": "stt-184",
@@ -1703,8 +1705,8 @@
     "id": "stt-186",
     "stt": 186,
     "targetGrammar": "VるかVないかのうちに",
-    "englishQuestion": "How soon did your tired friend fall asleep?",
-    "japaneseQuestion": "疲れていた友達は、どのくらいすぐ寝ましたか。",
+    "englishQuestion": "How long did it take your tired friend to fall asleep after getting into bed?",
+    "japaneseQuestion": "疲れていた友達は、ベッドに入ってからどのくらいで眠りましたか。",
     "englishMeaningHint": "barely lying down → already asleep",
     "japaneseModelAnswer": "ベッドに横になるかならないかのうちに、眠ってしまいました。"
   },
@@ -1721,10 +1723,10 @@
     "id": "stt-188",
     "stt": 188,
     "targetGrammar": "Vるや否や",
-    "englishQuestion": "What did your dog do when it saw you? Describe what happened vividly.",
-    "japaneseQuestion": "犬はあなたを見ると、どうしましたか。様子を生き生きと伝えてください。",
+    "englishQuestion": "What did your dog do when you got home?",
+    "japaneseQuestion": "帰宅したとき、飼っている犬はどうしましたか。",
     "englishMeaningHint": "dog sees owner → immediately runs over",
-    "japaneseModelAnswer": "うちの犬は私を見るや否や、走ってきました。",
+    "japaneseModelAnswer": "私を見るや否や、走り寄ってきました。",
     "context": "Formal, workplace, or descriptive register; practice as prompted."
   },
   {
@@ -1750,18 +1752,18 @@
     "id": "stt-191",
     "stt": 191,
     "targetGrammar": "本当ならば",
-    "englishQuestion": "What were you originally planning to do today?",
-    "japaneseQuestion": "今日は、本来なら何をする予定でしたか。",
-    "englishMeaningHint": "planned picnic → canceled because of rain",
-    "japaneseModelAnswer": "本当ならばピクニックに行く予定でしたが、雨で中止になりました。"
+    "englishQuestion": "You were going to go out today, weren't you? What happened to your plans?",
+    "japaneseQuestion": "今日は出かける予定だったんですよね。どうなったんですか。",
+    "englishMeaningHint": "original picnic plan → rain → canceled",
+    "japaneseModelAnswer": "本当ならばピクニックに行くはずでしたが、雨で中止になりました。"
   },
   {
     "id": "stt-192",
     "stt": 192,
     "targetGrammar": "Vてまだ～ないうちに",
-    "englishQuestion": "What happened to your new mug shortly after you started using it?",
-    "japaneseQuestion": "新しいマグカップは、使い始めてすぐどうなりましたか。",
-    "englishMeaningHint": "new mug → broken within the first week",
+    "englishQuestion": "You only just bought that mug. How did it break?",
+    "japaneseQuestion": "そのマグカップ、買ったばかりですよね。どうして割れてしまったんですか。",
+    "englishMeaningHint": "new mug → used less than a week → dropped it",
     "japaneseModelAnswer": "使い始めてまだ一週間もたたないうちに、落として割ってしまいました。"
   },
   {
@@ -1786,10 +1788,10 @@
     "id": "stt-195",
     "stt": 195,
     "targetGrammar": "～から～にかけて",
-    "englishQuestion": "When are cherry blossoms usually in bloom here?",
-    "japaneseQuestion": "この辺りの桜は、いつ頃咲きますか。",
-    "englishMeaningHint": "late March → early April",
-    "japaneseModelAnswer": "三月の終わりから四月の初めにかけて咲きます。"
+    "englishQuestion": "What time of year do cherry blossoms usually bloom in Tokyo?",
+    "japaneseQuestion": "東京の桜は、だいたいいつ頃咲きますか。",
+    "englishMeaningHint": "Tokyo → late March to early April",
+    "japaneseModelAnswer": "例年、三月の終わりから四月の初めにかけて咲きます。"
   },
   {
     "id": "stt-196",
@@ -1822,10 +1824,10 @@
     "id": "stt-199",
     "stt": 199,
     "targetGrammar": "～たところで",
-    "englishQuestion": "Will worrying about yesterday's exam now change the result?",
-    "japaneseQuestion": "今、昨日の試験を心配しても、結果は変わりますか。",
-    "englishMeaningHint": "worrying now → exam result unchanged",
-    "japaneseModelAnswer": "今さら心配したところで、結果は変わりません。"
+    "englishQuestion": "A friend keeps worrying about an exam they've already taken. What would you say?",
+    "japaneseQuestion": "友達が、もう終わった試験のことをずっと心配しています。何と言いますか。",
+    "englishMeaningHint": "exam finished → worrying changes nothing → take a break",
+    "japaneseModelAnswer": "今さら心配したところで、結果は変わらないよ。今日はゆっくり休もう。"
   },
   {
     "id": "stt-200",
@@ -1840,10 +1842,10 @@
     "id": "stt-201",
     "stt": 201,
     "targetGrammar": "～ずにすむ",
-    "englishQuestion": "What happened when you found your lost wallet at home?",
-    "japaneseQuestion": "なくした財布が家で見つかって、どうでしたか。",
+    "englishQuestion": "Did you file a police report about your lost wallet?",
+    "japaneseQuestion": "財布の紛失届は、警察に出しましたか。",
     "englishMeaningHint": "wallet found at home → no need for a police report",
-    "japaneseModelAnswer": "家で見つかったので、警察に届けずにすみました。"
+    "japaneseModelAnswer": "家で見つかったので、警察に紛失届を出さずにすみました。"
   },
   {
     "id": "stt-202",
@@ -1867,19 +1869,19 @@
     "id": "stt-204",
     "stt": 204,
     "targetGrammar": "に",
-    "englishQuestion": "Where do you usually study Japanese?",
-    "japaneseQuestion": "いつもどこで日本語を勉強していますか。",
-    "englishMeaningHint": "weekend → library → study",
-    "japaneseModelAnswer": "週末は図書館に勉強しに行きます。"
+    "englishQuestion": "Where do you keep your Japanese textbook?",
+    "japaneseQuestion": "日本語の教科書は、いつもどこに置いていますか。",
+    "englishMeaningHint": "textbook → on the desk",
+    "japaneseModelAnswer": "いつも机の上に置いています。"
   },
   {
     "id": "stt-205",
     "stt": 205,
     "targetGrammar": "か = không biết",
-    "englishQuestion": "Do you know exactly when your friend will arrive?",
-    "japaneseQuestion": "友達が何時に着くか、はっきり分かりますか。",
-    "englishMeaningHint": "friend's arrival time → still unknown",
-    "japaneseModelAnswer": "何時に着くか、まだ分かりません。"
+    "englishQuestion": "Do you have any plans for your next day off?",
+    "japaneseQuestion": "次の休みは、何か予定がありますか。",
+    "englishMeaningHint": "no fixed plans → go somewhere",
+    "japaneseModelAnswer": "まだ決めていませんが、どこかへ出かけたいです。"
   },
   {
     "id": "stt-206",
@@ -1894,10 +1896,10 @@
     "id": "stt-207",
     "stt": 207,
     "targetGrammar": "～つもり",
-    "englishQuestion": "Why didn't you buy milk on the way home?",
-    "japaneseQuestion": "帰りに、どうして牛乳を買わなかったんですか。",
-    "englishMeaningHint": "milk already bought? → mistaken assumption",
-    "japaneseModelAnswer": "もう買ったつもりだったんですが、忘れていました。"
+    "englishQuestion": "Did you turn off the air conditioner before you went out?",
+    "japaneseQuestion": "出かける前に、エアコンは消しましたか。",
+    "englishMeaningHint": "thought it was off → still running on return",
+    "japaneseModelAnswer": "消したつもりだったんですが、帰ったらまだついていました。"
   },
   {
     "id": "stt-208",
@@ -1940,10 +1942,10 @@
     "id": "stt-212",
     "stt": 212,
     "targetGrammar": "～Vたことにする",
-    "englishQuestion": "How will you deal with the upsetting thing you heard yesterday?",
-    "japaneseQuestion": "昨日聞いた嫌なことは、どうしますか。",
-    "englishMeaningHint": "upsetting news → pretend not to have heard it",
-    "japaneseModelAnswer": "昨日の話は、聞かなかったことにします。"
+    "englishQuestion": "Will you speak to them about the rude comment they made yesterday?",
+    "japaneseQuestion": "昨日の失礼な発言について、本人に何か言うつもりですか。",
+    "englishMeaningHint": "rude remark → let it go → pretend not heard",
+    "japaneseModelAnswer": "今回は、聞かなかったことにします。"
   },
   {
     "id": "stt-213",
@@ -1958,9 +1960,9 @@
     "id": "stt-214",
     "stt": 214,
     "targetGrammar": "甲斐もなく\nかいもなく",
-    "englishQuestion": "What happened after you spent a long time waiting to buy tickets?",
-    "japaneseQuestion": "切符を買うために長い時間待って、どうなりましたか。",
-    "englishMeaningHint": "long wait → sold-out tickets → wasted effort",
-    "japaneseModelAnswer": "長い時間待ったかいもなく、切符は売り切れてしまいました。"
+    "englishQuestion": "Did you manage to buy concert tickets after waiting in line for so long?",
+    "japaneseQuestion": "長い時間並んでいたそうですが、コンサートのチケットは買えましたか。",
+    "englishMeaningHint": "long wait → sold out before my turn → wasted effort",
+    "japaneseModelAnswer": "長い時間待ったかいもなく、順番が来る前にチケットが売り切れてしまいました。"
   }
 ]

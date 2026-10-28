@@ -1,0 +1,1615 @@
+{
+  "sourceFile": "Grammar-N2.xlsx",
+  "sha256": "a226bf2621282c2538d85b92368fcd403a44c1a2fd5bce0eac377ce2561dcecc",
+  "sheet": "Sheet",
+  "requestedSheet": "Sheet 2",
+  "sourceNote": "The supplied workbook contains only one worksheet: Sheet. All numbered entries are imported from it verbatim.",
+  "headers": [
+    "STT",
+    "Cấu trúc ngữ pháp",
+    "Nghĩa",
+    "Ví dụ"
+  ],
+  "entries": [
+    {
+      "stt": 1,
+      "structure": "～ざるを得ない",
+      "meaning": "Chỉ còn 1 cách (Đành phải làm)",
+      "examples": "( 2011/12)  台風が近づいているので、明日からの旅行は、残念だが延期せざるを得ない。\n(12/2018) わが国は、石油や石炭などのエネルギー資源がほとんどないため、多くを海外からの輸入に頼らざるを得ない。",
+      "sourceRow": 2
+    },
+    {
+      "stt": 2,
+      "structure": "～ほかない\n～よりほかはない\n～しかない\n～しかあるまい",
+      "meaning": "Chỉ còn 1 cách (Chính N / đành phải)",
+      "examples": "(12/2015) パソコンの画面が映らなくなってしまった。いろいろ試してみたがうまくいかず、もう自分ではどうしようもないので、修理に出すほかない。\n( 2021/12)  じゃあ、会議が終わるのを待つしかないね。\n(12/2014) 夫にもらった指輪をなくしてしまった。一週間以上あちこち探しているが見つからない。もうあきらめるしかないのか。\n(07/2011) 面倒だが、やはりこの仕事は断れない。引き受けるしかあるまい。",
+      "sourceRow": 3
+    },
+    {
+      "stt": 3,
+      "structure": "～ようがない",
+      "meaning": "0 cách (Không có cách nào)",
+      "examples": "( 2021/12)  彼女があのとき何を考えていたのか知りたいけれど、今はもう会うこともないので、確かめようがない。\n(12/2010) 客「このカメラ直りますか。」 店員「うん、こんなにひどく壊れていると、直しようがないですね。」",
+      "sourceRow": 4
+    },
+    {
+      "stt": 4,
+      "structure": "～っこない",
+      "meaning": "(-)",
+      "examples": "( 2011/07)  寝坊した！もうどんなに急いでも、あの飛行機には間に合いっこない.\n( 2016/07)  抽選で一人じゃ、当たりっこないよ.",
+      "sourceRow": 5
+    },
+    {
+      "stt": 5,
+      "structure": "～てはいられない",
+      "meaning": "K thể cứ mãi được",
+      "examples": "試験が近いので、遊んではいられない。",
+      "sourceRow": 6
+    },
+    {
+      "stt": 6,
+      "structure": "～ないではいられない]\n～ずにはいられない",
+      "meaning": "K thể k cười K thể nhịn cười",
+      "examples": "( 2018/12)  この音楽を聞くと、踊り出さずにはいられないんです.\n( 2021/12)  必要のない物でも、欲しくなると、買わずにはいられなくなってしまう.",
+      "sourceRow": 7
+    },
+    {
+      "stt": 7,
+      "structure": "～わけにはいかない",
+      "meaning": "Không thể (vì đạo đức, hoàn cảnh...)",
+      "examples": "(07/2018) 市長は、記者会見で「高速道路建設に反対している市民も少なくないのだから、市長として、そのことを無視して建設計画を進めるわけにはいかない。」と述べた.\n(07/2013) 夫「行ってきます。」 妻「え？会社、行くの？まだ熱があるんでしょう？」 夫「大事な会議があるから、休むわけにはいかないんだ。」",
+      "sourceRow": 8
+    },
+    {
+      "stt": 8,
+      "structure": "～ないわけにはいかない",
+      "meaning": "Không thể không... (phải làm)",
+      "examples": "(07/2025) 満員電車に乗るのは嫌だが、ほかに手段がないので乗らないわけにはいかない。",
+      "sourceRow": 9
+    },
+    {
+      "stt": 9,
+      "structure": "～わけがない",
+      "meaning": "K lý nào 絶対ない",
+      "examples": "(7/2011) 山田さんは出張中だよ。今ここにいるわけないじゃない。",
+      "sourceRow": 10
+    },
+    {
+      "stt": 10,
+      "structure": "～がたい",
+      "meaning": "Khó mà...",
+      "examples": "( 2010/07)  これだけ景気が悪いのに、税金を上げようとするのは、わたしたち国民には理解しがたい。\n(12/2024) 私は20年前に初めて富士山に登った。山頂に立ったときの感動は今でも忘れがたい。",
+      "sourceRow": 11
+    },
+    {
+      "stt": 11,
+      "structure": "だす",
+      "meaning": "Bắt đầu một cách đột ngột (khóc òa, mưa đổ...) hoặc nảy sinh ý tưởng mới.",
+      "examples": "(100 câu #14)  その新入社員は注意されると怒り出し、あげくのはてには泣き出した。",
+      "sourceRow": 12
+    },
+    {
+      "stt": 12,
+      "structure": "もとより",
+      "meaning": "(Từ vựng) Ngay từ đầu đã...",
+      "examples": "(12/2018) この近くには、コンビニはもとより自動販売機さえない.",
+      "sourceRow": 13
+    },
+    {
+      "stt": 13,
+      "structure": "～のみならず",
+      "meaning": "Không chỉ mà còn",
+      "examples": "彼女は日本語のみならず、英語も話せる。",
+      "sourceRow": 14
+    },
+    {
+      "stt": 14,
+      "structure": "～はもとより",
+      "meaning": "Không chỉ mà còn",
+      "examples": "( 2018/12)  この近くには、コンビニはもとより自動販売機さえない。",
+      "sourceRow": 15
+    },
+    {
+      "stt": 15,
+      "structure": "～を込めて",
+      "meaning": "Gửi gắm, dồn cả... (tình cảm)",
+      "examples": "( 2024/12)  昨日は「母の日」だったので、いつもおいしいお弁当を作ってくれてありがとうという感謝の気持ちを込めて、母が欲しがっていたアクセサリーをプレゼントした。",
+      "sourceRow": 16
+    },
+    {
+      "stt": 16,
+      "structure": "Aもあれば、Bもある",
+      "meaning": "Có A thì cũng có B",
+      "examples": " 好きな人もいれば、嫌いな人もいる。",
+      "sourceRow": 17
+    },
+    {
+      "stt": 17,
+      "structure": "～ぬく",
+      "meaning": "Làm tới cùng",
+      "examples": "( 2021/07)  仕事でも勉強でも、一度やると決めたら最後までやり抜くことが大事だと思う。",
+      "sourceRow": 18
+    },
+    {
+      "stt": 18,
+      "structure": "に応じて",
+      "meaning": "Tùy theo / Phù hợp với... ",
+      "examples": "(100 câu #13)  山に登るときは、自分の体力に応じた計画を立てましょう。",
+      "sourceRow": 19
+    },
+    {
+      "stt": 19,
+      "structure": "がち",
+      "meaning": "Thường, hay... (tiêu cực hoặc không tốt).",
+      "examples": " 彼は最近、病気がちで学校を休みがちだ。",
+      "sourceRow": 20
+    },
+    {
+      "stt": 20,
+      "structure": "～かけ",
+      "meaning": "Đang làm dở dang / suýt chút nữa là xảy ra trạng thái xấu.",
+      "examples": "( 2022/12)  先週末は、読みかけだった3冊の本をすべて最後まで読んだ。",
+      "sourceRow": 21
+    },
+    {
+      "stt": 21,
+      "structure": "欠かさず / に欠かせない",
+      "meaning": "① Luôn duy trì không bỏ sót\n② Không thể thiếu trong cuộc sống, công việc.",
+      "examples": "( 2018/07)  父は、どんなに忙しい時でも、朝の運動を欠かさない。\n( 2024/07)  チームでの仕事をスムーズに進めるには、メンバー同士の十分なコミュニケーションが欠かせない。",
+      "sourceRow": 22
+    },
+    {
+      "stt": 22,
+      "structure": "～を踏まえて",
+      "meaning": "Dựa trên... / Xem xét đến... (lấy làm cơ sở, tiền đề thực tế để hành động tiếp theo).",
+      "examples": " 今回の反省を踏まえて、次の計画を立てたいと思います。",
+      "sourceRow": 23
+    },
+    {
+      "stt": 23,
+      "structure": "～に基づいて",
+      "meaning": "Dựa trên / Căn cứ vào... (lấy làm tiêu chuẩn, phương châm, cơ sở pháp lý).",
+      "examples": " この映画は、実際にあった話に基づいて作られている。",
+      "sourceRow": 24
+    },
+    {
+      "stt": 24,
+      "structure": "～をもとにして",
+      "meaning": "Dựa trên / Lấy cảm hứng từ... (lấy chất liệu, nguyên liệu thô ban đầu để sáng tạo cái mới).",
+      "examples": "( 2013/07)  前回の会議での議論をもとに、全員改良案を作成のうえ、当日10時までに原田までご提出ください。",
+      "sourceRow": 25
+    },
+    {
+      "stt": 25,
+      "structure": "～次第で",
+      "meaning": "Tùy thuộc vào... (quyết định kết quả)",
+      "examples": "( 2023/12)  林選手がオリンピックに出場できるかどうかは、今度の大会の結果次第だ。",
+      "sourceRow": 26
+    },
+    {
+      "stt": 26,
+      "structure": "～に応えて",
+      "meaning": "Đáp lại... (kỳ vọng, nguyện vọng)",
+      "examples": "( 2011/12)  この美術館では、利用者の声にこたえて、夏期の開館時間を1時間延長することにします。",
+      "sourceRow": 27
+    },
+    {
+      "stt": 27,
+      "structure": "～に備えて",
+      "meaning": "Để chuẩn bị cho...",
+      "examples": " 私は、急な雨に備えて、いつも折り畳み傘を持ち歩いている。",
+      "sourceRow": 28
+    },
+    {
+      "stt": 28,
+      "structure": "V-るだけV-て",
+      "meaning": "Thử làm... xem sao (dù chưa biết kết quả thế nào nhưng cứ thực hiện hết mức có thể).",
+      "examples": " 行くだけ行って交渉してみよう。",
+      "sourceRow": 29
+    },
+    {
+      "stt": 29,
+      "structure": "A より B のほうが + Adj",
+      "meaning": "So với A thì B ... hơn (so sánh hơn giữa hai sự việc).",
+      "examples": " (12/2014) 部下の作った書類にミスがあるとき、部下にもう一度書き直させるより、つい自分でやってしまったほうが早い。",
+      "sourceRow": 30
+    },
+    {
+      "stt": 30,
+      "structure": "～ては～ては",
+      "meaning": "Cứ hễ… thì…, lặp đi lặp lại",
+      "examples": "書いては消し、書いては消しを繰り返した。",
+      "sourceRow": 31
+    },
+    {
+      "stt": 31,
+      "structure": "～つつ",
+      "meaning": "Vừa vừa (văn viết) ながら",
+      "examples": "( 2019/12)  昨日の夜は、11 時までには寝ようと思いつつ、テレビを見続けてしまい、結局寝たのは 1 時だった.",
+      "sourceRow": 33
+    },
+    {
+      "stt": 32,
+      "structure": "～つつある",
+      "meaning": "Đang dần dần",
+      "examples": "( 2017/12)  政府の発表によると、景気は回復しつつあるということだが、そうした実感はない.",
+      "sourceRow": 34
+    },
+    {
+      "stt": 33,
+      "structure": "～てならない",
+      "meaning": "Vô cùng... / Không chịu nổi",
+      "examples": "(100 câu #19)  このような難病が手術で治るとは、医学の進歩に感謝してならない。",
+      "sourceRow": 35
+    },
+    {
+      "stt": 34,
+      "structure": "～てたまらない",
+      "meaning": "Rất... không chịu nổi",
+      "examples": "( 2019/07)  私はピアノを弾くことが、好きで好きでたまらない。",
+      "sourceRow": 36
+    },
+    {
+      "stt": 35,
+      "structure": "ことになると",
+      "meaning": "Hễ cứ động đến... / Hễ cứ nói đến chuyện... (diễn tả việc hễ đụng chạm tới chủ đề nào đó là thái độ, hành động thay đổi đột ngột).",
+      "examples": " 山本さんは料理のことになると誰よりも熱心に話をする。",
+      "sourceRow": 37
+    },
+    {
+      "stt": 36,
+      "structure": "～をめぐって",
+      "meaning": "Xoay quanh... (tranh chấp, thảo luận)",
+      "examples": "(100 câu #93)  商店街の再開発をめぐって意見が対立している。",
+      "sourceRow": 38
+    },
+    {
+      "stt": 37,
+      "structure": "～はさておき",
+      "meaning": "Tạm chưa nói đến A mà nói B đã (chuyển chủ đề)",
+      "examples": "冗談はさておき、本題に入りましょう。",
+      "sourceRow": 39
+    },
+    {
+      "stt": 38,
+      "structure": "～にすぎない",
+      "meaning": "Chỉ là… mà thôi (giống だけ)\nChỉ là... không hơn không kém",
+      "examples": "( 2013/12)  北川市は、かつては人口5千人の小さな村にすぎなかったが、今では人口50万人の大都市だ。",
+      "sourceRow": 40
+    },
+    {
+      "stt": 39,
+      "structure": "～だけあって\n～だけのことはある",
+      "meaning": "Đúng là A → nên B có khác\nQuả đúng là…",
+      "examples": "( 2011/07)  さすが高級旅館だけあって、料理もサービスも満足のいくものだった。",
+      "sourceRow": 41
+    },
+    {
+      "stt": 40,
+      "structure": "～どころか",
+      "meaning": "Không những không... mà ngược lại... / Ngay cả... cũng không",
+      "examples": "( 2022/07) 今朝は寝坊してしまい、食事をする時間どころか顔を洗う時間もなかった。",
+      "sourceRow": 42
+    },
+    {
+      "stt": 41,
+      "structure": "～はおろか",
+      "meaning": "Đừng nói là... ngay cả... cũng không",
+      "examples": " 彼は漢字はおろか、ひらがなさえ書けない。",
+      "sourceRow": 43
+    },
+    {
+      "stt": 42,
+      "structure": "～というものだ",
+      "meaning": "Thế mới gọi là... (đưa ra nhận xét, đánh giá khách quan)",
+      "examples": "(100 câu #83)  手伝いもしない人が、文句ばかり言うというものだ。",
+      "sourceRow": 44
+    },
+    {
+      "stt": 43,
+      "structure": "～ものだ",
+      "meaning": "Chuyện đương nhiên , chân lí",
+      "examples": "( 2016/07)  実家の押し入れを片付けていたら、祖父母の結婚式の写真が出てきた。よくこんな昔の写真が今まで残っていたものだ。\n(100 câu #4)  苦しい時に支えあう、それが家族というものだ。",
+      "sourceRow": 45
+    },
+    {
+      "stt": 44,
+      "structure": "～とは\n～なんて",
+      "meaning": "Thật không ngờ",
+      "examples": " こんなに雪が降るとは思わなかった。",
+      "sourceRow": 46
+    },
+    {
+      "stt": 45,
+      "structure": "～ことはない",
+      "meaning": "Không cần thiết phải...",
+      "examples": "( 2015/07)  赤ちゃんの熱が少しあると心配になるかもしれませんが、熱が多少あっても、元気に遊んでいるなら、慌てることはありません。",
+      "sourceRow": 47
+    },
+    {
+      "stt": 46,
+      "structure": "～あたり",
+      "meaning": "Khoảng / Tầm / Khu vực đó.",
+      "examples": " 来週あたり、一度食事でもしませんか。",
+      "sourceRow": 48
+    },
+    {
+      "stt": 47,
+      "structure": "～と言ってもいい",
+      "meaning": "Có thể nói là...",
+      "examples": " この人を見ない日はないと言ってもいいぐらいだよね。",
+      "sourceRow": 49
+    },
+    {
+      "stt": 48,
+      "structure": "～限りは",
+      "meaning": "Chừng nào còn thở thì còn gỡ",
+      "examples": "(100 câu N2-N3) 雨が降らない限り、毎日走るようにしています.",
+      "sourceRow": 50
+    },
+    {
+      "stt": 49,
+      "structure": "～限りだ",
+      "meaning": "Cảm giác đạt đến mức độ cao nhất, thật là vui",
+      "examples": "皆さんに会えて、うれしい限りです。",
+      "sourceRow": 52
+    },
+    {
+      "stt": 50,
+      "structure": "～とすると\n～とすれば\n～としたら",
+      "meaning": "Nếu (Giả sử, nếu cho rằng...)",
+      "examples": "( 2012/12)  人は通勤に多くの時間を使っている。仮に通勤に往復2時間かけるとすると、１年間で480時間も通勤に使っている計算になる。",
+      "sourceRow": 54
+    },
+    {
+      "stt": 51,
+      "structure": "～さえ～ば",
+      "meaning": "Chỉ cần là đủ",
+      "examples": "( 2011/12)  事前にリストをしっかり確認さえしておけばミスは防げたのに、申し訳ありません。",
+      "sourceRow": 55
+    },
+    {
+      "stt": 52,
+      "structure": "～ならともかく",
+      "meaning": "A thì chấp nhận được chứ B thì quá kỳ.",
+      "examples": "( 2013/12)  デートで着るならともかく、仕事には派手すぎるよ.\n( 2021/12)  デートで着るならともかく、仕事には派手すぎるよ.",
+      "sourceRow": 56
+    },
+    {
+      "stt": 53,
+      "structure": "～からには",
+      "meaning": "Một khi đã...",
+      "examples": "( 2025/12)  苦手な同僚と同じチームで仕事をすることになってしまったが、決まったからには、うまく付き合っていこうと思う.",
+      "sourceRow": 57
+    },
+    {
+      "stt": 54,
+      "structure": "～ばこそ",
+      "meaning": "Chính vì nên mới",
+      "examples": "努力すればこそ、成功できるのだ。",
+      "sourceRow": 58
+    },
+    {
+      "stt": 55,
+      "structure": "～こそ",
+      "meaning": "Chính は！",
+      "examples": "( 2012/12)  電子メールが普及している今の時代であるからこそ、手書きの手紙に温かい気持ちを感じる.\n( 2020/12)  12 年間付き合っている彼女に、今年こそ結婚を申し込もうと思っている.",
+      "sourceRow": 59
+    },
+    {
+      "stt": 56,
+      "structure": "Aにしろ、Bにしろ",
+      "meaning": "Dù là A hay B đi chăng nữa",
+      "examples": " 行くにしろ行かないにしろ、必ず連絡してください。",
+      "sourceRow": 60
+    },
+    {
+      "stt": 57,
+      "structure": "～か～まいか",
+      "meaning": "Nên làm hay không nên làm",
+      "examples": " 買うか買うまいか考え中だ。",
+      "sourceRow": 61
+    },
+    {
+      "stt": 58,
+      "structure": "～ばと思う",
+      "meaning": "Ước gì... / Tôi hy vọng...",
+      "examples": " お忙しいところを恐縮ですが、一度ご記入内容をご確認いただければと思います。",
+      "sourceRow": 62
+    },
+    {
+      "stt": 59,
+      "structure": "お/ご...申し上げる",
+      "meaning": "Xin phép được làm... (kính ngữ khiêm nhường cực kỳ trang trọng thể hiện hành động hướng tới đối phương).",
+      "examples": "( 2010/12)  このたびは、私どもの商品発送ミスにより、お客様に大変ご迷惑をおかけしましたことを深くおわび申し上げます。申し訳ございませんでした。",
+      "sourceRow": 63
+    },
+    {
+      "stt": 60,
+      "structure": "たとえ～ても",
+      "meaning": "Cho dù... (chưa xảy ra)",
+      "examples": "(100 câu #43)  たとえ失敗したとしても、やってみることに価値がある。",
+      "sourceRow": 64
+    },
+    {
+      "stt": 61,
+      "structure": "～としても",
+      "meaning": "Cho dù... (đã xảy ra)",
+      "examples": "( 2019/07)  用事が何時に終わるかわからないんだよ。行けるとしても、多分、途中からになると思う。",
+      "sourceRow": 65
+    },
+    {
+      "stt": 62,
+      "structure": "～であっても",
+      "meaning": "Cho dù là... đi nữa",
+      "examples": " 良い商品やサービスであっても、その良さが客に伝わらなければ、売り上げの増加は期待できない。",
+      "sourceRow": 66
+    },
+    {
+      "stt": 63,
+      "structure": "～にせよ / ～にしろ",
+      "meaning": "Cho dù là... / Ngay cả...",
+      "examples": "(100 câu #16)  事情があったにせよ、遅れるなら連絡ぐらいしてほしい。",
+      "sourceRow": 67
+    },
+    {
+      "stt": 64,
+      "structure": "Vたいものだ",
+      "meaning": "Rất muốn (thể hiện mong muốn sâu sắc, bền bỉ)",
+      "examples": "いつか日本で働いてみたいものだ。",
+      "sourceRow": 68
+    },
+    {
+      "stt": 65,
+      "structure": "Vたものだ",
+      "meaning": "Thường hay làm gì trong quá khứ (nhớ lại thói quen)",
+      "examples": "子供のころ、よく川で泳いだものだ。",
+      "sourceRow": 69
+    },
+    {
+      "stt": 66,
+      "structure": "～ものなら",
+      "meaning": "Nếu có thể … thì",
+      "examples": "( 2017/07)  あのころに戻れるものなら戻りたい。\n(100 câu #80)  買えるものなら買いたいが、今の給料では何年かかっても無理だ。",
+      "sourceRow": 70
+    },
+    {
+      "stt": 67,
+      "structure": "～もの/ もん",
+      "meaning": "Bởi vì (trẻ em, nữ nhõng nhẽo)",
+      "examples": "だって、知らなかったんだもん。",
+      "sourceRow": 71
+    },
+    {
+      "stt": 68,
+      "structure": "～ものか/ もんか",
+      "meaning": "Tuyệt đối không... / Đời nào...",
+      "examples": "(100 câu #34) 対応は遅いし情報は不正確だし、こんな旅行会社、二度と利用するものか。",
+      "sourceRow": 72
+    },
+    {
+      "stt": 69,
+      "structure": "～か",
+      "meaning": "Ai mà tin chuyện đó chứ. Ai mà biết!",
+      "examples": " 誰がそんなことを信じるか。\n 分かるか！",
+      "sourceRow": 73
+    },
+    {
+      "stt": 70,
+      "structure": "～ことに、",
+      "meaning": "Thật là...",
+      "examples": "( 2021/07)  初めてこの町を訪れたが、不思議なことに、ずっと前からここに住んでいるような気がする。\n(100 câu #22)  おもしろいことに、この魚はオスが子育てをするのだそうだ。",
+      "sourceRow": 74
+    },
+    {
+      "stt": 71,
+      "structure": "～ことか",
+      "meaning": "Thật là... biết bao (thường đi với từ để hỏi như どんなに, 何度 để cảm thán)",
+      "examples": "( 2021/12)  私が留学していたときにもそんなサービスがあったらどれだけよかったか。\n(100 câu #29)  工業が発展したおかげで、生活はどれほど便利になったことか。",
+      "sourceRow": 75
+    },
+    {
+      "stt": 72,
+      "structure": "～こと。",
+      "meaning": "Phải... (dùng trong mệnh lệnh, quy định, luật lệ)",
+      "examples": "試験中は携帯電話を使用しないこと。",
+      "sourceRow": 76
+    },
+    {
+      "stt": 73,
+      "structure": "～ことだ。",
+      "meaning": "Nên / Không nên…",
+      "examples": "(100 câu #79)  あせる気持ちもわかるが、今は落ち着いて、無理はしないことだ。\n(100 câu #81)  自分が悪かったと思ったのなら、さっさと謝ることだ。",
+      "sourceRow": 77
+    },
+    {
+      "stt": 74,
+      "structure": "～ということです\n～とのことです",
+      "meaning": "Nghe nói là... / Có nghĩa là... (truyền đạt lại thông tin)",
+      "examples": " 配られたプリントに、ビニール袋を持参することとのことだが、だいたい何枚ぐらいで足りるのでしょうか。\n(12/2014) 山下「田中さん、先ほど ABC 建設の木村様からお電話がありました。至急連絡がほしいとのことです。」.\n(7/2023) 木村「山下さん、先ほど、さくら銀行の南さんからお電話がありまして、今日中に連絡してほしいとのことでした。」.",
+      "sourceRow": 78
+    },
+    {
+      "stt": 75,
+      "structure": "～ないことには。。。ない",
+      "meaning": "Nếu không... thì không... ",
+      "examples": "( 2015/07)  この企業で働きたいと思っていても、応募しないことには、何も進みません。\n(100 câu #3)  手術をしないことには、命は助からないだろう。",
+      "sourceRow": 79
+    },
+    {
+      "stt": 76,
+      "structure": "Vたことはない",
+      "meaning": "Chưa từng làm...",
+      "examples": " 行ったことはない。",
+      "sourceRow": 80
+    },
+    {
+      "stt": 77,
+      "structure": "～わけ",
+      "meaning": "Lý do, nguyên nhân",
+      "examples": "( 2017/12)  おなかがすいているわけでもないのに、どうしておなかが鳴るのだろう。",
+      "sourceRow": 81
+    },
+    {
+      "stt": 78,
+      "structure": "～わけだ / ～というわけだ",
+      "meaning": "① Chỉ lý do đương nhiên\n② Chỉ kết quả logic",
+      "examples": " あんなに食べたら太るわけだ。\n一個は10円。7個を買うと、70円を払うわけだ。",
+      "sourceRow": 82
+    },
+    {
+      "stt": 79,
+      "structure": "～わけではない",
+      "meaning": "Không hẳn là... / Không có nghĩa là...",
+      "examples": "( 2010/12)  現在、建設作業はスムーズに進んでいるが、必ずしも最初から順調だったわけではない。",
+      "sourceRow": 83
+    },
+    {
+      "stt": 80,
+      "structure": "～に関して",
+      "meaning": "Về việc... / Liên quan đến...",
+      "examples": "( 2010/07)  人間の脳に関する研究で明らかになったことはまだほんの一部にすぎないとはいえ、その研究は着実に進んできた。",
+      "sourceRow": 84
+    },
+    {
+      "stt": 81,
+      "structure": "～につきまして",
+      "meaning": "Về việc... (lịch sự của に関して)",
+      "examples": " この件につきまして何かご質問はございますか。",
+      "sourceRow": 85
+    },
+    {
+      "stt": 82,
+      "structure": "～といった",
+      "meaning": "Ví dụ như là...",
+      "examples": "( 2024/07)  花山市では、きゅうりやトマト、なすといった夏の野菜が多く生産されている。",
+      "sourceRow": 86
+    },
+    {
+      "stt": 83,
+      "structure": "～上",
+      "meaning": "Trên phương diện, về mặt...",
+      "examples": "( 2016/12)  エアコンを掃除するときは、安全上、必ずコンセントを抜いてからにしてください。",
+      "sourceRow": 87
+    },
+    {
+      "stt": 84,
+      "structure": "～上に",
+      "meaning": "Không chỉ... mà còn... / Hơn thế nữa",
+      "examples": "( 2015/12)  レストランでアルバイトを始めてから、今日で1年たつのに、客の注文を間違えたうえに、皿を割るというミスまでしてしまった。",
+      "sourceRow": 88
+    },
+    {
+      "stt": 85,
+      "structure": "～Vる上で",
+      "meaning": "Trong quá trình làm...",
+      "examples": "( 2014/07)  レポートを作成するうえで注意すべきことは、事実なのか意見なのかを明確にすることだ。",
+      "sourceRow": 89
+    },
+    {
+      "stt": 86,
+      "structure": "～Vた上で",
+      "meaning": "Sau khi làm xong A thì mới làm B",
+      "examples": "( 2013/07)  前回の会議での議論をもとに、全員改良案を作成のうえ、当日10時までに原田までご提出ください。",
+      "sourceRow": 90
+    },
+    {
+      "stt": 87,
+      "structure": "～次第",
+      "meaning": "① Ngay sau khi... ② Tùy thuộc vào...",
+      "examples": "( 2015/07)  4 月 20 日に新入生歓迎会を開きますので、ぜひご参加ください。なお、場所は決まり次第、お知らせします。",
+      "sourceRow": 91
+    },
+    {
+      "stt": 88,
+      "structure": "～は～にかかっている",
+      "meaning": "Kết quả của sự việc phụ thuộc hoàn toàn vào hành động hoặc yếu tố đi trước.",
+      "examples": " 試合の結果は最後の5分にかかっている。",
+      "sourceRow": 92
+    },
+    {
+      "stt": 89,
+      "structure": "いったい + Nghi vấn từ",
+      "meaning": "Rốt cuộc là... / Thực sự là... (nhấn mạnh sự tò mò, băn khoăn, nghi vấn cực độ).",
+      "examples": "( 2025/07)  仕事ができると言われる人は、そうでない人と比べていったい何が違うのだろうか。",
+      "sourceRow": 93
+    },
+    {
+      "stt": 90,
+      "structure": "Nとされている",
+      "meaning": "Được xem là / Được quy định là... (thừa nhận một thực tế hiển nhiên trong xã hội).",
+      "examples": "( 2015/07)  バイオリンなどの木製楽器では製造後数百年たったものが素晴らしい音を出すとされている。",
+      "sourceRow": 94
+    },
+    {
+      "stt": 91,
+      "structure": "～（さ）せてもらう",
+      "meaning": "Được cho phép làm gì / Được làm gì nhờ sự cho phép (thường dùng khi nói về hành động của bản thân được người khác cho phép).",
+      "examples": " 課長に許可をもらって、風邪をひいたので休ませてもらった。",
+      "sourceRow": 95
+    },
+    {
+      "stt": 92,
+      "structure": "～（さ）せる",
+      "meaning": "Làm cho / Khiến cho (thể sai khiến, diễn tả việc bắt buộc hoặc cho phép ai đó làm gì, hoặc làm khơi dậy một cảm xúc nào đó).",
+      "examples": "( 2014/07)  おれたちが勝って世間を驚かせてやろうじゃないか。",
+      "sourceRow": 96
+    },
+    {
+      "stt": 93,
+      "structure": "～（さ）せていただく",
+      "meaning": "Cho phép tôi được làm... (kính ngữ khiêm nhường thể hiện sự xin phép đối phương một cách lịch sự, biết ơn khi bản thân được thực hiện hành động).",
+      "examples": "( 2010/07)  （メールで）田中です。先日お話があったスピーチの件なんですが、ぜひわたしにやらせていただけないでしょうか。",
+      "sourceRow": 97
+    },
+    {
+      "stt": 94,
+      "structure": "～のみ",
+      "meaning": "Chỉ (trang trọng) だけ",
+      "examples": "(7/2021) Ｂ「どうして悩むの?嫌なら断ればいいだけでしょう？」.",
+      "sourceRow": 98
+    },
+    {
+      "stt": 95,
+      "structure": "～だけ～",
+      "meaning": "Chỉ (trong phạm vi)/ Đến mức có thể",
+      "examples": "食べたいだけ食べてください。",
+      "sourceRow": 99
+    },
+    {
+      "stt": 96,
+      "structure": "～限りでは",
+      "meaning": "Trong phạm vi 見る、聞く、調べる、調査、検索、知っている、覚えてる",
+      "examples": "(12/2018) その事件について私が知っている限りのことは、もう全部話しました.",
+      "sourceRow": 100
+    },
+    {
+      "stt": 97,
+      "structure": "～限り",
+      "meaning": "できる限り (Trong phạm vi có thể...)",
+      "examples": "( 2018/12)  その事件について私が知っている限りのことは、もう全部話しました。",
+      "sourceRow": 102
+    },
+    {
+      "stt": 98,
+      "structure": "～限りで\n～を限りに",
+      "meaning": "Đến thời điểm kết thúc\nHết sức, hết mức có thể",
+      "examples": "( 2020/12)  これまで多くの名作を残した映画監督が、今回限りで引退することを発表した。",
+      "sourceRow": 103
+    },
+    {
+      "stt": 99,
+      "structure": "～をもって",
+      "meaning": "Kể từ hôm nay (本日をもって、このイベントを終了いたします。)",
+      "examples": "( 2020/12)  本日をもって、このイベントを終了いたします。",
+      "sourceRow": 105
+    },
+    {
+      "stt": 100,
+      "structure": "～に限って",
+      "meaning": "① Chỉ ngày hôm đó\n② Cứ đúng lúc quan trọng thì điện thoại hết pin (大事な時に限って、スマホの電池が切れる。)",
+      "examples": "( 2021/07)  めったに出かけないのに、外出するときに限って大雨になる。",
+      "sourceRow": 106
+    },
+    {
+      "stt": 101,
+      "structure": "～に限らず",
+      "meaning": "① Bất kể\n② Không chỉ mà còn: A～に限らず, Bも (日本に限らず、海外でも人気だ。)",
+      "examples": "( 2020/12)  外国人にかぎらず日本人にも書けない漢字はたくさんある。",
+      "sourceRow": 108
+    },
+    {
+      "stt": 102,
+      "structure": "～に限ったことではない",
+      "meaning": "Không chỉ mà còn",
+      "examples": "この問題は日本に限ったことではない。",
+      "sourceRow": 110
+    },
+    {
+      "stt": 103,
+      "structure": "～にとどまらず",
+      "meaning": "Không chỉ… mà còn vượt quá (被害は北海道にとどまらず、東北にも広がった。)",
+      "examples": "( 2012/12)  論理的に書かれている文章を読んでいくときには、書かれた文章を自分が理解できたということにとどまらず、書かれている主張や根拠が本当に妥当だろうかと考えながら読むことが大切だ。",
+      "sourceRow": 112
+    },
+    {
+      "stt": 104,
+      "structure": "～とは限らない",
+      "meaning": "Không hẳn là, chưa chắc là",
+      "examples": "お金持ちが幸せだとは限らない。",
+      "sourceRow": 113
+    },
+    {
+      "stt": 105,
+      "structure": "～限りがない",
+      "meaning": "Không có điểm dừng, vô tận, không đáy\n限りなく、無限、果てなく、きりがない (không đáy)",
+      "examples": "彼の話は聞いていて飽きる限りがない。",
+      "sourceRow": 114
+    },
+    {
+      "stt": 106,
+      "structure": "～問わず",
+      "meaning": "Bất kể (N có tính phân loại / đối lập / category: 男女, 年齢, 国籍, 経験の有無...)",
+      "examples": "( 2021/07)  川西ピアノ教室では、初心者、経験者 を問わず、どなたにでも丁寧に指導します。",
+      "sourceRow": 115
+    },
+    {
+      "stt": 107,
+      "structure": "～もかまわず",
+      "meaning": "Bất chấp…, không quan tâm",
+      "examples": "( 2018/12)  子供たちは服が汚れるのもかまわず夢中で遊んでいる。",
+      "sourceRow": 116
+    },
+    {
+      "stt": 108,
+      "structure": "～にわたって",
+      "meaning": "Trải dài khắp",
+      "examples": "( 2010/07)  踏切事故のため、2時間にわたり、電車がストップしました。\n( 2014/12)  竹石海水浴場は、約 700 メートルにわたって、美しい砂浜が続いています.",
+      "sourceRow": 117
+    },
+    {
+      "stt": 109,
+      "structure": "～にかかわらず\n～Nの いかんにかかわらず\n～Nの いかんによらず",
+      "meaning": "Bất kể... (không phân biệt)",
+      "examples": "( 2023/12) 来週の説明会に参加するしないにかかわらず、この書類は必ず読んでおいてください。",
+      "sourceRow": 118
+    },
+    {
+      "stt": 110,
+      "structure": "～に至っては",
+      "meaning": "Ngay cả đến như... / Đến mức cực đoan như... (ví dụ cực đoan).",
+      "examples": "( 2023/12)  私の3人の兄はみんな料理が苦手で、一番上の兄に至っては、卵もうまく割れない。",
+      "sourceRow": 119
+    },
+    {
+      "stt": 111,
+      "structure": "～おきに",
+      "meaning": "Cứ cách / Cứ mỗi... (thời gian, khoảng cách)",
+      "examples": "( 2011/12)  父は一日おきにジョギングをしている。",
+      "sourceRow": 120
+    },
+    {
+      "stt": 112,
+      "structure": "～にかけては",
+      "meaning": "Nếu nói về... thì nhất",
+      "examples": " 彼は、人を笑わせることにかけては天才だ。",
+      "sourceRow": 121
+    },
+    {
+      "stt": 113,
+      "structure": "～抜きで",
+      "meaning": "Không có/Bỏ qua...",
+      "examples": "( 2025/12)  今朝は寝坊してしまい、朝食抜きで大学に来た。",
+      "sourceRow": 122
+    },
+    {
+      "stt": 114,
+      "structure": "Nのに限り",
+      "meaning": "Chỉ riêng だけ",
+      "examples": "(12/2025) 「一日乗車券」は、ご購入いただいた当日に限り、何度でも自由に乗り降りができる乗車券です.",
+      "sourceRow": 123
+    },
+    {
+      "stt": 115,
+      "structure": "～から言うと\n ～からすると\n～からいえば",
+      "meaning": "From the perspective of (Nhìn từ, xét từ góc độ...)",
+      "examples": "( 2024/07)  会社の今井先輩は、自分はミスが多いといつも言っているが、私からすると何でも完璧にできているように見える。",
+      "sourceRow": 125
+    },
+    {
+      "stt": 116,
+      "structure": "～からして",
+      "meaning": "① Đặc trưng tiêu biểu からすると\n② Ngay cả / xét về góc độ... (đưa ra một ví dụ nhỏ để phán đoán toàn thể)",
+      "examples": " 服装からして、お金持ちそうだ。\n( 2014/12)  こんな作品が作れる彼は天才だ。発想からして普通の人とは違っている。",
+      "sourceRow": 126
+    },
+    {
+      "stt": 117,
+      "structure": "～にしたら\n ～にすれば\n～にしても",
+      "meaning": "If you were In someone’s position",
+      "examples": "親にしたら、子どもはいつまでも子どもだ。\n( 2011/07)  不調だった山中選手がついにゴールを決めた。彼にしたらプレッシャーは相当あったはずだ。",
+      "sourceRow": 127
+    },
+    {
+      "stt": 118,
+      "structure": "いずれにしても",
+      "meaning": "Dù sao đi nữa / Dù thế nào đi nữa / Đằng nào thì...",
+      "examples": " 進めるかやめるか、いずれにしても早急に結論を出す必要があるだろう。",
+      "sourceRow": 128
+    },
+    {
+      "stt": 119,
+      "structure": "～得る",
+      "meaning": "Có thể",
+      "examples": "そんな事故は誰にでも起こり得る。",
+      "sourceRow": 129
+    },
+    {
+      "stt": 120,
+      "structure": "～ないことはない",
+      "meaning": "Không phải là không... (khẳng định một phần, đồng ý có điều kiện)",
+      "examples": "食べられ\n～ないことはない\n～ないこともない\n～なくはない\n～なくもない",
+      "sourceRow": 130
+    },
+    {
+      "stt": 121,
+      "structure": "～のは + N + にほかならない\n～ことは + N + にほかならない",
+      "meaning": "Chính là こそ/ không gì khác ngoài",
+      "examples": "(7/2023) 睡眠時間を削ることは、体や脳を回復させる大切な機会を奪うことにほかならないのだ.",
+      "sourceRow": 131
+    },
+    {
+      "stt": 122,
+      "structure": "〜までもない",
+      "meaning": "Chưa tới mức phải... / Không cần thiết phải... (vì đã quá hiển nhiên)",
+      "examples": "(100 câu #9)  簡単な調べものならインターネットでできるので、図書館に行くまでもない。",
+      "sourceRow": 132
+    },
+    {
+      "stt": 123,
+      "structure": "～「Vよう」にも～ない",
+      "meaning": "Muốn thì muốn đấy nhưng bất khả thi",
+      "examples": "財布を忘れて、払おうにも払えない。",
+      "sourceRow": 133
+    },
+    {
+      "stt": 124,
+      "structure": "どうにも…ない",
+      "meaning": "Dù thế nào cũng không thể... / Hoàn toàn không thể làm gì nổi (diễn tả trạng thái bất lực trước hoàn cảnh).",
+      "examples": " 自分一人の力ではどうにもならないこともある。",
+      "sourceRow": 134
+    },
+    {
+      "stt": 125,
+      "structure": "～ものではない\n～ものじゃない",
+      "meaning": "Không nên làm gì (Đạo lý)",
+      "examples": " そんなことを言うものじゃない。\n(100 câu N2-N3) 手伝いもしない人が、文句ばかり言うものじゃないよ.",
+      "sourceRow": 135
+    },
+    {
+      "stt": 126,
+      "structure": "～てばかり",
+      "meaning": "Chỉ toàn.../Suốt ngày",
+      "examples": " 彼は毎日遊んでばかりで、少しも勉強しない。",
+      "sourceRow": 136
+    },
+    {
+      "stt": 127,
+      "structure": "おいでくださり、ありがとうございます",
+      "meaning": "Cảm ơn quý khách/quý anh chị đã ghé thăm (kính ngữ trang trọng trong dịch vụ).",
+      "examples": "( 2025/07)  （旅館で） 旅館の人「いらっしゃいませ。本日は森川旅館においでくださり、ありがとうございます。」",
+      "sourceRow": 137
+    },
+    {
+      "stt": 128,
+      "structure": "～に限る",
+      "meaning": "① Khi mệt thì ngủ là nhất\n② Chỉ riêng だけ",
+      "examples": "(12/2013) 私の祖父は、風邪をひいても、「風邪のときはあたたかくして早く寝るに限る」と言って病院に行かない.",
+      "sourceRow": 138
+    },
+    {
+      "stt": 129,
+      "structure": "～てでも",
+      "meaning": "Dù phải... cũng / Cho dù có phải làm gì đi nữa thì cũng quyết tâm thực hiện.",
+      "examples": " 今晩徹夜してでもレポートを終わらせてしまわないといけない。",
+      "sourceRow": 140
+    },
+    {
+      "stt": 130,
+      "structure": "～に限って～ない",
+      "meaning": "Riêng anh ấy thì chắc chắn không làm chuyện đó đâu.",
+      "examples": "(7/2021) めったに出かけないのに、外出するときに限って大雨になる.",
+      "sourceRow": 141
+    },
+    {
+      "stt": 131,
+      "structure": "～だけに",
+      "meaning": "Chính vì A → nên B đương nhiên",
+      "examples": "(12/2014) 私がテニスを教えている中学生が、県大会で初めて優勝した。彼の努力をずっと見てきただけに本当にうれしい.",
+      "sourceRow": 142
+    },
+    {
+      "stt": 132,
+      "structure": "～Vていては",
+      "meaning": "Cứ tiếp tục làm vậy → KQ xấu",
+      "examples": "毎日遊んでいては、試験に合格できない。",
+      "sourceRow": 143
+    },
+    {
+      "stt": 133,
+      "structure": "～ばかりに",
+      "meaning": "Chỉ vì → kết quả xấu",
+      "examples": "一言余計なことを言ったばかりに、彼女を怒らせてしまった。",
+      "sourceRow": 144
+    },
+    {
+      "stt": 134,
+      "structure": "Vたら、かえって",
+      "meaning": "Làm xong mà ngược lại còn tệ hơn",
+      "examples": " 薬を飲んだら、かえって悪化した。",
+      "sourceRow": 145
+    },
+    {
+      "stt": 135,
+      "structure": "～ことから",
+      "meaning": "Từ việc... nên... / Vì... nên... (nguồn gốc tên gọi hoặc căn cứ phán đoán)",
+      "examples": "( 2018/12)  「百」の字から「一」をとることからそう呼ばれています。\n( 2020/12)  腰が曲がった老人に似ているところからエビは「海老」とも書かれると聞いた。",
+      "sourceRow": 146
+    },
+    {
+      "stt": 136,
+      "structure": "～ことだから",
+      "meaning": "Ai chứ... thì...",
+      "examples": "( 2012/12)  青木くんのことだね。\n(100 câu #53)  時間を守らないあの人のことだから、きっと今日も遅れてくるだろう。",
+      "sourceRow": 147
+    },
+    {
+      "stt": 137,
+      "structure": "～あまり",
+      "meaning": "Vì quá... nên dẫn đến kết quả xấu",
+      "examples": "(100 câu #94)  電車の中で昔の友達に会い、感激のあまり大声を出してしまった。",
+      "sourceRow": 148
+    },
+    {
+      "stt": 138,
+      "structure": "～せいか",
+      "meaning": "Có lẽ là tại... / Có lẽ là vì... (chỉ nguyên nhân không chắc chắn nhưng mang lại kết quả tiêu cực).",
+      "examples": "( 2021/07)  昨夜よく眠れなかったせいか、体がだるい。",
+      "sourceRow": 149
+    },
+    {
+      "stt": 139,
+      "structure": "どうしてもお願いしたい",
+      "meaning": "Thực sự bằng mọi giá muốn nhờ cậy vào đối phương.",
+      "examples": " この仕事は、どうしてもあなたにお願いしたい。",
+      "sourceRow": 150
+    },
+    {
+      "stt": 140,
+      "structure": "～はともかく",
+      "meaning": "Tạm chưa nói đến A mà nói B đã, Khoan bàn tới… (Đánh giá B)",
+      "examples": "( 2011/07)  値段はともかく、デザインや性能はこの製品が一番いい。",
+      "sourceRow": 151
+    },
+    {
+      "stt": 141,
+      "structure": "～というより",
+      "meaning": "K phải A, mà đúng hơn là B (Sửa lại cách nói)",
+      "examples": "( 2021/12)  水泳クラブの山田コーチは、私たちにとってコーチというより兄のような存在です。",
+      "sourceRow": 152
+    },
+    {
+      "stt": 142,
+      "structure": "～といっても",
+      "meaning": "Dù có nói là A nhưng …",
+      "examples": "( 2010/07)  ひとくちにカレーライスといってもそれぞれの店によって材料はさまざまだ.",
+      "sourceRow": 153
+    },
+    {
+      "stt": 143,
+      "structure": "～見えて",
+      "meaning": "Trông trẻ vậy mà đã 50 tuổi rồi.",
+      "examples": "彼は疲れていると見えて、電車の中で寝ている。",
+      "sourceRow": 154
+    },
+    {
+      "stt": 144,
+      "structure": "～からといって",
+      "meaning": "Dù nói là nhưng không có nghĩa là",
+      "examples": "( 2022/12)  休みの日だからといって、昼過ぎまで寝ているのはよくないと思う.",
+      "sourceRow": 155
+    },
+    {
+      "stt": 145,
+      "structure": "～かというと。。。ない",
+      "meaning": "Dù nói là nhưng không có nghĩa là",
+      "examples": "(100 câu #2)  雪国の人なら誰でもスキーが上手かというと、必ずしもそうではない。",
+      "sourceRow": 156
+    },
+    {
+      "stt": 146,
+      "structure": "～というものではない",
+      "meaning": "Không phải cứ... là được/không hẳn là...",
+      "examples": " 日本人だからといって、日本語が教えられるというものではない。",
+      "sourceRow": 157
+    },
+    {
+      "stt": 147,
+      "structure": "～どころではない\n～どころじゃない",
+      "meaning": "Không phải lúc để... / Không còn tâm trí để...",
+      "examples": "(100 câu #68)  今日は娘の合格発表なので、朝から気になって仕事どころではない。",
+      "sourceRow": 158
+    },
+    {
+      "stt": 148,
+      "structure": "～まい",
+      "meaning": "①　Quyết không\n②　Chắc là không",
+      "examples": "(100 câu #70)  事故を起こしてから、二度とバイクには乗るまいと決めた。",
+      "sourceRow": 159
+    },
+    {
+      "stt": 149,
+      "structure": "～にしては\n～にしても",
+      "meaning": "Tuy nhưng (bất ngờ)\nẤy thế mà",
+      "examples": "日本に20年も住んでいるにしては、日本語が上手ではない。",
+      "sourceRow": 160
+    },
+    {
+      "stt": 150,
+      "structure": "～ものの",
+      "meaning": "Tuy nhưng",
+      "examples": "( 2015/07)  この地域のみかんの生産量は、2000 年から 2003 年にかけて一時減少したものの、再び増加し、2010 年には過去最高となった.\n( 2023/07)  今回のオリンピックで、体操の青木選手は、メダルは獲得できなかったものの、素晴らしい演技を見せてくれた.",
+      "sourceRow": 161
+    },
+    {
+      "stt": 151,
+      "structure": "V ます ながらも",
+      "meaning": "Tuy... nhưng... (thường biểu thị một trạng thái trái ngược với kỳ vọng)",
+      "examples": "( 2025/07)  彼女は、まだ小学生ながらも、すでに数々の国際的なピアノコンクールで優勝している。",
+      "sourceRow": 162
+    },
+    {
+      "stt": 152,
+      "structure": "～くせに",
+      "meaning": "Mặc dù... thế mà (thể hiện sự trách móc, mỉa mai, chê trách)",
+      "examples": "彼は何も知らないくせに、偉そうに話している。",
+      "sourceRow": 163
+    },
+    {
+      "stt": 153,
+      "structure": "～にもかかわらず",
+      "meaning": "Bất chấp, mặc dù... (dù thực tế có là thế nào vẫn thực hiện)",
+      "examples": "( 2012/12) 駅前に新しくできたラーメン屋はいつも込んでいる。昨日も大雨にもかかわらず行列ができていた。\n( 2018/12) 悪天候にもかかわらず、大勢の客がパンダを見ようと来園した。",
+      "sourceRow": 164
+    },
+    {
+      "stt": 154,
+      "structure": "～わりに",
+      "meaning": "Dù... nhưng... (kết quả không tương xứng)",
+      "examples": " 50歳のわりに若く見える。",
+      "sourceRow": 165
+    },
+    {
+      "stt": 155,
+      "structure": "～反面",
+      "meaning": "Trái lại, mặt khác (đối lập)",
+      "examples": "( 2023/12)  この植物は、寒さに強い反面、暑さや湿気に弱い。",
+      "sourceRow": 166
+    },
+    {
+      "stt": 156,
+      "structure": "～に反して",
+      "meaning": "Trái ngược với...",
+      "examples": "( 2011/12)  見た目がよくないが、予想に反しておいしかった。",
+      "sourceRow": 167
+    },
+    {
+      "stt": 157,
+      "structure": "～とはいえ",
+      "meaning": null,
+      "examples": "(7/2010) 人間の脳に関する研究で明らかになったことはまだほんの一部にすぎないとはいえ、その研究は着実に進んできた.",
+      "sourceRow": 168
+    },
+    {
+      "stt": 158,
+      "structure": "～には～が",
+      "meaning": "Muốn thì muốn đấy nhưng do dự",
+      "examples": "この本は読んでみるには読んでみたが、難しくてよく分からなかった。",
+      "sourceRow": 169
+    },
+    {
+      "stt": 159,
+      "structure": "ことは～が",
+      "meaning": "Có thì có thật đấy nhưng ",
+      "examples": "日本語は話せることは話せるが、まだ上手ではない。",
+      "sourceRow": 170
+    },
+    {
+      "stt": 160,
+      "structure": "～おそれがある",
+      "meaning": "Có nguy cơ (trang trọng) (+)",
+      "examples": "( 2017/07)  発達する低気圧の影響で、明日の夕方から夜にかけて、激しい雨が降るおそれがある.",
+      "sourceRow": 171
+    },
+    {
+      "stt": 161,
+      "structure": "～かねない",
+      "meaning": "Có nguy cơ (+)",
+      "examples": "( 2015/12)  その計画は自然環境に悪影響を与えかねない\n( 2018/12)  言葉の選び方は難しい。間違えると誤解されかねない.",
+      "sourceRow": 172
+    },
+    {
+      "stt": 162,
+      "structure": "～かねる",
+      "meaning": "Khó mà (-)",
+      "examples": "( 2016/07)  今回の戦略が有効であったかどうかは、まだ結果が出ていない現時点では判断しかねる.\n( 2020/12)  今回の戦略が有効であったかどうかは、まだ結果が出ていない現時点では判断しかねる.",
+      "sourceRow": 173
+    },
+    {
+      "stt": 163,
+      "structure": "はず",
+      "meaning": "Chắc chắn là... (phán đoán có căn cứ logic, lý do xác thực của người nói).",
+      "examples": "( 2010/12)  彼がそんなことをする人間でないことは、あなたが一番ご存じのはずだ。",
+      "sourceRow": 174
+    },
+    {
+      "stt": 164,
+      "structure": "に違いない",
+      "meaning": "Chắc chắn là... (phán đoán mang tính khẳng định mạnh mẽ dựa trên chứng cứ thực tế).",
+      "examples": "( 2019/12)  昨日購入した中古の大型バイクは、かなり古いものなのだが、とてもきれいな状態だった。前の持ち主によほど大切にされていたに違いない。",
+      "sourceRow": 175
+    },
+    {
+      "stt": 165,
+      "structure": "に決まっている",
+      "meaning": "Chắc chắn là... (chủ quan).",
+      "examples": " 相手はプロなんだから、強いに決まっている。",
+      "sourceRow": 176
+    },
+    {
+      "stt": 166,
+      "structure": "～に相違ない",
+      "meaning": "Chắc chắn là... (trang trọng).",
+      "examples": " 彼が犯人であることに相違ない。",
+      "sourceRow": 177
+    },
+    {
+      "stt": 167,
+      "structure": "～げ",
+      "meaning": "Trông có vẻ",
+      "examples": " 子どもが不安げに母親を見た。",
+      "sourceRow": 178
+    },
+    {
+      "stt": 168,
+      "structure": "～かのようだ",
+      "meaning": "Giống hệt như là... / Cứ như thể là... (so sánh ví von trạng thái giả định).",
+      "examples": " 何も知らないかのように振る舞った。",
+      "sourceRow": 179
+    },
+    {
+      "stt": 169,
+      "structure": "～のことだから",
+      "meaning": "Ai chứ ... thì",
+      "examples": "(100 câu N2-N3) 時間を守らないあの人のことだから、きっと今日も遅れてくるだろう.",
+      "sourceRow": 180
+    },
+    {
+      "stt": 170,
+      "structure": "いまにも Vますそうだ",
+      "meaning": "Có vẻ sắp",
+      "examples": "(12/2013) 彼が描いたライオンの絵は、本物そっくりに描かれていて、今にも動き出して近づいてきそうなほどだ.",
+      "sourceRow": 181
+    },
+    {
+      "stt": 171,
+      "structure": "～に比べて",
+      "meaning": "So với",
+      "examples": "去年に比べて、今年は暑い。",
+      "sourceRow": 182
+    },
+    {
+      "stt": 172,
+      "structure": "Nほど～ことはない\nNほど～ものはない",
+      "meaning": "Không gì bằng",
+      "examples": "家族と過ごす時間ほど大切なことはない。",
+      "sourceRow": 183
+    },
+    {
+      "stt": 173,
+      "structure": "N ほど～ことはない",
+      "meaning": "Không có gì bằng N... (so sánh nhất)",
+      "examples": "健康ほど大切なものはない。",
+      "sourceRow": 184
+    },
+    {
+      "stt": 174,
+      "structure": "～を前にして",
+      "meaning": "Trước khi にあたって",
+      "examples": "大勢の人を前にして、緊張してしまった。",
+      "sourceRow": 185
+    },
+    {
+      "stt": 175,
+      "structure": "～にともなって",
+      "meaning": "A thay đổi → B thay đổi (伴う: đi kèm, song hành)",
+      "examples": "( 2022/07)  情報技術の発展にともなって、コミュニケーションの手段は多様化している。",
+      "sourceRow": 186
+    },
+    {
+      "stt": 176,
+      "structure": "～て以来",
+      "meaning": "Suốt từ sau khi",
+      "examples": "( 2021/12)  X社の健康食品はテレビ番組で紹介されて以来、とても売れている。",
+      "sourceRow": 187
+    },
+    {
+      "stt": 177,
+      "structure": "～にしたがって",
+      "meaning": "Càng A → càng B (quy luật) 従う",
+      "examples": "( 2018/12)  X 社の調査によると、共働き夫婦における夫の家事負担の割合は、夫の年齢が下がるにしたがって増加しているという.",
+      "sourceRow": 188
+    },
+    {
+      "stt": 178,
+      "structure": "～とともに",
+      "meaning": "① と ② にともなって ③ as soon as",
+      "examples": "年を取るとともに、体力が落ちてきた。",
+      "sourceRow": 189
+    },
+    {
+      "stt": 179,
+      "structure": "～きり",
+      "meaning": "Kể từ đó (K làm nữa) きり = cắt đứt",
+      "examples": "( 2013/07)  半年前に切ったきり一度も切ってないんですよ.\n( 2024/07)  彼とは数年前に先輩の結婚式で会ったきり、ずっと会っていない.",
+      "sourceRow": 190
+    },
+    {
+      "stt": 180,
+      "structure": "～あげく",
+      "meaning": "Sau một thời gian dài cuối cùng thì (tiêu cực)",
+      "examples": "( 2011/07)  あれこれ質問に答えさせられたあげく、対応できないと言われた.",
+      "sourceRow": 191
+    },
+    {
+      "stt": 181,
+      "structure": "～末（に）",
+      "meaning": "Sau một thời gian dài cuối cùng thì",
+      "examples": "( 2011/07)  あれこれ悩んだすえに、ABC 大学を志望校に決めた.\n( 2013/07)  鉄道会社と自治体による長期間の議論の末に、新駅の建設が決定された.",
+      "sourceRow": 192
+    },
+    {
+      "stt": 182,
+      "structure": "～を契機に",
+      "meaning": "Lấy… làm cơ hội/bước ngoặt",
+      "examples": "留学を契機に、日本文化に興味を持つようになった。",
+      "sourceRow": 193
+    },
+    {
+      "stt": 183,
+      "structure": "～一方で",
+      "meaning": "Một mặt thì… mặt khác thì…",
+      "examples": " 彼は仕事を熱心にする一方で、趣味の時間も大切にしている。",
+      "sourceRow": 194
+    },
+    {
+      "stt": 184,
+      "structure": "Vたかと思うと",
+      "meaning": "Vừa mới... thì ngay lập tức...",
+      "examples": " 帰ってきたかと思うと、また出かけた。",
+      "sourceRow": 195
+    },
+    {
+      "stt": 185,
+      "structure": "Vた途端 / とたん",
+      "meaning": "Vừa mới... (bất ngờ)",
+      "examples": " 家を出たとたん、雨が降った。",
+      "sourceRow": 196
+    },
+    {
+      "stt": 186,
+      "structure": "VるかVないかのうちに",
+      "meaning": "Chưa biết hành động vế trước đã xong chưa thì vế sau đã xảy ra ngay lập tức (bất ngờ).",
+      "examples": "( 2021/07)  遠足の日の朝、娘は、「いってきます」と言い終わるか終わらないかのうちに玄関を飛び出して行った。",
+      "sourceRow": 197
+    },
+    {
+      "stt": 187,
+      "structure": "～矢先に／～矢先の やさき",
+      "meaning": "Ngay đúng khoảnh khắc chuẩn bị thực hiện hành động thì có sự việc khác bất ngờ xen vào.",
+      "examples": " 出かけようとした矢先に、雨が降った。",
+      "sourceRow": 198
+    },
+    {
+      "stt": 188,
+      "structure": "Vるや否や",
+      "meaning": "Ngay sau khi hành động trước xảy ra thì hành động sau lập tức diễn ra (gần như đồng thời).",
+      "examples": " 犬は主人を見るや否や、走ってきた。",
+      "sourceRow": 199
+    },
+    {
+      "stt": 189,
+      "structure": "Vるに先立って",
+      "meaning": "Trước khi tiến hành một sự kiện quan trọng (chuẩn bị cần thiết trước khi bắt đầu).",
+      "examples": "( 2022/12)  さくら市はさくら駅周辺の再開発事業を行うに先立って、関係者に対する説明会を開催する予定だ。",
+      "sourceRow": 200
+    },
+    {
+      "stt": 190,
+      "structure": "間（ま） = khoảng thời gian",
+      "meaning": "Khoảng thời gian trống / Kẽ hở thời gian.",
+      "examples": " 忙しくて、お茶を飲む間もない。",
+      "sourceRow": 201
+    },
+    {
+      "stt": 191,
+      "structure": "本当ならば",
+      "meaning": "Đáng lẽ ra... (thực tế khác dự định)",
+      "examples": "本当ならば、今日行く予定でした。",
+      "sourceRow": 202
+    },
+    {
+      "stt": 192,
+      "structure": "Vてまだ～ないうちに",
+      "meaning": "Mới làm V chưa được bao lâu thì... / Trong lúc chưa trôi qua bao lâu kể từ khi V.",
+      "examples": "( 2025/12)  新しいコーヒーカップを使い始めていくらもたたないうちに、床に落として割ってしまった。",
+      "sourceRow": 203
+    },
+    {
+      "stt": 193,
+      "structure": "～についで",
+      "meaning": "Tiếp sau... / Đứng sau...",
+      "examples": "( 2023/12)  この国でサッカーに次いで人気のあるスポーツといえば野球だ.",
+      "sourceRow": 204
+    },
+    {
+      "stt": 194,
+      "structure": "いつのまにか Vた",
+      "meaning": "Chẳng biết từ lúc nào đã V\nいつ = khi nào\n間（ま） = khoảng thời gian\nに\nか = không biết",
+      "examples": "(12/2023) 駅前に新しいラーメン屋がオープンしていた。いつのまにできたのだろう.",
+      "sourceRow": 205
+    },
+    {
+      "stt": 195,
+      "structure": "～から～にかけて",
+      "meaning": "Từ … đến …",
+      "examples": "( 2017/07)  発達する低気圧の影響で、明日の夕方から夜にかけて、激しい雨が降るおそれがある.",
+      "sourceRow": 206
+    },
+    {
+      "stt": 196,
+      "structure": "～ところが",
+      "meaning": "Nhưng",
+      "examples": "雨が降ると思っていた。ところが、晴れてきた。",
+      "sourceRow": 207
+    },
+    {
+      "stt": 197,
+      "structure": "～ところを",
+      "meaning": "Trong lúc... (dùng khi xin lỗi, cảm ơn vì làm phiền người khác)",
+      "examples": " お忙しいところを、ありがとうございます。\n お休みのところを、すみません。",
+      "sourceRow": 208
+    },
+    {
+      "stt": 198,
+      "structure": "～ところで",
+      "meaning": "Nhân tiện, à mà này (chuyển chủ đề)",
+      "examples": "今から急いだところで、間に合わないだろう。",
+      "sourceRow": 209
+    },
+    {
+      "stt": 199,
+      "structure": "～たところで",
+      "meaning": "Dù có... thì cũng vô ích",
+      "examples": "今さら謝ったところで、もう遅い。\n急いだところで間に合わない。",
+      "sourceRow": 210
+    },
+    {
+      "stt": 200,
+      "structure": "～ところがある",
+      "meaning": "Có lúc/Có đặc điểm là...",
+      "examples": "( 2025/12)  後輩の田中さんは仕事熱心だが、少しまじめすぎるところがある。",
+      "sourceRow": 211
+    },
+    {
+      "stt": 201,
+      "structure": "～ずにすむ",
+      "meaning": "May quá không cần phải... ",
+      "examples": "( 2025/07)  昨日の晩、目覚まし時計をセットするのを忘れてしまい、今朝は寝坊してしまった。それでも遅刻をせずに済んだのは、たまたまかかってきた電話に起こされたからだ。",
+      "sourceRow": 212
+    },
+    {
+      "stt": 202,
+      "structure": "～といって",
+      "meaning": "Hầu như là... / Gần như là... (thường đi với \"必ずと言っていいほど\" - hễ... là gần như chắc chắn...).",
+      "examples": " 私は、辛いものを食べると、必ずといっていいほどせきが出るんです。",
+      "sourceRow": 213
+    },
+    {
+      "stt": 203,
+      "structure": "～として",
+      "meaning": "Với tư cách là",
+      "examples": "(7/2023) 60代の父が、趣味としてなら何歳から始めても遅くないだろうと言って、最近ピアノ教室に通い始めた.\n(12/2025) 私は音楽大学でバイオリンを専攻しているが、卒業後は演奏家としてではなく、子供たちに教えるという形でバイオリンに関わっていきたいと思っている.",
+      "sourceRow": 214
+    },
+    {
+      "stt": 204,
+      "structure": "に",
+      "meaning": "Chỉ địa điểm, phương hướng, thời gian xảy ra hành động hoặc sự tồn tại của sự vật.",
+      "examples": " 机の上に本があります。",
+      "sourceRow": 215
+    },
+    {
+      "stt": 205,
+      "structure": "か = không biết",
+      "meaning": "Thể hiện sự không chắc chắn, không biết rõ cụ thể sự việc.",
+      "examples": " どこかへ行きたい。",
+      "sourceRow": 216
+    },
+    {
+      "stt": 206,
+      "structure": "どうしても",
+      "meaning": "Dù thế nào đi nữa / Nhất định... (nỗ lực bằng mọi giá hoặc kết quả bất khả kháng).",
+      "examples": " 大勢の前で話すのは苦手なので、どうしてもと言われて悩んだのだが、引き受けることにした。",
+      "sourceRow": 217
+    },
+    {
+      "stt": 207,
+      "structure": "～つもり",
+      "meaning": "Vる / Vない: định (trong đầu)\nVた/Nの: tưởng đã làm",
+      "examples": "(12/2020) 今日は、本当は映画を見に行くつもりだったが、雪が降ってきたのでやめた。\n(12/2025) ちょっと服屋に入ったら見るだけのつもりで好みの T シャツを見つけてしまい、つい買ってしまった。",
+      "sourceRow": 218
+    },
+    {
+      "stt": 208,
+      "structure": "「Vよう」とする",
+      "meaning": "① Đang định làm gì\n② Cố gắng làm\n③ Định làm thì có việc xen vào",
+      "examples": "( 2023/12)  懐中電灯を使おうとしたら、電池が切れていて、つかなかった。",
+      "sourceRow": 219
+    },
+    {
+      "stt": 209,
+      "structure": "「Vよう」にする",
+      "meaning": "Cố gắng làm gì (tạo thói quen tốt)",
+      "examples": "( 2025/07)  父は、健康のことを考えてなるべく歩くようにしているらしく、会社から家まで 1 時間かけて歩いて帰ってくることもある。",
+      "sourceRow": 220
+    },
+    {
+      "stt": 210,
+      "structure": "Vことにする",
+      "meaning": "Quyết định cá nhân",
+      "examples": "( 2022/07)  私が教えている経営学の講義では、去年から、毎回学生に講義の感想や質問を書いて出してもらうことにしている。",
+      "sourceRow": 221
+    },
+    {
+      "stt": 211,
+      "structure": "～一方だ。",
+      "meaning": "Dần dần... (xu hướng tiến triển liên tục)",
+      "examples": "( 2010/07)  田中選手は前大会に続いて、今大会でも優勝を果たした。彼の今後の活躍に周囲の期待は高まる一方だ。",
+      "sourceRow": 222
+    },
+    {
+      "stt": 212,
+      "structure": "～Vたことにする",
+      "meaning": "Coi như là...",
+      "examples": " 今日の話は聞かなかったことにしてください。",
+      "sourceRow": 223
+    },
+    {
+      "stt": 213,
+      "structure": "甲斐があった\nかいがあった",
+      "meaning": "Bỏ công đạt kết quả xứng đáng",
+      "examples": "毎日勉強した甲斐があって、N2に合格した。",
+      "sourceRow": 224
+    },
+    {
+      "stt": 214,
+      "structure": "甲斐もなく\nかいもなく",
+      "meaning": "Uổng công",
+      "examples": "一生懸命練習した甲斐もなく、試合に負けてしまった。",
+      "sourceRow": 225
+    }
+  ],
+  "notes": [
+    {
+      "sourceRow": 32,
+      "afterStt": 30,
+      "cells": [
+        null,
+        null,
+        "Cứ mỗi lần ta bị chú kiến cắn thì lại thấy tê quá!\nたびに（行動）\nにつけ（感情）\nては（tiêu cực）",
+        null
+      ]
+    },
+    {
+      "sourceRow": 51,
+      "afterStt": 48,
+      "cells": [
+        null,
+        null,
+        "Chừng nào còn quà thì còn qua",
+        null
+      ]
+    },
+    {
+      "sourceRow": 53,
+      "afterStt": 49,
+      "cells": [
+        null,
+        null,
+        "Thật là đã",
+        null
+      ]
+    },
+    {
+      "sourceRow": 101,
+      "afterStt": 96,
+      "cells": [
+        null,
+        null,
+        "では＝によると＝によれば Theo như phạm vi mà tôi có được nguồn tin",
+        null
+      ]
+    },
+    {
+      "sourceRow": 104,
+      "afterStt": 98,
+      "cells": [
+        null,
+        null,
+        "Đến hạn chót thì phải hết sức",
+        null
+      ]
+    },
+    {
+      "sourceRow": 107,
+      "afterStt": 100,
+      "cells": [
+        null,
+        null,
+        "Riêng thằng tiền thì tôi đen khác thường",
+        null
+      ]
+    },
+    {
+      "sourceRow": 109,
+      "afterStt": 101,
+      "cells": [
+        null,
+        null,
+        "Giữa câu",
+        null
+      ]
+    },
+    {
+      "sourceRow": 111,
+      "afterStt": 102,
+      "cells": [
+        null,
+        null,
+        "Cuối câu",
+        null
+      ]
+    },
+    {
+      "sourceRow": 124,
+      "afterStt": 114,
+      "cells": [
+        null,
+        null,
+        "chỉ RI mới được đối xử đặc biệt",
+        null
+      ]
+    },
+    {
+      "sourceRow": 139,
+      "afterStt": 128,
+      "cells": [
+        null,
+        null,
+        "Ru con là nhất",
+        null
+      ]
+    }
+  ]
+}

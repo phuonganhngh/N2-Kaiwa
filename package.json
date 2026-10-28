@@ -1,0 +1,11 @@
+{
+  "name": "n2-controlled-kaiwa-trainer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8000 --bind 0.0.0.0",
+    "test": "node --test tests/core.test.mjs",
+    "test:browser": "python3 tests/browser.py"
+  }
+}

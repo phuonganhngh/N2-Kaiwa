@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#176b58">
+  <meta name="description" content="Turn N2 grammar into conversation. Daily controlled speaking practice with local questions and ChatGPT Voice prompts.">
+  <title>N2 Controlled Kaiwa Trainer</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="N2 Controlled Kaiwa Trainer home"><span class="brand-mark" lang="ja">話</span><span>N2 <b>Kaiwa</b><small>CONTROLLED SPEAKING TRAINER</small></span></a>
+    <button class="text-button" id="help-button">How to practice</button>
+  </header>
+  <main id="main">
+    <section class="intro">
+      <div><p class="eyebrow"><span class="dot"></span> KNOW IT. SAY IT. MAKE IT YOURS.</p><h1>A little grammar.<br>A real conversation.</h1><p class="intro-copy">Build the confidence to speak, one structure at a time.</p></div>
+      <div class="intro-aside"><span lang="ja">毎日、少しずつ。</span><p><strong id="bank-count">214</strong> structures <span>·</span> <strong>22</strong> days</p><small>Controlled Speaking · Level 2</small></div>
+    </section>
+    <div id="loading" role="status">Loading your local question bank…</div>
+    <div id="workspace" hidden>
+      <div class="workspace-grid">
+        <aside class="lesson-panel" aria-label="Practice settings">
+          <p class="eyebrow panel-heading">YOUR PRACTICE</p>
+          <div class="mode-tabs" role="group" aria-label="Practice mode"><button data-mode="daily" class="active" aria-pressed="true">Daily</button><button data-mode="custom" aria-pressed="false">Custom</button></div>
+          <div id="daily-controls"><label for="day">Lesson</label><select id="day"></select></div>
+          <div id="custom-controls" hidden><p id="custom-summary" class="setting-note">Choose days, then untick grammar you already feel confident using.</p></div>
+          <label for="round">Round</label><select id="round"></select>
+          <div class="lesson-divider"></div>
+          <label for="covered">Grammar covered through</label><select id="covered"></select><p class="setting-note">Used for random practice in Daily mode. Custom uses only your selected structures.</p>
+          <button id="mark-covered" class="text-button mark-button">✓ Mark this day covered</button>
+          <button id="choose-grammar" class="outline full">Adjust grammar <span aria-hidden="true">＋</span></button>
+          <div class="source-summary"><span class="source-icon" aria-hidden="true">▤</span><div>From your grammar notebook<small>Original STT order · saved locally</small></div></div>
+        </aside>
+        <section class="practice-column" aria-label="Speaking exercise">
+          <article class="exercise-card" id="exercise-card">
+            <div class="card-top"><span id="exercise-location" class="eyebrow"></span><span class="question-count" id="question-count"></span></div>
+            <div class="progress-track" aria-hidden="true"><div id="progress-fill"></div></div>
+            <div class="grammar-row"><div><p class="field-label">TARGET GRAMMAR</p><h2 id="target" lang="ja"></h2></div><span class="stt-tag" id="stt"></span></div>
+            <section class="question-section"><p class="field-label"><span class="label-number">01</span> ENGLISH QUESTION</p><h3 id="english-question"></h3><button id="toggle-question" class="reveal-button" aria-expanded="false" aria-controls="japanese-question"><span aria-hidden="true">＋</span> Show Japanese question</button><p id="japanese-question" class="japanese reveal-content" lang="ja" hidden></p></section>
+            <section class="hint-section"><p class="field-label"><span aria-hidden="true">✧</span> ENGLISH MEANING HINT</p><p id="meaning-hint"></p></section>
+            <section class="answer-section"><button id="toggle-answer" class="reveal-button" aria-expanded="false" aria-controls="japanese-answer"><span aria-hidden="true">＋</span> Show Japanese answer</button><p id="japanese-answer" class="japanese reveal-content" lang="ja" hidden></p></section>
+            <nav class="exercise-nav" aria-label="Exercise navigation"><button id="previous" class="outline">← <span>Previous</span></button><span id="nav-count"></span><button id="next" class="primary"><span>Next question</span> →</button></nav>
+          </article>
+          <section class="copy-section" aria-label="Copy and practice"><div class="section-title"><h2>Take it into conversation</h2><span>YOUR QUESTIONS. YOUR PACE.</span></div>
+            <div class="copy-grid">
+              <div class="copy-card"><span class="copy-icon" aria-hidden="true">01</span><h3>One question</h3><p>Focus on this structure.</p><button id="copy-one" class="outline full">Copy 1Q</button></div>
+              <div class="copy-card"><span class="copy-icon" aria-hidden="true">05</span><h3>This round</h3><p id="round-copy-description">Five questions, in order.</p><button id="copy-five" class="outline full">Copy 5Qs</button></div>
+              <div class="copy-card random-card"><span class="copy-icon" aria-hidden="true">10</span><h3>A fresh mix</h3><p>Preview a unique random set.</p><button id="copy-ten" class="primary full">Copy 10Qs <span aria-hidden="true">→</span></button></div>
+            </div>
+          </section>
+          <details class="source-details"><summary>Original source & notes <span>Grammar N2.xlsx</span></summary><p class="source-notice">The uploaded workbook has one worksheet, “Sheet”, rather than “Sheet 2”. All 214 numbered entries are preserved verbatim. Day 22 contains the remaining 4 entries.</p><dl><dt>STT</dt><dd id="source-stt"></dd><dt>Structure</dt><dd id="source-structure" lang="ja"></dd><dt>Original meaning</dt><dd id="source-meaning" lang="vi"></dd><dt>Original examples</dt><dd id="source-examples" lang="ja"></dd></dl><div id="source-notes"></div><p class="setting-note">Speaking questions and model answers are separately authored practice material. Source spellings, incomplete labels, and missing meanings are preserved.</p></details>
+        </section>
+      </div>
+    </div>
+    <footer><span>N2 Kaiwa <span class="footer-ja" lang="ja">・話す力を、毎日の習慣に。</span></span><span>Local content. No accounts. No AI API.</span></footer>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="random-dialog" aria-labelledby="random-title"><div class="dialog-header"><div><p class="eyebrow">A FRESH MIX</p><h2 id="random-title">Your 10-question set</h2></div><button class="close-button" data-close aria-label="Close random preview">×</button></div><label for="random-scope">Choose from</label><select id="random-scope"><option value="custom" id="random-custom-option">Your Custom selection</option><option value="covered">Grammar covered through selected day</option><option value="all">Entire grammar bank</option></select><p id="random-note" class="setting-note"></p><div class="dialog-toolbar"><button id="reroll" class="outline">↻ Generate another set</button></div><ol id="random-list" class="preview-list"></ol><div class="dialog-actions"><button id="copy-random" class="outline">Copy this 10Q set</button></div></dialog>
+  <dialog id="custom-dialog" aria-labelledby="custom-title"><div class="dialog-header"><div><p class="eyebrow">MAKE IT YOURS</p><h2 id="custom-title">Choose your grammar</h2></div><button class="close-button" data-close aria-label="Close grammar selection">×</button></div><p class="setting-note">Tick one or more days to select their grammar. Untick any structure you feel confident using. Your selection is saved when you start practice.</p><fieldset class="custom-day-fieldset"><legend>Choose days</legend><div id="custom-days" class="custom-days"></div></fieldset><label for="grammar-search">Search STT, structure, or meaning</label><input id="grammar-search" type="search" placeholder="Try ざる, 27, or a meaning…"><div class="selection-toolbar"><span id="selected-count" role="status"></span><button id="clear-selection" class="text-button">Clear selection</button></div><div id="grammar-options" class="grammar-options"></div><div class="dialog-actions"><button id="apply-selection" class="primary">Practice selected grammar</button></div></dialog>
+  <dialog id="handoff-dialog" aria-labelledby="handoff-title"><div class="dialog-header"><div><p class="eyebrow">MANUAL COPY</p><h2 id="handoff-title">Copy your prompt</h2></div><button class="close-button" data-close aria-label="Close manual copy">×</button></div><p>Automatic copying was unavailable. Select and copy the full prompt below, then paste it into ChatGPT.</p><label for="prompt-text">Complete practice prompt</label><textarea id="prompt-text" rows="12" readonly></textarea><div class="dialog-actions"><button id="select-prompt" class="outline">Select prompt</button><button id="retry-copy" class="primary">Try copying again</button></div></dialog>
+  <dialog id="help-dialog" aria-labelledby="help-title"><div class="dialog-header"><div><p class="eyebrow">COPY & PRACTICE</p><h2 id="help-title">Practice at your pace</h2></div><button class="close-button" data-close aria-label="Close practice help">×</button></div><p>Choose <b>Copy 1Q</b> for the current question or <b>Copy 5Qs</b> for the selected round. <b>Copy 10Qs</b> shows a random set first; inspect it and copy when ready.</p><p>Open ChatGPT yourself, paste the prompt, and send it. Start Voice if you want spoken practice. Japanese model answers are never included in the prompt.</p><p>In <b>Custom</b>, tick D1, D2, … to select grammar by day. Untick individual structures you already feel confident using, then start practice. You can select multiple days.</p><h3>Privacy</h3><p>Preferences and Custom selections stay in this browser. No account, cloud sync, microphone access, or AI API is used by this website.</p><button id="reset-progress" class="outline">Reset local preferences</button></dialog>
+</body>
+</html>

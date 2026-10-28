@@ -4,8 +4,9 @@
 
 - Node: 5 logic test cases covering all 214 source-linked exercises, lesson/round selection, eligible unique random sets, exact copied fields, and model-answer exclusion.
 - Source fidelity: all four columns for every numbered entry and all 10 unnumbered notes match the archived workbook exactly.
-- Chromium + Playwright: 67 assertions passed for each edition (modular site and standalone HTML). The browser suite checks English/hint defaults, independent Japanese reveals, navigation, daily/final/custom rounds, Copy 1/5/10 counts and exact questions, preview-before-copy, unique random sets, source-order Custom practice, and no model answers in prompts.
+- Chromium + Playwright: 71 assertions passed for each edition (modular site and standalone HTML). The browser suite checks English/hint defaults, independent Japanese reveals, navigation, daily/final/custom rounds, Copy 1/5/10 counts and exact questions, preview-before-copy, unique random sets, source-order Custom practice, and no model answers in prompts.
 - Only Daily and Custom remain. No Review tab, Shortcut links, or Practice-in-ChatGPT actions remain.
+- All 214 structures appear immediately in Custom with no day selected. Individual selection works directly; Clear selection and unticking a day retain the complete list.
 - Day selection checks: D1 selects 10; D1+D2 selects 20; individual untick gives a partial D1 indicator and accurate count; practice skips the unticked entry; removing D2 preserves D1; D22 selects exactly 4. Multi-day selections persist across reload, and canceled edits do not overwrite saved selections.
 - Custom random 10Q defaults to the selected structures, excluding unticked ones. Fewer than 10 disables copy and explains the limit instead of duplicating entries. Entire bank remains an explicit alternative.
 - Successful copy only shows a confirmation, with no additional dialog or automatic app launch. Clipboard denial exposes the complete selectable prompt for manual copying. Preferences are optional when localStorage is unavailable.

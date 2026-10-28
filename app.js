@@ -3,7 +3,7 @@ import { lesson, roundQuestions, randomTen, voicePrompt } from './core.js';
 const $ = id => document.getElementById(id);
 const storageKey = 'n2-kaiwa.preferences.v1';
 let grammar, bank, source, currentSet = [], position = 0, randomSet = [];
-let draftSelection = new Set(), draftDays = new Set(), handoffPrompt = '', toastTimer;
+let draftSelection = new Set(), handoffPrompt = '', toastTimer;
 let preferences = {};
 try { preferences = JSON.parse(localStorage.getItem(storageKey) || '{}') || {}; } catch { /* Storage is optional. */ }
 const bounded = (value, max) => Number.isInteger(value) && value >= 1 && value <= max ? value : 1;
@@ -147,7 +147,6 @@ function openRandom() {
 }
 function openSelection() {
   draftSelection = new Set(state.custom);
-  draftDays = new Set([...draftSelection].map(stt => Math.ceil(stt / 10)));
   $('grammar-search').value = '';
   renderDayChoices(); renderOptions(); $('custom-dialog').showModal();
 }
@@ -173,9 +172,9 @@ function renderDayChoices() {
     input.addEventListener('change', () => {
       const entries = lesson(grammar,day);
       if (input.checked) {
-        draftDays.add(day); entries.forEach(g => draftSelection.add(g.stt));
+        entries.forEach(g => draftSelection.add(g.stt));
       } else {
-        draftDays.delete(day); entries.forEach(g => draftSelection.delete(g.stt));
+        entries.forEach(g => draftSelection.delete(g.stt));
       }
       renderOptions();
     });
@@ -190,7 +189,7 @@ function renderOptions() {
   let lastDay = 0;
   grammar.filter(g => query
     ? String(g.stt) === query || `${g.structure} ${g.meaning || ''}`.toLowerCase().includes(query)
-    : draftDays.has(Math.ceil(g.stt / 10))).forEach(g => {
+    : true).forEach(g => {
     const day = Math.ceil(g.stt / 10);
     if (day !== lastDay) {
       $('grammar-options').append(el('h3', `D${day} · STT ${(day - 1) * 10 + 1}–${Math.min(day * 10, grammar.length)}`, 'grammar-day-heading'));
@@ -201,13 +200,13 @@ function renderOptions() {
     const span = el('span', `${g.stt}. ${g.structure}`); span.lang = 'ja';
     const small = el('small',g.meaning ?? 'Meaning not supplied in source'); small.lang = 'vi'; span.append(small);
     input.addEventListener('change', () => {
-      if (input.checked) { draftSelection.add(g.stt); draftDays.add(day); }
+      if (input.checked) draftSelection.add(g.stt);
       else draftSelection.delete(g.stt);
       syncSelection();
     });
     label.append(input,span); $('grammar-options').append(label);
   });
-  if (!$('grammar-options').children.length) $('grammar-options').append(el('p', query ? 'No matching entries. Try a different search.' : 'Tick D1, D2, … above to show their grammar, or search for a specific structure.', 'setting-note'));
+  if (!$('grammar-options').children.length) $('grammar-options').append(el('p', 'No matching entries. Try a different search.', 'setting-note'));
 }
 async function init() {
   try {
@@ -243,7 +242,7 @@ async function init() {
     $('copy-random').addEventListener('click', () => copyExercises(randomSet));
     $('choose-grammar').addEventListener('click',openSelection);
     $('grammar-search').addEventListener('input',renderOptions);
-    $('clear-selection').addEventListener('click', () => { draftSelection.clear(); draftDays.clear(); renderOptions(); });
+    $('clear-selection').addEventListener('click', () => { draftSelection.clear(); renderOptions(); });
     $('apply-selection').addEventListener('click', () => {
       if (!draftSelection.size) return;
       state.custom = [...draftSelection].sort((a,b)=>a-b); save(); $('custom-dialog').close(); changeMode('custom');

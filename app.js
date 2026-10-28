@@ -209,7 +209,7 @@ function renderOptions() {
 }
 async function init() {
   try {
-    const responses = await Promise.all([fetch('./data/grammar.json'),fetch('./data/exercises.json?v=20261028-english-review')]);
+    const responses = await Promise.all([fetch('./data/grammar.json'),fetch('./data/exercises.json?v=20261028-contact')]);
     if (responses.some(r => !r.ok)) throw new Error('Local data could not be loaded.');
     [source, bank] = await Promise.all(responses.map(r => r.json())); grammar = source.entries;
     if (grammar.length !== 214 || bank.length !== grammar.length || bank.some((e,i) => e.stt !== grammar[i].stt || e.targetGrammar !== grammar[i].structure)) throw new Error('The local question bank does not match the grammar source.');

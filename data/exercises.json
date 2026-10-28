@@ -21,10 +21,10 @@
     "id": "stt-003",
     "stt": 3,
     "targetGrammar": "～ようがない",
-    "englishQuestion": "You lost your friend's contact details. Can you check their plans?",
-    "japaneseQuestion": "友達の連絡先をなくしました。予定を確認できますか。",
-    "englishMeaningHint": "no contact details → no way to check",
-    "japaneseModelAnswer": "連絡先が分からないので、確認しようがありません。"
+    "englishQuestion": "Why haven't you been able to get back in touch with your old friend?",
+    "japaneseQuestion": "昔の友達と、どうしてまだ連絡が取れていないんですか。",
+    "englishMeaningHint": "no contact details → no way to get in touch",
+    "japaneseModelAnswer": "連絡先が分からないので、連絡の取りようがありません。"
   },
   {
     "id": "stt-004",

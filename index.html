@@ -25,6 +25,10 @@
 
 .kaiwa-edit-button{padding:8px 14px;min-height:44px;font-size:12px;flex-shrink:0}.danger-text{color:#9a4135;margin-top:12px}.deck-toolbar{display:flex;gap:10px;flex-wrap:wrap}.deck-toolbar>button{flex:1;min-height:46px}.card-source-option{display:flex;gap:12px;align-items:flex-start;padding:15px;margin:12px 0;background:#fff;border:1px solid var(--line);border-radius:10px;cursor:pointer}.card-source-option>input{width:21px;height:21px;accent-color:var(--green);flex-shrink:0;margin-top:4px}.card-source-option p{margin:3px 0 8px;white-space:pre-wrap;overflow-wrap:anywhere}.card-source-option small{font-size:12px;color:var(--muted);font-weight:400;white-space:pre-wrap;overflow-wrap:anywhere}.card-source-option>span{min-width:0}.card-source-option .source-title{font-size:15px;font-weight:500}.card-source-option .source-notes{display:block;background:var(--soft);padding:9px 12px;border-radius:6px;margin-top:8px}
 
+.source-english{font-weight:500}.source-japanese{font-weight:400}
+
+.voice-commands{margin-top:18px;padding:14px 16px;background:var(--soft);border-radius:10px;font-size:13px;line-height:1.8;overflow-wrap:anywhere}.voice-commands p{margin:5px 0}.voice-commands [lang="ja"]{font-weight:600}
+
   </style>
 
 </head>
@@ -74,6 +78,12 @@
               <div class="copy-card"><span class="copy-icon" aria-hidden="true">05</span><h3>This round</h3><p id="round-copy-description">Five questions, in order.</p><button id="copy-five" class="outline full">Copy 5Qs</button></div>
               <div class="copy-card random-card"><span class="copy-icon" aria-hidden="true">10</span><h3>A fresh mix</h3><p>Preview a unique random set.</p><button id="copy-ten" class="primary full">Copy 10Qs <span aria-hidden="true">→</span></button></div>
             </div>
+            <div class="voice-commands" aria-label="ChatGPT Voice commands">
+              <p><span lang="ja">ヒントをください</span>: Give me a short hint in English.</p>
+              <p><span lang="ja">フィードバックお願いします</span>: Give me feedback and corrections in Vietnamese.</p>
+              <p><span lang="ja">もう一度</span>: Repeat the current question.</p>
+              <p><span lang="ja">次の問題</span>: Move to the next question.</p>
+            </div>
           </section>
           <details class="source-details"><summary>Original source & notes <span>Grammar N2.xlsx</span></summary><p class="source-notice">The uploaded workbook has one worksheet, “Sheet”, rather than “Sheet 2”. All 214 numbered entries are preserved verbatim. Day 22 contains the remaining 4 entries.</p><dl><dt>STT</dt><dd id="source-stt"></dd><dt>Structure</dt><dd id="source-structure" lang="ja"></dd><dt>Original meaning</dt><dd id="source-meaning" lang="vi"></dd><dt>Original examples</dt><dd id="source-examples" lang="ja"></dd></dl><div id="source-notes"></div><p class="setting-note">Speaking questions and model answers are separately authored practice material. Source spellings, incomplete labels, and missing meanings are preserved.</p></details>
         </section>
@@ -94,8 +104,8 @@
   <dialog id="kaiwa-editor" aria-labelledby="kaiwa-editor-title"><form id="kaiwa-form"><div class="dialog-header"><div><p class="eyebrow">DAILY KAIWA</p><h2 id="kaiwa-editor-title">Add a phrase</h2></div><button type="button" class="close-button" data-close aria-label="Close Kaiwa editor">×</button></div><div class="editor-row"><div><label for="kaiwa-date">Date</label><input id="kaiwa-date" type="date" required></div><div><label for="kaiwa-topic">Topic (optional)</label><input id="kaiwa-topic" type="text" maxlength="120" placeholder="Work, shopping, conversation…"></div></div><label for="kaiwa-japanese">Japanese text *</label><textarea id="kaiwa-japanese" rows="3" maxlength="2000" required lang="ja" placeholder="Enter a question or phrase you want to keep…"></textarea><label for="kaiwa-meaning">Meaning / translation (optional)</label><textarea id="kaiwa-meaning" rows="2" maxlength="2000" placeholder="Vietnamese, English or your preferred language…"></textarea><details id="kaiwa-extra"><summary>Add a reply / notes</summary><label for="kaiwa-answer">Reply / follow-up (optional)</label><textarea id="kaiwa-answer" rows="3" maxlength="3000" lang="ja"></textarea><label for="kaiwa-notes">Notes (optional)</label><textarea id="kaiwa-notes" rows="3" maxlength="2000" placeholder="雪が解けてきた（ゆきがとけてきた）"></textarea><p class="setting-note">One flashcard per line. Use English :: Japanese（reading）. Japanese-only notes go on the back. Save the phrase, then use Flashcards at the top to create or study cards.</p></details><button id="delete-kaiwa-editor" type="button" class="text-button danger-text" hidden>Delete phrase</button><p id="kaiwa-form-error" class="form-error" role="alert" hidden></p><div class="dialog-actions"><button type="button" class="outline" data-close>Cancel</button><button id="save-kaiwa" type="submit" class="primary">Save phrase</button></div></form></dialog>
   <dialog id="delete-kaiwa-dialog" aria-labelledby="delete-kaiwa-title"><div class="dialog-header"><h2 id="delete-kaiwa-title">Delete this phrase?</h2><button class="close-button" data-close aria-label="Close deletion confirmation">×</button></div><p id="delete-kaiwa-preview" class="japanese" lang="ja"></p><div class="dialog-actions"><button class="outline" data-close>Keep phrase</button><button id="confirm-delete-kaiwa" class="primary">Delete phrase</button></div></dialog>
   <dialog id="import-dialog" aria-labelledby="import-title"><div class="dialog-header"><div><p class="eyebrow">UPDATE PROGRESS</p><h2 id="import-title">Restore from backup</h2></div><button class="close-button" data-close aria-label="Close progress restoration">×</button></div><p id="import-summary"></p><p id="import-exported-at" class="setting-note"></p><p>This file will <b>replace</b> the Kaiwa phrases, flashcards, review schedules and grammar progress saved in this browser. You can download your current data before restoring.</p><button id="download-before-restore" class="outline">Download Current Data</button><p id="import-error" class="form-error" role="alert" hidden></p><div class="dialog-actions"><button class="outline" data-close>Cancel</button><button id="confirm-import" class="primary">Restore from File</button></div></dialog>
-  <dialog id="card-sources" aria-labelledby="card-sources-title"><div class="dialog-header"><div><p class="eyebrow">CREATE FROM NOTES</p><h2 id="card-sources-title">Choose your Notes</h2></div><button class="close-button" data-close aria-label="Close Notes selection">×</button></div><p>Select the phrases whose Notes you want to turn into flashcards. Each nonempty line becomes one editable preview.</p><label class="check-row" id="select-all-sources-row"><input id="select-all-card-sources" type="checkbox"> Select all</label><div id="card-source-list"></div><p id="card-sources-empty" class="setting-note" hidden>No Notes yet. Edit a Daily Kaiwa phrase and add Notes first.</p><p id="card-source-count" class="setting-note" role="status"></p><div class="dialog-actions"><button class="outline" data-close>Cancel</button><button id="preview-note-cards" class="primary">Preview cards</button></div></dialog>
-  <dialog id="card-builder" aria-labelledby="card-builder-title"><form id="card-builder-form" novalidate><div class="dialog-header"><div><p class="eyebrow">FROM YOUR NOTES</p><h2 id="card-builder-title">Create flashcards</h2></div><button type="button" class="close-button" data-close aria-label="Close card preview">×</button></div><p>Each line becomes one card. Put English on the front and Japanese, with its reading if useful, on the back. Untick lines you do not want to study.</p><p class="setting-note">Recall the Japanese from the English cue before revealing the answer. Add any missing English yourself; translations are not generated automatically.</p><div id="card-builder-rows"></div><p id="card-builder-error" class="form-error" role="alert" hidden></p><div class="dialog-actions"><button type="button" class="outline" data-close>Cancel</button><button type="submit" id="confirm-create-cards" class="primary">Create cards</button></div></form></dialog>
+  <dialog id="card-sources" aria-labelledby="card-sources-title"><div class="dialog-header"><div><p class="eyebrow">CREATE FROM NOTES</p><h2 id="card-sources-title">Choose your Notes</h2></div><button class="close-button" data-close aria-label="Close Notes selection">×</button></div><p>Select the phrases whose Notes you want to turn into flashcards. Cards are created immediately from English :: Japanese pairs in Notes.</p><label class="check-row" id="select-all-sources-row"><input id="select-all-card-sources" type="checkbox"> Select all</label><div id="card-source-list"></div><p id="card-sources-empty" class="setting-note" hidden>No Notes yet. Edit a Daily Kaiwa phrase and add Notes first.</p><p id="card-sources-error" class="form-error" role="alert" hidden></p><p id="card-source-count" class="setting-note" role="status"></p><div class="dialog-actions"><button class="outline" data-close>Cancel</button><button id="create-note-cards" class="primary">Create cards</button></div></dialog>
+
   <dialog id="flashcard-deck" aria-labelledby="deck-title"><div class="dialog-header"><div><p class="eyebrow">SPACED REPETITION</p><h2 id="deck-title">Your flashcards</h2></div><button class="close-button" data-close aria-label="Close flashcards">×</button></div><p id="deck-summary" role="status"></p><p id="deck-storage-warning" class="storage-warning" role="status" hidden></p><div class="deck-toolbar"><button id="start-card-review" class="primary">Study due cards</button><button id="create-from-notes" class="outline">Create from Notes</button></div><p id="deck-next-due" class="setting-note"></p><label for="flashcard-search">Search flashcards</label><input id="flashcard-search" type="search" placeholder="Search front or back…"><p id="flashcard-empty" class="setting-note"></p><div id="flashcard-list"></div></dialog>
   <dialog id="flashcard-study" aria-labelledby="study-title"><div class="dialog-header"><div><p class="eyebrow">RECALL BEFORE REVEALING</p><h2 id="study-title">Flashcard review</h2></div><button class="close-button" data-close aria-label="Back to flashcards">×</button></div><p id="study-count" class="setting-note" role="status"></p><p id="study-storage-warning" class="storage-warning" role="status" hidden></p><div id="study-face"><p id="study-source" class="setting-note"></p><p class="field-label">FRONT — ENGLISH</p><p id="study-front" class="study-front flashcard-text"></p><button id="show-card-answer" class="primary full">Show answer</button><section id="study-back-section" hidden><p class="field-label">BACK — JAPANESE</p><p id="study-back" class="study-back flashcard-text"></p></section><div id="card-ratings" class="card-ratings" hidden><button id="rating-again" class="rating-button rating-again">Again<small id="rating-again-interval"></small></button><button id="rating-hard" class="rating-button rating-hard">Hard<small id="rating-hard-interval"></small></button><button id="rating-good" class="rating-button rating-good">Good<small id="rating-good-interval"></small></button><button id="rating-easy" class="rating-button rating-easy">Easy<small id="rating-easy-interval"></small></button></div></div><div id="study-empty" hidden><h3>You're done for now</h3><p id="study-next-due" class="setting-note" role="status"></p><button id="study-check-again" class="outline">Check again</button></div><details class="study-help"><summary>How the ratings work</summary><p>Again brings a card back soon. Hard keeps the interval shorter. Good follows the next learning step. Easy skips ahead. The next interval appears on each button. Learning cards return during the session when due.</p><p class="setting-note">Download Progress saves your cards and review schedule. Space activates the focused Show answer or Good button; keys 1–4 choose a rating after revealing.</p></details></dialog>
   <dialog id="card-editor" aria-labelledby="card-editor-title"><form id="card-editor-form"><div class="dialog-header"><h2 id="card-editor-title">Edit flashcard</h2><button type="button" class="close-button" data-close aria-label="Close card editor">×</button></div><label for="edit-card-front">Front — English</label><textarea id="edit-card-front" rows="3" maxlength="2000" required></textarea><label for="edit-card-back">Back — Japanese</label><textarea id="edit-card-back" rows="3" maxlength="3000" required></textarea><label class="check-row"><input type="checkbox" id="reset-card-schedule"> Reset schedule and make this card new</label><p class="setting-note">Editing a card does not change the original Notes. Its schedule is kept unless you select Reset.</p><p id="card-edit-error" class="form-error" role="alert" hidden></p><div class="dialog-actions"><button type="button" class="outline" data-close>Cancel</button><button id="save-card-edit" type="submit" class="primary">Save card</button></div></form></dialog>
@@ -392,40 +402,22 @@ function mountFlashcards({store,getPreferences,notify,onChange}) {
     }
   }
   function openDeck(){store.refresh();renderDeck();find('flashcard-deck').showModal();startTimer();}
-  function openBuilder(entries){
-    const candidates=getNoteCardCandidates(entries,store.data.flashcards);
-    if(!candidates.length){notify('Add at least one line to Notes first.');return;}
-    find('card-builder-error').hidden=true;find('card-builder-rows').replaceChildren();
-    const known=new Set(store.data.flashcards.map(c=>cardContentKey(c.front,c.back)));
-    for(const [index,candidate] of candidates.entries()){
-      const row=node('fieldset',undefined,'card-builder-row');row.dataset.sourceLine=candidate.sourceLine;row.dataset.sourceId=candidate.sourceId;
-      const legend=node('legend');const include=node('input');include.type='checkbox';include.className='include-card';
-      const duplicate=candidate.alreadyCreated||candidate.front&&candidate.back&&known.has(cardContentKey(candidate.front,candidate.back));include.checked=!duplicate;
-      const label=node('label',undefined,'check-row');label.append(include,document.createTextNode(`Card ${index+1}${duplicate?' · already in deck':''}`));legend.append(label);row.append(legend);
-      for(const key of ['front','back']){
-        const fieldLabel=node('label',key==='front'?'Front — English':'Back — Japanese');const field=node('textarea');field.rows=2;field.maxLength=key==='front'?2000:3000;field.className=`card-${key}-input`;field.value=candidate[key];field.disabled=!include.checked;field.setAttribute('aria-label',`Card ${index+1} ${key}`);
-        fieldLabel.append(field);row.append(fieldLabel);
-      }
-      include.addEventListener('change',()=>row.querySelectorAll('textarea').forEach(field=>{field.disabled=!include.checked;}));
-      find('card-builder-rows').append(row);
-    }
-    find('card-builder').showModal();
-  }
   function sourceSelectionState(){
     const boxes=[...find('card-source-list').querySelectorAll('input')],count=boxes.filter(c=>c.checked).length;
     find('card-source-count').textContent=`${count} phrases selected`;
-    find('preview-note-cards').disabled=!count;
+    find('create-note-cards').disabled=!count;
     find('select-all-card-sources').checked=boxes.length>0&&count===boxes.length;
     find('select-all-card-sources').indeterminate=count>0&&count<boxes.length;
   }
   find('create-from-notes').addEventListener('click',()=>{
     store.refresh();find('card-source-list').replaceChildren();
+    find('card-sources-error').hidden=true;
     const candidates=getNoteCardCandidates(store.data.kaiwa,store.data.flashcards);
     for(const entry of store.data.kaiwa){
       const rows=candidates.filter(c=>c.sourceId===entry.id);if(!rows.length)continue;
       const pending=rows.filter(c=>!c.alreadyCreated).length;
       const label=node('label',undefined,'card-source-option'),box=node('input');box.type='checkbox';box.value=entry.id;box.checked=pending>0;
-      const details=node('span');details.append(node('strong',entry.topic||'Daily Kaiwa'),node('p',entry.japanese),node('small',pending?`${pending} new Notes lines`:'Already in deck'));
+      const details=node('span');details.append(node('p',entry.meaning||'No meaning added','source-english'),node('p',entry.japanese,'source-japanese'),node('small',pending?`${pending} new Notes lines`:'Already in deck'));
       label.append(box,details);box.addEventListener('change',sourceSelectionState);find('card-source-list').append(label);
     }
     find('card-sources-empty').hidden=candidates.length>0;find('select-all-sources-row').hidden=!candidates.length;
@@ -434,25 +426,24 @@ function mountFlashcards({store,getPreferences,notify,onChange}) {
   find('select-all-card-sources').addEventListener('change',event=>{
     find('card-source-list').querySelectorAll('input').forEach(box=>{box.checked=event.target.checked;});sourceSelectionState();
   });
-  find('preview-note-cards').addEventListener('click',()=>{
+  find('create-note-cards').addEventListener('click',()=>{
+    const error=find('card-sources-error');error.hidden=true;
     const ids=new Set([...find('card-source-list').querySelectorAll('input:checked')].map(box=>box.value));
-    find('card-sources').close();find('flashcard-deck').close();openBuilder(store.data.kaiwa.filter(e=>ids.has(e.id)));
-  });
-  find('card-builder-form').addEventListener('submit',event=>{
-    event.preventDefault();const additions=[],known=new Set(store.data.flashcards.map(c=>cardContentKey(c.front,c.back)));let duplicates=0;
-    find('card-builder-error').hidden=true;
-    for(const row of find('card-builder-rows').children){
-      if(!row.querySelector('.include-card').checked)continue;
-      const front=row.querySelector('.card-front-input'),back=row.querySelector('.card-back-input');
-      if(!front.value.trim()||!back.value.trim()){find('card-builder-error').textContent='Add English to the front and Japanese to the back of each selected card, or untick it. Translations are not generated automatically.';find('card-builder-error').hidden=false;(!front.value.trim()?front:back).focus();return;}
-      const key=cardContentKey(front.value,back.value);
-      if(known.has(key)){duplicates++;continue;}known.add(key);
-      additions.push(makeFlashcard({id:uid(),sourceId:row.dataset.sourceId,sourceLine:row.dataset.sourceLine,front:front.value,back:back.value}));
+    store.refresh();
+    const candidates=getNoteCardCandidates(store.data.kaiwa.filter(entry=>ids.has(entry.id)),store.data.flashcards);
+    const additions=[],known=new Set(store.data.flashcards.map(card=>cardContentKey(card.front,card.back)));
+    let skipped=0;
+    for(const candidate of candidates){
+      if(candidate.alreadyCreated)continue;
+      const {front,back}=candidate;
+      if(!front||!back){skipped++;continue;}
+      const key=cardContentKey(front,back);if(known.has(key))continue;known.add(key);
+      additions.push(makeFlashcard({id:uid(),sourceId:candidate.sourceId,sourceLine:candidate.sourceLine,front,back}));
     }
-    if(!additions.length){find('card-builder-error').textContent='Select at least one new card. Identical front/back pairs already in the deck are skipped.';find('card-builder-error').hidden=false;return;}
-    if(store.data.flashcards.length+additions.length>MAX_FLASHCARDS){find('card-builder-error').textContent=`The deck can contain up to ${MAX_FLASHCARDS} cards.`;find('card-builder-error').hidden=false;return;}
+    if(!additions.length){error.textContent=skipped?`No cards created. Skipped ${skipped} incomplete Notes lines.`:'These Notes are already in the deck. No duplicate cards were created.';error.hidden=false;return;}
+    if(store.data.flashcards.length+additions.length>MAX_FLASHCARDS){error.textContent=`The deck can contain up to ${MAX_FLASHCARDS} cards.`;error.hidden=false;return;}
     if(persist([...store.data.flashcards,...additions])){
-      find('card-builder').close();find('flashcard-search').value='';notify(`Created ${additions.length} ${additions.length===1?'card':'cards'}${duplicates?`; skipped ${duplicates} duplicates`:''}.`);openDeck();
+      find('card-sources').close();find('flashcard-search').value='';renderDeck();notify(`Created ${additions.length} ${additions.length===1?'card':'cards'}.${skipped?` Skipped ${skipped} incomplete Notes lines.`:''}`);
     }
   });
   function openEditor(id){

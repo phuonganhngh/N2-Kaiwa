@@ -14,7 +14,7 @@ notebook = re.sub(r'^import .*?;\n', '', notebook, flags=re.M)
 notebook = re.sub(r'^export\s+', '', notebook, flags=re.M)
 app = (root / 'app.js').read_text()
 app = re.sub(r'^import .*?;\n', '', app, flags=re.M)
-old = """    const responses = await Promise.all([fetch('./data/grammar.json'),fetch('./data/exercises.json?v=20261029-notebook')]);
+old = """    const responses = await Promise.all([fetch('./data/grammar.json'),fetch('./data/exercises.json?v=20261029-english-ui')]);
     if (responses.some(r => !r.ok)) throw new Error('Local data could not be loaded.');
     [source, bank] = await Promise.all(responses.map(r => r.json())); grammar = source.entries;"""
 new = """    const bundled = JSON.parse(document.getElementById('bundled-data').textContent);

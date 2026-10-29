@@ -21,7 +21,7 @@ test('restoration writes once atomically and never changes state if persistence 
  const storage={getItem:k=>map.get(k)??null,setItem:(k,v)=>{if(fail)throw Error('quota');writes++;map.set(k,v);}};
  const store=createUserStore(()=>storage);store.update(prefs,[note]);const before=JSON.stringify(store.data);
  fail=true;const restored=fresh();restored.kaiwa=[];
- assert.throws(()=>store.restore(restored),/chưa bị thay đổi/);
+ assert.throws(()=>store.restore(restored),/has not changed/);
  assert.equal(JSON.stringify(store.data),before);assert.equal(map.get(USER_DATA_KEY),before);
  fail=false;store.restore(restored);assert.deepEqual(store.data.kaiwa,[]);assert.equal(writes,2);
 });

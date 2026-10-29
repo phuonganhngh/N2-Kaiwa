@@ -1,6 +1,6 @@
 import { lesson, roundQuestions, randomTen, voicePrompt } from './core.js';
-import { createUserStore } from './progress.js?v=20261029-notebook';
-import { mountNotebook } from './notebook.js?v=20261029-notebook';
+import { createUserStore } from './progress.js?v=20261029-english-ui';
+import { mountNotebook } from './notebook.js?v=20261029-english-ui';
 
 const $ = id => document.getElementById(id);
 const userStore = createUserStore(() => window.localStorage);
@@ -229,7 +229,7 @@ function renderOptions() {
 }
 async function init() {
   try {
-    const responses = await Promise.all([fetch('./data/grammar.json'),fetch('./data/exercises.json?v=20261029-notebook')]);
+    const responses = await Promise.all([fetch('./data/grammar.json'),fetch('./data/exercises.json?v=20261029-english-ui')]);
     if (responses.some(r => !r.ok)) throw new Error('Local data could not be loaded.');
     [source, bank] = await Promise.all(responses.map(r => r.json())); grammar = source.entries;
     if (grammar.length !== 214 || bank.length !== grammar.length || bank.some((e,i) => e.stt !== grammar[i].stt || e.targetGrammar !== grammar[i].structure)) throw new Error('The local question bank does not match the grammar source.');
@@ -279,7 +279,7 @@ async function init() {
       $('day').value = 1; $('covered').value = 1; changeMode('daily'); $('help-dialog').close(); notify('Local preferences reset.');
     });
     notebook=mountNotebook({store:userStore,getPreferences,applyPreferences:applyImportedPreferences,notify,copyText:async text=>{
-      if (await clipboard(text)) notify('Đã sao chép câu Kaiwa.');
+      if (await clipboard(text)) notify('Kaiwa phrase copied.');
       else presentManualCopy(text);
     }});
     $('grammar-tab').addEventListener('click',()=>setSection('grammar'));

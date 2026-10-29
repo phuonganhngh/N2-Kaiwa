@@ -58,10 +58,10 @@ Optional Python dependencies: openpyxl for source audit; Playwright and Chromium
 
 ## Additional iPhone/iPad device checks — pending
 
-- [ ] Kaiwa hằng ngày stays separate; adding/editing Japanese and optional replies/meanings works with the native keyboard.
+- [ ] Daily Kaiwa stays separate; adding/editing Japanese and optional replies/meanings works with the native keyboard.
 - [ ] Date controls, editor scrolling, review flags, search, and deletion confirmation are touch-friendly in portrait/landscape.
-- [ ] Download tiến độ saves a complete JSON file to Files (or use Share → Save to Files if Safari opens it).
-- [ ] Transfer the file to another device; Update tiến độ can select it from Files and display the preview.
+- [ ] Download Progress saves a complete JSON file to Files (or use Share → Save to Files if Safari opens it).
+- [ ] Transfer the file to another device; Update Progress can select it from Files and display the preview.
 - [ ] Confirm restoration; verify exact notes, reviewed flags, Custom choices and grammar question position on the receiving device.
 - [ ] Cancel or select an invalid file: existing notes remain unchanged. Download current data from the preview before replacing it.
 - [ ] If storage is unavailable, the visible warning appears and a session backup remains downloadable.

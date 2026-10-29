@@ -96,26 +96,26 @@ An alternative is Pages “Deploy from a branch” using main / root. The Action
 
 GitHub Pages must be enabled in the repository settings. A successful code push and a successful Pages deployment are separate steps.
 
-## Kaiwa hằng ngày — separate manual collection
+## Daily Kaiwa — separate manual collection
 
-Use the **Kaiwa hằng ngày** section beside Ngữ pháp N2. This collection is independent of all 214 source grammar exercises. Personal entries do not appear in Daily, Custom, Copy 1/5/10 prompts, or the authoritative source JSON.
+Use the **Daily Kaiwa** section beside N2 Grammar. This collection is independent of all 214 source grammar exercises. Personal entries do not appear in Daily, Custom, Copy 1/5/10 prompts, or the authoritative source JSON.
 
 - Add a required Japanese phrase/question, an automatically filled date, and optional topic, meaning (Vietnamese or English), Japanese reply, and notes.
 - Edit or delete individual entries; deletion requires confirmation. Cards are grouped by date, newest first.
-- Mark **Đã ôn**, filter by reviewed status, or search your own text. Copy on a personal card copies that card's Japanese text/reply, not a grammar Voice prompt.
+- Mark **Reviewed**, filter by reviewed status, or search your own text. Copy on a personal card copies that card's Japanese text/reply, not a grammar Voice prompt.
 - Notes and preferences are saved to this browser's localStorage. Existing day/coverage/Custom preferences migrate automatically. Actual lesson question position and the selected section now resume after reloading.
 - Reset local preferences resets grammar preferences only; it does not delete personal Kaiwa entries.
 
-### Download / Update tiến độ
+### Download / Update Progress
 
-1. On the current device, choose **Download tiến độ**. Keep the generated `N2-Kaiwa-tien-do-YYYY-MM-DD.json` file.
+1. On the current device, choose **Download Progress**. Keep the generated `N2-Kaiwa-progress-YYYY-MM-DD.json` file.
 2. Transfer it yourself to another device (Files, AirDrop, or your preferred file transfer).
-3. Open the website on that device, choose **Update tiến độ**, and select the file.
-4. Check the preview, optionally download the destination browser's current data first, then choose **Khôi phục từ tệp**.
+3. Open the website on that device, choose **Update Progress**, and select the file.
+4. Check the preview, optionally download the destination browser's current data first, then choose **Restore from File**.
 
-Restoration replaces the destination's saved personal collection and preferences; it is not a merge or automatic synchronization. Closing the preview leaves current data unchanged. The backup includes manual entries, dates, meanings, replies, notes, reviewed flags, covered day, full Custom selection, random scope, current grammar mode/question, and active section. It never replaces or exports the source grammar/exercise bank. This is an N2 Kaiwa backup format, not an importer for another application's files.
+Restoration replaces the destination's saved personal collection and preferences; it is not a merge or automatic synchronization. Closing the preview leaves current data unchanged. The backup includes manual entries, dates, meanings, replies, notes, reviewed flags, covered day, full Custom selection, random scope, current grammar mode/question, and active section. It never replaces or exports the source grammar/exercise bank. This is an N2 Kaiwa backup format, not an importer for another application's files. Older N2 Kaiwa backups, including files named `N2-Kaiwa-tien-do-*.json`, remain compatible; changing the interface language does not translate or modify personal text.
 
-Safari may download directly to Files or show the JSON document. If it opens the document, use **Share → Save to Files**, then select that file via Update tiến độ on the destination device. No Apple Shortcut is required.
+Safari may download directly to Files or show the JSON document. If it opens the document, use **Share → Save to Files**, then select that file via Update Progress on the destination device. No Apple Shortcut is required.
 
 File validation rejects foreign formats, unsupported versions, invalid dates/positions, duplicate IDs, missing fields, oversized text, or a file larger than 4 MiB. Each backup supports up to 1,000 personal entries. Validation completes before any data is written; restoration writes one storage record and leaves the current state intact if persistence fails. Imported text is rendered as plain text. Unexpected source-grammar fields are ignored and cannot modify the static bank.
 

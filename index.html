@@ -105,12 +105,12 @@
   <dialog id="custom-dialog" aria-labelledby="custom-title"><div class="dialog-header"><div><p class="eyebrow">MAKE IT YOURS</p><h2 id="custom-title">Choose your grammar</h2></div><button class="close-button" data-close aria-label="Close grammar selection">×</button></div><p class="setting-note">All grammar is listed below. Tick individual structures, or use D1, D2, … to select or clear a whole day quickly. Untick anything you feel confident using. Your selection is saved when you start practice.</p><fieldset class="custom-day-fieldset"><legend>Quick select by day</legend><div id="custom-days" class="custom-days"></div></fieldset><label for="grammar-search">Search STT, structure, or meaning</label><input id="grammar-search" type="search" placeholder="Try ざる, 27, or a meaning…"><div class="selection-toolbar"><span id="selected-count" role="status"></span><button id="clear-selection" class="text-button">Clear selection</button></div><div id="grammar-options" class="grammar-options"></div><div class="dialog-actions"><button id="apply-selection" class="primary">Practice selected grammar</button></div></dialog>
   <dialog id="handoff-dialog" aria-labelledby="handoff-title"><div class="dialog-header"><div><p class="eyebrow">MANUAL COPY</p><h2 id="handoff-title">Copy your prompt</h2></div><button class="close-button" data-close aria-label="Close manual copy">×</button></div><p>Automatic copying was unavailable. Select and copy the full prompt below, then paste it into ChatGPT.</p><label for="prompt-text">Complete practice prompt</label><textarea id="prompt-text" rows="12" readonly></textarea><div class="dialog-actions"><button id="select-prompt" class="outline">Select prompt</button><button id="retry-copy" class="primary">Try copying again</button></div></dialog>
   <dialog id="help-dialog" aria-labelledby="help-title"><div class="dialog-header"><div><p class="eyebrow">COPY & PRACTICE</p><h2 id="help-title">Practice at your pace</h2></div><button class="close-button" data-close aria-label="Close practice help">×</button></div><p>Choose <b>Copy 1Q</b> for the current question or <b>Copy 5Qs</b> for the selected round. <b>Copy 10Qs</b> shows a random set first; inspect it and copy when ready.</p><p>Open ChatGPT yourself, paste the prompt, and send it. Start Voice if you want spoken practice. Japanese model answers are never included in the prompt.</p><p>In <b>Custom</b>, tick D1, D2, … to select grammar by day. Untick individual structures you already feel confident using, then start practice. You can select multiple days.</p><p><b>Daily Kaiwa</b> is your personal phrase collection. Add Japanese text, meanings, replies or flashcard content, and manage your flashcards from the Flashcards button at the top. These phrases stay separate from the 214 grammar exercises.</p><p><b>Download Progress</b> saves your personal phrases, selections and current lesson position to a JSON file. On another browser or device, choose <b>Update Progress</b>, select that file, check the summary and confirm restoration. If Safari opens the backup in a new window, choose Share → Save to Files.</p><button id="reset-progress" class="outline">Reset local preferences</button></dialog>
-  <dialog id="kaiwa-editor" aria-labelledby="kaiwa-editor-title"><form id="kaiwa-form"><div class="dialog-header"><div><p class="eyebrow">DAILY KAIWA</p><h2 id="kaiwa-editor-title">Add a phrase</h2></div><button type="button" class="close-button" data-close aria-label="Close Kaiwa editor">×</button></div><div class="editor-row"><div><label for="kaiwa-date">Date</label><input id="kaiwa-date" type="date" required></div><div><label for="kaiwa-topic">Topic (optional)</label><input id="kaiwa-topic" type="text" maxlength="120" placeholder="Work, shopping, conversation…"></div></div><label for="kaiwa-japanese">Japanese text *</label><textarea id="kaiwa-japanese" rows="3" maxlength="2000" required lang="ja" placeholder="Enter a question or phrase you want to keep…"></textarea><label for="kaiwa-meaning">Meaning / translation (optional)</label><textarea id="kaiwa-meaning" rows="2" maxlength="2000" placeholder="Vietnamese, English or your preferred language…"></textarea><details id="kaiwa-extra"><summary>Add a reply / flashcard</summary><label for="kaiwa-answer">Reply / follow-up (optional)</label><textarea id="kaiwa-answer" rows="3" maxlength="3000" lang="ja"></textarea><section aria-labelledby="create-flashcard-title"><h3 id="create-flashcard-title">Create Flashcard</h3><div id="kaiwa-card-drafts"></div><button type="button" id="add-card-draft" class="outline">+ Add another flashcard</button></section></details><button id="delete-kaiwa-editor" type="button" class="text-button danger-text" hidden>Delete phrase</button><p id="kaiwa-form-error" class="form-error" role="alert" hidden></p><div class="dialog-actions"><button type="button" class="outline" data-close>Cancel</button><button id="save-kaiwa" type="submit" class="primary">Save phrase</button></div></form></dialog>
+  <dialog id="kaiwa-editor" aria-labelledby="kaiwa-editor-title"><form id="kaiwa-form"><div class="dialog-header"><div><p class="eyebrow">DAILY KAIWA</p><h2 id="kaiwa-editor-title">Add a phrase</h2></div><button type="button" class="close-button" data-close aria-label="Close Kaiwa editor">×</button></div><div class="editor-row"><div><label for="kaiwa-date">Date</label><input id="kaiwa-date" type="date" required></div><div><label for="kaiwa-topic">Topic (optional)</label><input id="kaiwa-topic" type="text" maxlength="120" placeholder="Work, shopping, conversation…"></div></div><label for="kaiwa-japanese">Japanese text *</label><textarea id="kaiwa-japanese" rows="3" maxlength="2000" required lang="ja" placeholder="Enter a question or phrase you want to keep…"></textarea><label for="kaiwa-meaning">Meaning / translation (optional)</label><textarea id="kaiwa-meaning" rows="2" maxlength="2000" placeholder="Vietnamese, English or your preferred language…"></textarea><details id="kaiwa-extra"><summary>Add a reply / flashcard</summary><label for="kaiwa-answer">Reply / follow-up (optional)</label><textarea id="kaiwa-answer" rows="3" maxlength="3000" lang="ja"></textarea><section aria-labelledby="create-flashcard-title"><h3 id="create-flashcard-title">Create Flashcard</h3><p class="setting-note">Save phrase creates or updates your cards. Front: English. Back: Japanese.</p><div id="kaiwa-card-drafts"></div><button type="button" id="add-card-draft" class="outline">+ Add another flashcard</button></section></details><button id="delete-kaiwa-editor" type="button" class="text-button danger-text" hidden>Delete phrase</button><p id="kaiwa-form-error" class="form-error" role="alert" hidden></p><div class="dialog-actions"><button type="button" class="outline" data-close>Cancel</button><button id="save-kaiwa" type="submit" class="primary">Save phrase</button></div></form></dialog>
   <dialog id="delete-kaiwa-dialog" aria-labelledby="delete-kaiwa-title"><div class="dialog-header"><h2 id="delete-kaiwa-title">Delete this phrase?</h2><button class="close-button" data-close aria-label="Close deletion confirmation">×</button></div><p id="delete-kaiwa-preview" class="japanese" lang="ja"></p><div class="dialog-actions"><button class="outline" data-close>Keep phrase</button><button id="confirm-delete-kaiwa" class="primary">Delete phrase</button></div></dialog>
   <dialog id="import-dialog" aria-labelledby="import-title"><div class="dialog-header"><div><p class="eyebrow">UPDATE PROGRESS</p><h2 id="import-title">Restore from backup</h2></div><button class="close-button" data-close aria-label="Close progress restoration">×</button></div><p id="import-summary"></p><p id="import-exported-at" class="setting-note"></p><p>This file will <b>replace</b> the Kaiwa phrases, flashcards, review schedules and grammar progress saved in this browser. You can download your current data before restoring.</p><button id="download-before-restore" class="outline">Download Current Data</button><p id="import-error" class="form-error" role="alert" hidden></p><div class="dialog-actions"><button class="outline" data-close>Cancel</button><button id="confirm-import" class="primary">Restore from File</button></div></dialog>
-  <dialog id="card-sources" aria-labelledby="card-sources-title"><div class="dialog-header"><div><p class="eyebrow">CREATE FLASHCARDS</p><h2 id="card-sources-title">Choose your flashcards</h2></div><button class="close-button" data-close aria-label="Close flashcard selection">×</button></div><p>Select the saved flashcards to create. Front: English. Back: Japanese.</p><label class="check-row" id="select-all-sources-row"><input id="select-all-card-sources" type="checkbox"> Select all</label><div id="card-source-list"></div><p id="card-sources-empty" class="setting-note" hidden>No flashcard content yet. Edit a phrase and fill in Create Flashcard.</p><p id="card-sources-error" class="form-error" role="alert" hidden></p><p id="card-source-count" class="setting-note" role="status"></p><div class="dialog-actions"><button class="outline" data-close>Cancel</button><button id="create-note-cards" class="primary">Create cards</button></div></dialog>
 
-  <dialog id="flashcard-deck" aria-labelledby="deck-title"><div class="dialog-header"><div><p class="eyebrow">SPACED REPETITION</p><h2 id="deck-title">Your flashcards</h2></div><button class="close-button" data-close aria-label="Close flashcards">×</button></div><p id="deck-summary" role="status"></p><p id="deck-storage-warning" class="storage-warning" role="status" hidden></p><div class="deck-toolbar"><button id="start-card-review" class="primary">Study due cards</button><button id="create-from-notes" class="outline">Create flashcards</button></div><p id="deck-next-due" class="setting-note"></p><label for="flashcard-search">Search flashcards</label><input id="flashcard-search" type="search" placeholder="Search front or back…"><p id="flashcard-empty" class="setting-note"></p><div id="flashcard-list"></div></dialog>
+
+  <dialog id="flashcard-deck" aria-labelledby="deck-title"><div class="dialog-header"><div><p class="eyebrow">SPACED REPETITION</p><h2 id="deck-title">Your flashcards</h2></div><button class="close-button" data-close aria-label="Close flashcards">×</button></div><p id="deck-summary" role="status"></p><p id="deck-storage-warning" class="storage-warning" role="status" hidden></p><div class="deck-toolbar"><button id="start-card-review" class="primary">Study due cards</button></div><p id="deck-next-due" class="setting-note"></p><h3 class="deck-list-title">Your cards</h3><label for="flashcard-search">Search flashcards</label><input id="flashcard-search" type="search" placeholder="Search front or back…"><p id="flashcard-empty" class="setting-note"></p><div id="flashcard-list"></div></dialog>
   <dialog id="flashcard-study" aria-labelledby="study-title"><div class="dialog-header"><div><p class="eyebrow">RECALL BEFORE REVEALING</p><h2 id="study-title">Flashcard review</h2></div><button class="close-button" data-close aria-label="Back to flashcards">×</button></div><p id="study-count" class="setting-note" role="status"></p><p id="study-storage-warning" class="storage-warning" role="status" hidden></p><div id="study-face"><p id="study-source" class="setting-note"></p><div id="study-flip-card" class="study-flip-card" role="button" tabindex="0" aria-label="Show answer" aria-expanded="false" aria-controls="study-back-section"><div id="study-front-section"><p class="field-label">FRONT</p><p id="study-front" class="study-front flashcard-text"></p></div><section id="study-back-section" hidden><p class="field-label">BACK</p><p id="study-back" class="study-back flashcard-text"></p></section><p class="flip-cue">Tap card to flip</p></div><button id="show-card-answer" class="primary full">Show answer</button><div id="card-ratings" class="card-ratings" hidden><button id="rating-again" class="rating-button rating-again">Again<small id="rating-again-interval"></small></button><button id="rating-hard" class="rating-button rating-hard">Hard<small id="rating-hard-interval"></small></button><button id="rating-good" class="rating-button rating-good">Good<small id="rating-good-interval"></small></button><button id="rating-easy" class="rating-button rating-easy">Easy<small id="rating-easy-interval"></small></button></div></div><div id="study-empty" hidden><h3>You're done for now</h3><p id="study-next-due" class="setting-note" role="status"></p><button id="study-check-again" class="outline">Check again</button></div><details class="study-help"><summary>How the ratings work</summary><p>Again brings a card back soon. Hard keeps the interval shorter. Good follows the next learning step. Easy skips ahead. The next interval appears on each button. Learning cards return during the session when due.</p><p class="setting-note">Download Progress saves your cards and review schedule. Space activates the focused Show answer or Good button; keys 1–4 choose a rating after revealing.</p></details></dialog>
   <dialog id="card-editor" aria-labelledby="card-editor-title"><form id="card-editor-form"><div class="dialog-header"><h2 id="card-editor-title">Edit flashcard</h2><button type="button" class="close-button" data-close aria-label="Close card editor">×</button></div><label for="edit-card-front">Front</label><textarea id="edit-card-front" rows="3" maxlength="2000" required></textarea><label for="edit-card-back">Back</label><textarea id="edit-card-back" rows="3" maxlength="3000" required></textarea><label class="check-row"><input type="checkbox" id="reset-card-schedule"> Reset schedule and make this card new</label><p class="setting-note">Editing a card does not change the saved phrase or its flashcard drafts. Its schedule is kept unless you select Reset.</p><p id="card-edit-error" class="form-error" role="alert" hidden></p><div class="dialog-actions"><button type="button" class="outline" data-close>Cancel</button><button id="save-card-edit" type="submit" class="primary">Save card</button></div></form></dialog>
   <dialog id="delete-card-dialog" aria-labelledby="delete-card-title"><div class="dialog-header"><h2 id="delete-card-title">Delete this flashcard?</h2><button class="close-button" data-close aria-label="Close card deletion">×</button></div><p id="delete-card-preview" class="flashcard-text"></p><p class="setting-note">This removes the card and its review schedule. The saved phrase and flashcard drafts are kept.</p><div class="dialog-actions"><button class="outline" data-close>Keep card</button><button id="confirm-delete-card" class="primary">Delete card</button></div></dialog>
@@ -191,6 +191,28 @@ function getNoteCardCandidates(entries,cards) {
       return {...candidate,sourceId:entry.id,alreadyCreated:Boolean(saved)||Boolean(candidate.front&&candidate.back&&known.has(cardContentKey(candidate.front,candidate.back)))};
     });
   });
+}
+// Save a phrase and its cards together. Linked cards keep their learning schedule.
+function syncPhraseFlashcards(entry,cards,now=new Date(),newId=()=>globalThis.crypto?.randomUUID?.()??`card-${Date.now()}-${Math.random().toString(36).slice(2)}`) {
+  const result=cards.slice();let created=0,updated=0,skipped=0;
+  const cardDrafts=(entry.cardDrafts||[]).map((draft,index)=>{
+    const front=draft.front.trim(),back=draft.back.trim();
+    if(!front||!back){if(front||back)skipped++;return {...draft,front,back};}
+    let linked=draft.cardId?result.find(card=>card.sourceId===entry.id&&card.id===draft.cardId):null;
+    if(linked&&cardContentKey(linked.front,linked.back)!==cardContentKey(front,back)&&(entry.cardDrafts||[]).some(other=>other!==draft&&other.cardId===draft.cardId&&other.front.trim()&&other.back.trim()&&cardContentKey(other.front,other.back)!==cardContentKey(front,back)))linked=null;
+    const same=result.find(card=>card.id!==linked?.id&&cardContentKey(card.front,card.back)===cardContentKey(front,back));
+    if(same)return {...draft,front,back,cardId:same.id};
+    if(linked){
+      if(linked.front!==front||linked.back!==back){
+        result[result.indexOf(linked)]={...linked,front,back,updatedAt:new Date(Math.max(now.getTime(),Date.parse(linked.updatedAt))).toISOString()};updated++;
+      }
+      return {...draft,front,back,cardId:linked.id};
+    }
+    if(result.length>=MAX_FLASHCARDS)throw new Error(`The deck can contain up to ${MAX_FLASHCARDS} cards.`);
+    const card=makeFlashcard({id:newId(),sourceId:entry.id,sourceLine:`draft:${index}`,front,back},now);
+    result.push(card);created++;return {...draft,front,back,cardId:card.id};
+  });
+  return {cards:result,cardDrafts,created,updated,skipped};
 }
 function validateFlashcards(rows) {
   if(!Array.isArray(rows)||rows.length>MAX_FLASHCARDS)throw new Error(`Invalid flashcard collection (up to ${MAX_FLASHCARDS} cards).`);
@@ -307,7 +329,8 @@ function checkedKaiwa(rows) {
       if(!Array.isArray(row.cardDrafts)||row.cardDrafts.length>100)fail('Invalid flashcard drafts.');
       drafts={cardDrafts:row.cardDrafts.map(draft=>{
         if(!isRecord(draft))fail('Invalid flashcard draft.');
-        return {front:checkedText(draft.front,'Flashcard front',2000),back:checkedText(draft.back,'Flashcard back',3000)};
+        if(draft.cardId!==undefined&&(typeof draft.cardId!=='string'||!/^[A-Za-z0-9_-]{1,100}$/.test(draft.cardId)))fail('Invalid linked flashcard ID.');
+        return {...(draft.cardId?{cardId:draft.cardId}:{}),front:checkedText(draft.front,'Flashcard front',2000),back:checkedText(draft.back,'Flashcard back',3000)};
       })};
     }
     return {...drafts,id:row.id,date:row.date,topic:checkedText(row.topic,'Topic',120),japanese:checkedText(row.japanese,'Japanese text',2000,true),meaning:checkedText(row.meaning,'Meaning / translation',2000),answer:checkedText(row.answer,'Reply',3000),notes:checkedText(row.notes,'Notes',2000),reviewed:row.reviewed,createdAt,updatedAt};
@@ -377,12 +400,11 @@ function createUserStore(storageProvider) {
 function mountFlashcards({store,getPreferences,notify,onChange}) {
   const find=id=>document.getElementById(id);
   const node=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
-  const uid=()=>globalThis.crypto?.randomUUID?.()??`card-${Date.now()}-${Math.random().toString(36).slice(2)}`;
   const atDate=value=>new Date(value).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
   let editingId=null,deletingId=null,activeId=null,revealed=false,sessionRatings=0,timer=null;
-  function persist(cards) {
+  function persist(cards,kaiwa=store.data.kaiwa) {
     try {
-      const durable=store.update(getPreferences(),store.data.kaiwa,cards);
+      const durable=store.update(getPreferences(),kaiwa,cards);
       if(!durable)notify('Saved for this session. Download Progress before closing this page.');
       onChange?.();renderDeck();return true;
     } catch(error){notify(error.message);return false;}
@@ -394,9 +416,6 @@ function mountFlashcards({store,getPreferences,notify,onChange}) {
     find('deck-summary').textContent=`${all.length} ${all.length===1?'card':'cards'} · ${due.length} due now · ${all.filter(c=>c.stage==='new').length} new`;
     find('start-card-review').disabled=!due.length;
     find('start-card-review').className=due.length?'primary':'outline';
-    const pending=getNoteCardCandidates(store.data.kaiwa,all).filter(c=>!c.alreadyCreated).length;
-    find('create-from-notes').textContent=`Create flashcards${pending?` · ${pending} new`:''}`;
-    find('create-from-notes').className=due.length?'outline':'primary';
     const next=all.filter(c=>Date.parse(c.dueAt)>Date.now()).sort((a,b)=>a.dueAt.localeCompare(b.dueAt))[0];
     find('deck-next-due').textContent=!due.length&&next?`Next review: ${atDate(next.dueAt)}`:'';
   }
@@ -407,7 +426,7 @@ function mountFlashcards({store,getPreferences,notify,onChange}) {
     const all=store.data.flashcards.filter(c=>!query||[c.front,c.back,c.sourceLine].some(v=>v.toLowerCase().includes(query))).slice().sort((a,b)=>a.dueAt.localeCompare(b.dueAt)||a.id.localeCompare(b.id));
     find('flashcard-list').replaceChildren();
     find('flashcard-empty').hidden=all.length>0;
-    find('flashcard-empty').textContent=store.data.flashcards.length?'No matching cards.':'No flashcards yet. Edit a phrase and fill in Create Flashcard.';
+    find('flashcard-empty').textContent=store.data.flashcards.length?'No matching cards.':'No flashcards yet. Fill in Front and Back in a Daily Kaiwa phrase, then Save phrase.';
     for(const card of all){
       const item=node('article',undefined,'deck-card');item.dataset.flashcardId=card.id;
       item.append(node('p',card.front,'deck-front'));
@@ -420,50 +439,6 @@ function mountFlashcards({store,getPreferences,notify,onChange}) {
     }
   }
   function openDeck(){store.refresh();renderDeck();find('flashcard-deck').showModal();startTimer();}
-  function sourceSelectionState(){
-    const boxes=[...find('card-source-list').querySelectorAll('input')],count=boxes.filter(c=>c.checked).length;
-    find('card-source-count').textContent=`${count} phrases selected`;
-    find('create-note-cards').disabled=!count;
-    find('select-all-card-sources').checked=boxes.length>0&&count===boxes.length;
-    find('select-all-card-sources').indeterminate=count>0&&count<boxes.length;
-  }
-  find('create-from-notes').addEventListener('click',()=>{
-    store.refresh();find('card-source-list').replaceChildren();
-    find('card-sources-error').hidden=true;
-    const candidates=getNoteCardCandidates(store.data.kaiwa,store.data.flashcards);
-    for(const entry of store.data.kaiwa){
-      const rows=candidates.filter(c=>c.sourceId===entry.id);if(!rows.length)continue;
-      const pending=rows.filter(c=>!c.alreadyCreated).length;
-      const label=node('label',undefined,'card-source-option'),box=node('input');box.type='checkbox';box.value=entry.id;box.checked=pending>0;
-      const details=node('span');details.append(node('p',entry.meaning||'No meaning added','source-english'),node('p',entry.japanese,'source-japanese'),node('small',pending?`${pending} new flashcards`:'Already in deck'));
-      label.append(box,details);box.addEventListener('change',sourceSelectionState);find('card-source-list').append(label);
-    }
-    find('card-sources-empty').hidden=candidates.length>0;find('select-all-sources-row').hidden=!candidates.length;
-    sourceSelectionState();find('card-sources').showModal();
-  });
-  find('select-all-card-sources').addEventListener('change',event=>{
-    find('card-source-list').querySelectorAll('input').forEach(box=>{box.checked=event.target.checked;});sourceSelectionState();
-  });
-  find('create-note-cards').addEventListener('click',()=>{
-    const error=find('card-sources-error');error.hidden=true;
-    const ids=new Set([...find('card-source-list').querySelectorAll('input:checked')].map(box=>box.value));
-    store.refresh();
-    const candidates=getNoteCardCandidates(store.data.kaiwa.filter(entry=>ids.has(entry.id)),store.data.flashcards);
-    const additions=[],known=new Set(store.data.flashcards.map(card=>cardContentKey(card.front,card.back)));
-    let skipped=0;
-    for(const candidate of candidates){
-      if(candidate.alreadyCreated)continue;
-      const {front,back}=candidate;
-      if(!front||!back){skipped++;continue;}
-      const key=cardContentKey(front,back);if(known.has(key))continue;known.add(key);
-      additions.push(makeFlashcard({id:uid(),sourceId:candidate.sourceId,sourceLine:candidate.sourceLine,front,back}));
-    }
-    if(!additions.length){error.textContent=skipped?`No cards created. Skipped ${skipped} incomplete flashcards.`:'These flashcards are already in the deck. No duplicate cards were created.';error.hidden=false;return;}
-    if(store.data.flashcards.length+additions.length>MAX_FLASHCARDS){error.textContent=`The deck can contain up to ${MAX_FLASHCARDS} cards.`;error.hidden=false;return;}
-    if(persist([...store.data.flashcards,...additions])){
-      find('card-sources').close();find('flashcard-search').value='';renderDeck();notify(`Created ${additions.length} ${additions.length===1?'card':'cards'}.${skipped?` Skipped ${skipped} incomplete flashcards.`:''}`);
-    }
-  });
   function openEditor(id){
     const card=store.data.flashcards.find(c=>c.id===id);if(!card)return;editingId=id;
     find('edit-card-front').value=card.front;find('edit-card-back').value=card.back;find('reset-card-schedule').checked=false;find('card-edit-error').hidden=true;find('card-editor').showModal();
@@ -475,7 +450,8 @@ function mountFlashcards({store,getPreferences,notify,onChange}) {
     if(store.data.flashcards.some(c=>c.id!==old.id&&cardContentKey(c.front,c.back)===cardContentKey(front,back))){find('card-edit-error').textContent='An identical card is already in the deck.';find('card-edit-error').hidden=false;return;}
     const now=new Date(Math.max(Date.now(),Date.parse(old.updatedAt)));
     const updated=find('reset-card-schedule').checked?{...makeFlashcard({...old,front,back},now),createdAt:old.createdAt}:{...old,front,back,updatedAt:now.toISOString()};
-    if(persist(store.data.flashcards.map(c=>c.id===old.id?updated:c)))find('card-editor').close();
+    const kaiwa=store.data.kaiwa.map(entry=>entry.id===old.sourceId&&entry.cardDrafts?{...entry,cardDrafts:entry.cardDrafts.map(draft=>draft.cardId===old.id?{...draft,front,back}:draft)}:entry);
+    if(persist(store.data.flashcards.map(c=>c.id===old.id?updated:c),kaiwa))find('card-editor').close();
   });
   find('confirm-delete-card').addEventListener('click',()=>{
     if(deletingId && persist(store.data.flashcards.filter(c=>c.id!==deletingId)))find('delete-card-dialog').close();deletingId=null;
@@ -548,7 +524,7 @@ function mountFlashcards({store,getPreferences,notify,onChange}) {
 }
 
 
-function mountNotebook({store,getPreferences,applyPreferences,notify}) {
+function mountNotebook({store,getPreferences,applyPreferences,notify,onChange}) {
   const find=id=>document.getElementById(id);
   const node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
   let editingId=null, deletingId=null, pendingImport=null;
@@ -556,15 +532,15 @@ function mountNotebook({store,getPreferences,applyPreferences,notify}) {
     find('storage-warning').hidden=store.persisted && !store.loadError;
     find('storage-warning').textContent=store.loadError || 'Changes are only available in this session. Download your progress before closing this page.';
   }
-  function persistKaiwa(kaiwa,message) {
+  function persistKaiwa(kaiwa,message,cards) {
     try {
-      const saved=store.update(getPreferences(),kaiwa);
-      render();storageStatus();notify(saved?message:'Updated for this session. Download your progress before closing this page.');
+      const saved=store.update(getPreferences(),kaiwa,cards);
+      render();storageStatus();onChange?.();notify(saved?message:'Updated for this session. Download your progress before closing this page.');
       return true;
     } catch(error) {notify(error.message);return false;}
   }
   function addDraft(draft={front:'',back:''}){
-    const row=node('fieldset',undefined,'draft-fields');
+    const row=node('fieldset',undefined,'draft-fields');if(draft.cardId)row.dataset.cardId=draft.cardId;
     for(const side of ['front','back']){
       const label=node('label',side==='front'?'Front: English':'Back: Japanese'),field=node('textarea');
       field.className=`draft-${side}`;field.rows=2;field.maxLength=side==='front'?2000:3000;field.value=draft[side];
@@ -582,7 +558,13 @@ function mountNotebook({store,getPreferences,applyPreferences,notify}) {
     find('kaiwa-date').value=entry?.date || localDate();
     for(const key of ['topic','japanese','meaning','answer'])find(`kaiwa-${key}`).value=entry?.[key] || '';
     find('kaiwa-card-drafts').replaceChildren();
-    const drafts=entry?.cardDrafts??(entry?.notes?parseNoteCards(entry.notes).map(card=>({front:card.front,back:card.back})):[]);
+    const drafts=entry?.cardDrafts?.map((draft,index)=>{
+      const linked=store.data.flashcards.find(card=>card.sourceId===entry.id&&(draft.cardId?card.id===draft.cardId:card.sourceLine===`draft:${index}`));
+      return linked?{...draft,cardId:linked.id}:draft;
+    })??(entry?.notes?parseNoteCards(entry.notes).map(card=>{
+      const linked=store.data.flashcards.find(saved=>saved.sourceId===entry.id&&saved.sourceLine===card.sourceLine);
+      return linked?{front:linked.front,back:linked.back,cardId:linked.id}:{front:card.front,back:card.back};
+    }):[]);
     for(const draft of drafts.length?drafts:[{front:'',back:''}])addDraft(draft);
     find('kaiwa-extra').open=Boolean(entry?.answer || drafts.length);
     find('delete-kaiwa-editor').hidden=!entry;
@@ -632,6 +614,7 @@ function mountNotebook({store,getPreferences,applyPreferences,notify}) {
   find('kaiwa-search').addEventListener('input',render);
   function savePhrase(){
     if(!find('kaiwa-form').reportValidity())return;
+    store.refresh();
     const old=editingId?store.data.kaiwa.find(e=>e.id===editingId):null;
     if(!old && store.data.kaiwa.length>=MAX_KAIWA) {find('kaiwa-form-error').textContent=`A backup can contain up to ${MAX_KAIWA} phrases.`;find('kaiwa-form-error').hidden=false;return;}
     const now=new Date(Math.max(Date.now(),old?Date.parse(old.updatedAt):0)).toISOString();
@@ -639,9 +622,13 @@ function mountNotebook({store,getPreferences,applyPreferences,notify}) {
     const entry={id,date:find('kaiwa-date').value,reviewed:old?.reviewed || false,createdAt:old?.createdAt || now,updatedAt:now};
     for(const key of ['topic','japanese','meaning','answer'])entry[key]=find(`kaiwa-${key}`).value.trim();
     entry.notes=old?.notes||'';
-    entry.cardDrafts=[...find('kaiwa-card-drafts').children].map(row=>({front:row.querySelector('.draft-front').value.trim(),back:row.querySelector('.draft-back').value.trim()})).filter(draft=>draft.front||draft.back);
-    const rows=old?store.data.kaiwa.map(e=>e.id===id?entry:e):[...store.data.kaiwa,entry];
-    if(persistKaiwa(rows,old?'Changes saved.':'Phrase added.'))find('kaiwa-editor').close();
+    entry.cardDrafts=[...find('kaiwa-card-drafts').children].map(row=>({... (row.dataset.cardId?{cardId:row.dataset.cardId}:{}),front:row.querySelector('.draft-front').value.trim(),back:row.querySelector('.draft-back').value.trim()})).filter(draft=>draft.front||draft.back);
+    try {
+      const synced=syncPhraseFlashcards(entry,store.data.flashcards,new Date(now));entry.cardDrafts=synced.cardDrafts;
+      const rows=old?store.data.kaiwa.map(e=>e.id===id?entry:e):[...store.data.kaiwa,entry];
+      const message=`${old?'Changes saved.':'Phrase added.'}${synced.created?` ${synced.created} flashcards created.`:''}${synced.updated?` ${synced.updated} flashcards updated.`:''}${synced.skipped?` ${synced.skipped} incomplete flashcards skipped.`:''}`;
+      if(persistKaiwa(rows,message,synced.cards))find('kaiwa-editor').close();
+    } catch(error){find('kaiwa-form-error').textContent=error.message;find('kaiwa-form-error').hidden=false;}
   }
   find('kaiwa-form').addEventListener('submit',event=>{event.preventDefault();savePhrase();});
   find('delete-kaiwa-editor').addEventListener('click',()=>{
@@ -960,7 +947,7 @@ async function init() {
       $('day').value = 1; $('covered').value = 1; changeMode('daily'); $('help-dialog').close(); notify('Local preferences reset.');
     });
     flashcards=mountFlashcards({store:userStore,getPreferences,notify,onChange:()=>notebook?.storageStatus()});
-    notebook=mountNotebook({store:userStore,getPreferences,applyPreferences:applyImportedPreferences,notify});
+    notebook=mountNotebook({store:userStore,getPreferences,applyPreferences:applyImportedPreferences,notify,onChange:()=>flashcards?.refresh()});
     $('grammar-tab').addEventListener('click',()=>setSection('grammar'));
     $('kaiwa-tab').addEventListener('click',()=>setSection('kaiwa'));
     changeMode(state.mode,false,false);setSection(activeSection,false);

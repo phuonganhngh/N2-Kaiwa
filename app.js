@@ -1,17 +1,37 @@
 import { lesson, roundQuestions, randomTen, voicePrompt } from './core.js';
+import { createUserStore } from './progress.js?v=20261029-notebook';
+import { mountNotebook } from './notebook.js?v=20261029-notebook';
 
 const $ = id => document.getElementById(id);
-const storageKey = 'n2-kaiwa.preferences.v1';
-let grammar, bank, source, currentSet = [], position = 0, randomSet = [];
-let draftSelection = new Set(), handoffPrompt = '', toastTimer;
-let preferences = {};
-try { preferences = JSON.parse(localStorage.getItem(storageKey) || '{}') || {}; } catch { /* Storage is optional. */ }
+const userStore = createUserStore(() => window.localStorage);
+const preferences = userStore.data.preferences;
+let grammar, bank, source, currentSet = [], position = preferences.position, randomSet = [];
+let draftSelection = new Set(), handoffPrompt = '', toastTimer, notebook;
+let activeSection = preferences.section;
 const bounded = (value, max) => Number.isInteger(value) && value >= 1 && value <= max ? value : 1;
-const state = { mode: 'daily', day: bounded(preferences.day, 22), round: 1,
-  covered: bounded(preferences.covered, 22), scope: preferences.scope === 'all' ? 'all' : 'covered',
-  custom: Array.isArray(preferences.custom) ? preferences.custom.filter(n => Number.isInteger(n) && n >= 1 && n <= 214) : [] };
+const state = {...preferences, round: 1};
+function getPreferences() {
+  return {day:state.day,covered:state.covered,custom:state.custom,scope:state.scope,mode:state.mode,position,section:activeSection};
+}
 function save() {
-  try { localStorage.setItem(storageKey, JSON.stringify({ day: state.day, covered: state.covered, scope: state.scope, custom: state.custom })); } catch { /* Private browsing must still work. */ }
+  try { userStore.update(getPreferences()); notebook?.storageStatus(); }
+  catch(error) { notify(error.message); }
+}
+function setSection(section, persist = true) {
+  activeSection = section;
+  $('grammar-workspace').hidden = section !== 'grammar';
+  $('grammar-stats').hidden = section !== 'grammar';
+  $('kaiwa-workspace').hidden = section !== 'kaiwa';
+  for (const name of ['grammar','kaiwa']) {
+    $(`${name}-tab`).classList.toggle('active',name===section);
+    $(`${name}-tab`).setAttribute('aria-pressed',String(name===section));
+  }
+  if (persist) save();
+}
+function applyImportedPreferences(prefs) {
+  Object.assign(state,prefs); position=prefs.position;activeSection=prefs.section;
+  $('day').value=state.day;$('covered').value=state.covered;
+  changeMode(state.mode,false,false);setSection(activeSection,false);
 }
 function el(tag, text, className) {
   const node = document.createElement(tag);
@@ -36,12 +56,12 @@ function fillRounds() {
   state.round = bounded(state.round, Math.max(1, Math.ceil(currentSet.length / 5)));
   $('round').value = state.round;
 }
-function loadSet() {
+function loadSet(resetPosition = true) {
   if (state.mode === 'daily') currentSet = lesson(bank, state.day);
   if (state.mode === 'custom') currentSet = bank.filter(e => state.custom.includes(e.stt));
-  position = 0; state.round = 1; fillRounds(); render();
+  position = resetPosition ? 0 : Math.max(0,Math.min(position,currentSet.length-1)); state.round = 1; fillRounds(); render();
 }
-function changeMode(mode) {
+function changeMode(mode, resetPosition = true, persist = true) {
   if (mode === 'custom' && !state.custom.length) { openSelection(); return; }
   state.mode = mode;
   document.querySelectorAll('[data-mode]').forEach(button => {
@@ -52,7 +72,7 @@ function changeMode(mode) {
   $('custom-controls').hidden = mode !== 'custom';
   $('mark-covered').hidden = mode !== 'daily';
   $('custom-summary').textContent = `${state.custom.length} structures in your personal practice set.`;
-  loadSet(); save();
+  loadSet(resetPosition); if (persist) save();
 }
 function hideReveals() {
   for (const [button, content, label] of [
@@ -209,7 +229,7 @@ function renderOptions() {
 }
 async function init() {
   try {
-    const responses = await Promise.all([fetch('./data/grammar.json'),fetch('./data/exercises.json?v=20261028-full-review')]);
+    const responses = await Promise.all([fetch('./data/grammar.json'),fetch('./data/exercises.json?v=20261029-notebook')]);
     if (responses.some(r => !r.ok)) throw new Error('Local data could not be loaded.');
     [source, bank] = await Promise.all(responses.map(r => r.json())); grammar = source.entries;
     if (grammar.length !== 214 || bank.length !== grammar.length || bank.some((e,i) => e.stt !== grammar[i].stt || e.targetGrammar !== grammar[i].structure)) throw new Error('The local question bank does not match the grammar source.');
@@ -222,7 +242,7 @@ async function init() {
     $('day').value = state.day; $('covered').value = state.covered; $('bank-count').textContent = bank.length;
     document.querySelectorAll('[data-mode]').forEach(button => button.addEventListener('click', () => button.dataset.mode === 'custom' ? openSelection() : changeMode('daily')));
     $('day').addEventListener('change', () => { state.day = Number($('day').value); loadSet(); save(); });
-    $('round').addEventListener('change', () => { position = (Number($('round').value) - 1)*5; render(); });
+    $('round').addEventListener('change', () => { position = (Number($('round').value) - 1)*5; render(); save(); });
     $('covered').addEventListener('change', () => {
       state.covered = Number($('covered').value); save();
     });
@@ -230,8 +250,8 @@ async function init() {
       state.covered = Math.max(state.covered,state.day); $('covered').value = state.covered; save();
       notify(`Covered through Day ${state.covered}`);
     });
-    $('previous').addEventListener('click', () => { if (position > 0) { position--; render(); } });
-    $('next').addEventListener('click', () => { if (position < currentSet.length-1) { position++; render(); } });
+    $('previous').addEventListener('click', () => { if (position > 0) { position--; render(); save(); } });
+    $('next').addEventListener('click', () => { if (position < currentSet.length-1) { position++; render(); save(); } });
     $('toggle-question').addEventListener('click', () => toggle('toggle-question','japanese-question','Japanese question'));
     $('toggle-answer').addEventListener('click', () => toggle('toggle-answer','japanese-answer','Japanese answer'));
     $('copy-one').addEventListener('click', () => copyExercises([current()]));
@@ -255,10 +275,17 @@ async function init() {
       } else notify('Copy unavailable. Select the prompt and copy it manually.');
     });
     $('reset-progress').addEventListener('click', () => {
-      state.day = 1; state.covered = 1; state.custom = []; state.scope = 'covered'; save();
+      state.day = 1; state.covered = 1; state.custom = []; state.scope = 'covered'; setSection('grammar',false);
       $('day').value = 1; $('covered').value = 1; changeMode('daily'); $('help-dialog').close(); notify('Local preferences reset.');
     });
-    loadSet(); $('loading').hidden = true; $('workspace').hidden = false;
+    notebook=mountNotebook({store:userStore,getPreferences,applyPreferences:applyImportedPreferences,notify,copyText:async text=>{
+      if (await clipboard(text)) notify('Đã sao chép câu Kaiwa.');
+      else presentManualCopy(text);
+    }});
+    $('grammar-tab').addEventListener('click',()=>setSection('grammar'));
+    $('kaiwa-tab').addEventListener('click',()=>setSection('kaiwa'));
+    changeMode(state.mode,false,false);setSection(activeSection,false);
+    $('loading').hidden = true; $('workspace').hidden = false;
   } catch (error) {
     $('loading').className = 'load-error';
     $('loading').textContent = `${error.message} Serve the project with a static web server (npm start), rather than opening index.html as a file. Reload to retry.`;

@@ -87,7 +87,7 @@ No Apple Shortcut is needed and the site never launches another app. If clipboar
 
 The included `.github/workflows/pages.yml` validates the bank, prepares only public assets, and deploys a static Pages artifact.
 
-1. Commit the website files and push them to **main** in `phuonganhngh/N2-Kaiwa` (the previously empty repository needs an initial commit).
+1. Commit the website files and push them to **main** in `phuonganhngh/N2-Kaiwa`.
 2. In GitHub, open **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**.
 3. Open **Actions → Deploy static site to GitHub Pages**. Run it manually, or let the push to main trigger it. Approve the GitHub Pages deployment environment if your repository's rules require it.
 4. After the workflow succeeds, use the URL shown by GitHub Pages. Test from that HTTPS URL on iPhone and iPad.
@@ -96,6 +96,31 @@ An alternative is Pages “Deploy from a branch” using main / root. The Action
 
 GitHub Pages must be enabled in the repository settings. A successful code push and a successful Pages deployment are separate steps.
 
+## Kaiwa hằng ngày — separate manual collection
+
+Use the **Kaiwa hằng ngày** section beside Ngữ pháp N2. This collection is independent of all 214 source grammar exercises. Personal entries do not appear in Daily, Custom, Copy 1/5/10 prompts, or the authoritative source JSON.
+
+- Add a required Japanese phrase/question, an automatically filled date, and optional topic, meaning (Vietnamese or English), Japanese reply, and notes.
+- Edit or delete individual entries; deletion requires confirmation. Cards are grouped by date, newest first.
+- Mark **Đã ôn**, filter by reviewed status, or search your own text. Copy on a personal card copies that card's Japanese text/reply, not a grammar Voice prompt.
+- Notes and preferences are saved to this browser's localStorage. Existing day/coverage/Custom preferences migrate automatically. Actual lesson question position and the selected section now resume after reloading.
+- Reset local preferences resets grammar preferences only; it does not delete personal Kaiwa entries.
+
+### Download / Update tiến độ
+
+1. On the current device, choose **Download tiến độ**. Keep the generated `N2-Kaiwa-tien-do-YYYY-MM-DD.json` file.
+2. Transfer it yourself to another device (Files, AirDrop, or your preferred file transfer).
+3. Open the website on that device, choose **Update tiến độ**, and select the file.
+4. Check the preview, optionally download the destination browser's current data first, then choose **Khôi phục từ tệp**.
+
+Restoration replaces the destination's saved personal collection and preferences; it is not a merge or automatic synchronization. Closing the preview leaves current data unchanged. The backup includes manual entries, dates, meanings, replies, notes, reviewed flags, covered day, full Custom selection, random scope, current grammar mode/question, and active section. It never replaces or exports the source grammar/exercise bank. This is an N2 Kaiwa backup format, not an importer for another application's files.
+
+Safari may download directly to Files or show the JSON document. If it opens the document, use **Share → Save to Files**, then select that file via Update tiến độ on the destination device. No Apple Shortcut is required.
+
+File validation rejects foreign formats, unsupported versions, invalid dates/positions, duplicate IDs, missing fields, oversized text, or a file larger than 4 MiB. Each backup supports up to 1,000 personal entries. Validation completes before any data is written; restoration writes one storage record and leaves the current state intact if persistence fails. Imported text is rendered as plain text. Unexpected source-grammar fields are ignored and cannot modify the static bank.
+
+If browser storage is denied or full, newly entered notes remain usable in the current session and a visible warning asks you to download before leaving. Do not rely on them surviving a reload. A restore requiring durable storage reports failure rather than claiming it saved. An unreadable existing notebook is not silently overwritten. Preference updates in another tab preserve the latest personal collection in the same browser.
+
 ## Verification
 
 ```sh
@@ -103,6 +128,7 @@ npm test                         # Node: data, lessons, randomness, prompt conte
 python3 tests/source_fidelity.py # Optional openpyxl: compare every cell with source
 # With npm start running, Python Playwright installed, and a browser available:
 python3 tests/browser.py
+python3 tests/notebook_browser.py   # real downloads + restore in a fresh browser
 # Optional: install WebKit, then run the same browser flows:
 python3 -m playwright install webkit
 N2_BROWSER=webkit python3 tests/browser.py
@@ -118,6 +144,8 @@ See [TESTING.md](TESTING.md) for verified results and the required device testin
 index.html + styles.css   Accessible responsive interface, local system fonts
 app.js                   State, DOM, optional localStorage, copy and manual-paste fallback
 core.js                  Pure lesson, round, random selection and prompt functions
+progress.js              User-data schema, validation, storage migration and backup handling
+notebook.js              Separate manual Kaiwa UI and JSON download/restore
 data/grammar.json        Immutable source import + source metadata
 data/exercises.json      Authored static question bank
 source/Grammar-N2.xlsx    Original workbook, for audit/reimport
@@ -125,4 +153,4 @@ scripts/                 Workbook importer
 tests/                   Source, logic, and browser flow checks
 ```
 
-Preferences only are saved to this browser's localStorage; prompts, responses, and audio are not persisted. Reset local preferences from How to practice. If storage is unavailable, practice still works. There are no external fonts, analytics, scripts, or runtime network calls except same-origin static files. Initial load requires a static server; offline reload is not promised (no service worker).
+Preferences and explicitly entered personal Kaiwa are saved to this browser's localStorage; microphone audio and ChatGPT responses are not captured. User data is stored separately from the immutable grammar bank. Reset local preferences from How to practice; personal entries remain. If storage is unavailable, practice still works, and manual entries can be downloaded from the current session. There are no external fonts, analytics, scripts, or runtime network calls except same-origin static files. Initial load requires a static server; offline reload is not promised (no service worker).

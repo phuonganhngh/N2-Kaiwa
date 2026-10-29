@@ -2,7 +2,7 @@
 
 ## Current automated checks
 
-- Node: 5 logic test cases covering all 214 source-linked exercises, lesson/round selection, eligible unique random sets, exact copied fields, and model-answer exclusion.
+- Node: 5 grammar logic cases plus 8 user-data/backup validation cases. Grammar cases covering all 214 source-linked exercises, lesson/round selection, eligible unique random sets, exact copied fields, and model-answer exclusion.
 - Source fidelity: all four columns for every numbered entry and all 10 unnumbered notes match the archived workbook exactly.
 - Chromium + Playwright: 71 assertions passed for each edition (modular site and standalone HTML). The browser suite checks English/hint defaults, independent Japanese reveals, navigation, daily/final/custom rounds, Copy 1/5/10 counts and exact questions, preview-before-copy, unique random sets, source-order Custom practice, and no model answers in prompts.
 - Only Daily and Custom remain. No Review tab, Shortcut links, or Practice-in-ChatGPT actions remain.
@@ -15,6 +15,15 @@
 
 Browser tests deliberately mock clipboard success/denial. Actual Safari permissions and pasting into ChatGPT require device testing. Tests are run for both the modular site and the rebuilt single-file HTML edition.
 
+## Manual Kaiwa and backup verification
+
+- A separate 43-assertion Chromium suite exercises manual add/edit/delete, cancel deletion, topic search, review-status filters, reviewed flags, reload persistence, migration of legacy preferences, and exact Daily and Custom grammar-position resume.
+- It downloads an actual JSON file and restores it in a separate fresh browser context. Canceled imports do not change data; selecting the same file again works. Japanese, meanings, replies, reviewed flags, Custom choices and lesson position survive the transfer.
+- Foreign/malformed files are rejected; storage-write failure leaves current state unchanged. A markup-containing entry is rendered literally rather than executed; extra grammar fields cannot replace the source bank.
+- A storage-denied browser can still add a session-only entry and download it, with a visible warning.
+- Notebook controls and editor were checked at 390px, 768px and 320px. These are Chromium layouts, not native Safari tests.
+- Unit tests cover invalid dates/IDs, future formats, oversized files, whole-record restore failure, protected unreadable existing data, and preserving another tab's newly added notes during a preference update.
+
 ## Run
 
 ```sh
@@ -22,8 +31,10 @@ npm test
 python3 tests/source_fidelity.py
 # Start npm start in another terminal first:
 python3 tests/browser.py
+python3 tests/notebook_browser.py
 python3 scripts/build_standalone.py
 N2_TEST_URL=http://127.0.0.1:8000/N2-Kaiwa-standalone.html python3 tests/browser.py
+N2_TEST_URL=http://127.0.0.1:8000/N2-Kaiwa-standalone.html python3 tests/notebook_browser.py
 ```
 
 Optional Python dependencies: openpyxl for source audit; Playwright and Chromium for browser testing. Neither is required by website visitors. Screenshots go to `/tmp/n2-test-results`.
@@ -44,3 +55,13 @@ Optional Python dependencies: openpyxl for source audit; Playwright and Chromium
 - [ ] Screen-reader labels, keyboard focus, modal closure, and visible status feedback work.
 - [ ] Private browsing/storage restrictions do not prevent practice.
 - [ ] Send copied prompt in ChatGPT; start Voice manually if desired. Check exact order, one question at a time, hints, Vietnamese feedback, repeat, and next commands. External ChatGPT behavior cannot be enforced by this site.
+
+## Additional iPhone/iPad device checks — pending
+
+- [ ] Kaiwa hằng ngày stays separate; adding/editing Japanese and optional replies/meanings works with the native keyboard.
+- [ ] Date controls, editor scrolling, review flags, search, and deletion confirmation are touch-friendly in portrait/landscape.
+- [ ] Download tiến độ saves a complete JSON file to Files (or use Share → Save to Files if Safari opens it).
+- [ ] Transfer the file to another device; Update tiến độ can select it from Files and display the preview.
+- [ ] Confirm restoration; verify exact notes, reviewed flags, Custom choices and grammar question position on the receiving device.
+- [ ] Cancel or select an invalid file: existing notes remain unchanged. Download current data from the preview before replacing it.
+- [ ] If storage is unavailable, the visible warning appears and a session backup remains downloadable.
